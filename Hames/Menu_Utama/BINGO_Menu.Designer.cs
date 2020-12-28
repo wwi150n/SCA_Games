@@ -35,6 +35,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(257, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.Size = new System.Drawing.Size(102, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "MULAI";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,9 +51,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(348, 12);
+            this.button2.Location = new System.Drawing.Point(365, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 44);
+            this.button2.Size = new System.Drawing.Size(102, 44);
             this.button2.TabIndex = 0;
             this.button2.Text = "DAFTAR SCORE";
             this.button2.UseVisualStyleBackColor = true;
@@ -61,27 +62,27 @@
             // 
             this.button3.Location = new System.Drawing.Point(257, 62);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 44);
+            this.button3.Size = new System.Drawing.Size(102, 44);
             this.button3.TabIndex = 0;
-            this.button3.Text = "SETTING";
+            this.button3.Text = "PENGATURAN";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(348, 62);
+            this.button4.Location = new System.Drawing.Point(365, 62);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 44);
+            this.button4.Size = new System.Drawing.Size(102, 44);
             this.button4.TabIndex = 0;
-            this.button4.Text = "KELUAR BINGO";
+            this.button4.Text = "BANTUAN";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(257, 112);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(166, 44);
+            this.button5.Size = new System.Drawing.Size(102, 44);
             this.button5.TabIndex = 0;
-            this.button5.Text = "KELUAR HAMES";
+            this.button5.Text = "KELUAR BINGO";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -94,12 +95,22 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(365, 112);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(102, 44);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "KELUAR HAMES";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // BINGO_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 184);
+            this.ClientSize = new System.Drawing.Size(475, 162);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -120,5 +131,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button6;
     }
 }
