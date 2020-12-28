@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Menu_Utama
 {
-    public partial class BINGO_Menu : Form
+    public partial class BINGO_Angka : Form
     {
-        public BINGO_Menu()
+        public BINGO_Angka()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            BINGO_Angka frm1 = new BINGO_Angka();
-            this.Hide();
-            frm1.Show();
         }
     }
 }
