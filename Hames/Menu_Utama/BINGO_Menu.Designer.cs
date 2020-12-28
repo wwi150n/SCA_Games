@@ -118,6 +118,7 @@
             this.Controls.Add(this.button1);
             this.Name = "BINGO_Menu";
             this.Text = "BINGO";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_Menu_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

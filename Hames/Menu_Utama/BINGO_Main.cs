@@ -10,21 +10,14 @@ using System.Windows.Forms;
 
 namespace Menu_Utama
 {
-    public partial class BINGO_Menu : Form
+    public partial class BINGO_Main : Form
     {
-        public BINGO_Menu()
+        public BINGO_Main()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            BINGO_Angka frm1 = new BINGO_Angka();
-            this.Hide();
-            frm1.Show();
-        }
-
-        private void BINGO_Menu_FormClosed(object sender, FormClosedEventArgs e)
+        private void BINGO_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

@@ -121,5 +121,84 @@ namespace Menu_Utama
             }
             xlabel(5, txt5);
         }
+
+        public void xpengecekan(int ukur, TextBox[] txt)
+        {
+            //pengecekan nilai
+            status = true;
+            tmp = new int[ukur * ukur];
+            for (int i = 0; i < ukur; i++)
+            {
+                for (int j = 0; j < ukur; j++)
+                {
+                    bool stt = true;
+                    a = txt[ukur * i + j].Text;
+                    if (a.Length == 0)
+                    {
+                        //pengecekan null
+                        stt = false;
+                        status = false;
+                        txt[ukur * i + j].BackColor = Color.Red;
+                    }
+                    for (int k = 0; k < a.Length; k++)
+                    {
+                        //pengecekan angka
+                        if (!Char.IsDigit(a[k]))
+                        {
+                            stt = false;
+                            status = false;
+                            txt[ukur * i + j].BackColor = Color.Red;
+                        }
+                    }
+                    if (stt)
+                    {
+                        if ((Convert.ToInt32(a) <= 0) || (Convert.ToInt32(a) > (ukur * ukur)))
+                        {
+                            stt = false;
+                            status = false;
+                            txt[ukur * i + j].BackColor = Color.Red;
+                        }
+                    }
+                    if (stt)
+                    {
+                        tmp[ukur * i + j] = Convert.ToInt32(txt[ukur * i + j].Text);
+                        txt[ukur * i + j].BackColor = Color.LightGreen;
+                    }
+                }
+            }
+            for (int i = 0; i < ukur*ukur; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    //pengecekan nilai yang sama
+                    if (tmp[i] == tmp[j])
+                    {
+                        status = false;
+                        txt[i].BackColor = Color.Red;
+                        txt[j].BackColor = Color.Red;
+                    }
+                }
+            }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int stg = 5;
+            xpengecekan(5, txt5);
+            if (status)
+            {
+                BINGO_Main frm1 = new BINGO_Main();
+                this.Hide();
+                frm1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Data tidak valid!!!", "Informasi");
+            }
+        }
+
+        private void BINGO_Angka_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
