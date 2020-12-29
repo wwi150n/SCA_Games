@@ -5,15 +5,16 @@
 
 28-30 Desember 2020: Scrummaster - Wilson (171114004)
 28 Desember 2020:
-Wilson - Membuat menu utama, membuat menu utama untuk game BINGO, dan membuat fitur isi angka manual untuk BINGO.
+Wilson - Membuat menu utama, membuat menu utama untuk game BINGO, membuat fitur isi angka manual untuk BINGO, dan membuat menu mulai permainan BINGO.
 Sylvia - Membuat menu utama untuk game XOXO.
 Anthony - Membuat menu utama untuk game SOS. (di commit pada hari berikutnya)
-NB: User Story no 1 dan 3 done. User Story no 8 dan 10 ke on progress. User Story no 14, 15 dan 20 ke sprint backlog.
+NB: User Story no 1, 3, 8 done. User Story no 5 ke on progress. User Story no 10, dan 20 ke sprint backlog.
 
 29 Desember 2020:
-Wilson - Membuat menu mulai permainan BINGO, isi daftar score, dan mengisi angka secara acak.
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO.
 Sylvia - Membuat papan permainan untuk meletakkan X dan O dan membuat fitur isi nama dalam permainan XOXO.
-Anthony - Membuat papan permainan untuk meletakkan S atau O dan membuat fitur isi nama dalam permainan SOS.
+Anthony - Membuat menu utama untuk game SOS (lanjutan).
+NB: User Story tidak berubah posisi. Akan tetapi, estimasi User Story no 5 dari 2 jam menjadi estimasi baru yaitu 6 jam.
 
 30 Desember 2020:
 
