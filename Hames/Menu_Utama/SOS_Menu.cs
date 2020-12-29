@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +16,15 @@ namespace Menu_Utama
         {
             InitializeComponent();
         }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+
     }
+
+    private void button3_Click(object sender, EventArgs e)
+    {
+
+    }
+  }
 }
