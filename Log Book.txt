@@ -12,11 +12,13 @@ NB: User Story no 1, 3, 8 done. User Story no 5 ke on progress. User Story no 10
 
 29 Desember 2020:
 Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO.
-Sylvia - Membuat papan permainan untuk meletakkan X dan O dan membuat fitur isi nama dalam permainan XOXO.
 Anthony - Membuat menu utama untuk game SOS (lanjutan).
 NB: User Story tidak berubah posisi. Akan tetapi, estimasi User Story no 5 dari 2 jam menjadi estimasi baru yaitu 6 jam.
 
 30 Desember 2020:
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO (lanjutan) dan mengisi nama untuk daftar poin tertinggi.
+Sylvia - Membuat menu utama untuk game XOXO (lanjutan).
+Anthony - Membuat papan permainan untuk meletakkan S dan O.
 
 31 Desember 2020-4 Januari 2021: Scrummaster - Sylvia Dewi Chaiyanti (171110690)
 31 Desember 2020:
