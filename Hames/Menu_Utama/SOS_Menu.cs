@@ -26,5 +26,12 @@ namespace Menu_Utama
     {
 
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+      SOS sOS = new SOS();
+      this.Hide();
+      sOS.Show();
+    }
   }
 }
