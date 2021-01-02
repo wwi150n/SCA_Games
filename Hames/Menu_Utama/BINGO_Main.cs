@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Menu_Utama
 {
@@ -15,6 +16,13 @@ namespace Menu_Utama
         public BINGO_Main()
         {
             InitializeComponent();
+            foreach (Control item in Controls)
+            {
+                if (item is Button)
+                {
+                    item.Click += new EventHandler(main1);
+                }
+            }
         }
         public void main1(object sender,EventArgs e)
         {
@@ -96,6 +104,7 @@ namespace Menu_Utama
             else if (pcom >= stg)
             {
                 MessageBox.Show("Anda kalah, silahkan coba lagi");
+
             }
         }
         public int mcek(int x,int y, int[,] posisi, int pemain)
@@ -208,6 +217,210 @@ namespace Menu_Utama
             }
             return hitung;
         }
+
+        private void BINGO_Main_Load(object sender, EventArgs e)
+        {
+            btn9[0, 0] = button1;
+            btn9[0, 1] = button2;
+            btn9[0, 2] = button3;
+            btn9[0, 3] = button4;
+            btn9[0, 4] = button5;
+            btn9[0, 5] = button6;
+            btn9[0, 6] = button7;
+            btn9[0, 7] = button8;
+            btn9[0, 8] = button9;
+            btn9[1, 0] = button10;
+            btn7[0, 0] = btn9[1, 1] = button11;
+            btn7[0, 1] = btn9[1, 2] = button12;
+            btn7[0, 2] = btn9[1, 3] = button13;
+            btn7[0, 3] = btn9[1, 4] = button14;
+            btn7[0, 4] = btn9[1, 5] = button15;
+            btn7[0, 5] = btn9[1, 6] = button16;
+            btn7[0, 6] = btn9[1, 7] = button17;
+            btn9[1, 8] = button18;
+            btn9[2, 0] = button19;
+            btn7[1, 0] = btn9[2, 1] = button20;
+            btn5[0, 0] = btn7[1, 1] = btn9[2, 2] = button21;
+            btn5[0, 1] = btn7[1, 2] = btn9[2, 3] = button22;
+            btn5[0, 2] = btn7[1, 3] = btn9[2, 4] = button23;
+            btn5[0, 3] = btn7[1, 4] = btn9[2, 5] = button24;
+            btn5[0, 4] = btn7[1, 5] = btn9[2, 6] = button25;
+            btn7[1, 6] = btn9[2, 7] = button26;
+            btn9[2, 8] = button27;
+            btn9[3, 0] = button28;
+            btn7[2, 0] = btn9[3, 1] = button29;
+            btn5[1, 0] = btn7[2, 1] = btn9[3, 2] = button30;
+            btn5[1, 1] = btn7[2, 2] = btn9[3, 3] = button31;
+            btn5[1, 2] = btn7[2, 3] = btn9[3, 4] = button32;
+            btn5[1, 3] = btn7[2, 4] = btn9[3, 5] = button33;
+            btn5[1, 4] = btn7[2, 5] = btn9[3, 6] = button34;
+            btn7[2, 6] = btn9[3, 7] = button35;
+            btn9[3, 8] = button36;
+            btn9[4, 0] = button37;
+            btn7[3, 0] = btn9[4, 1] = button38;
+            btn5[2, 0] = btn7[3, 1] = btn9[4, 2] = button39;
+            btn5[2, 1] = btn7[3, 2] = btn9[4, 3] = button40;
+            btn5[2, 2] = btn7[3, 3] = btn9[4, 4] = button41;
+            btn5[2, 3] = btn7[3, 4] = btn9[4, 5] = button42;
+            btn5[2, 4] = btn7[3, 5] = btn9[4, 6] = button43;
+            btn7[3, 6] = btn9[4, 7] = button44;
+            btn9[4, 8] = button45;
+            btn9[5, 0] = button46;
+            btn7[4, 0] = btn9[5, 1] = button47;
+            btn5[3, 0] = btn7[4, 1] = btn9[5, 2] = button48;
+            btn5[3, 1] = btn7[4, 2] = btn9[5, 3] = button49;
+            btn5[3, 2] = btn7[4, 3] = btn9[5, 4] = button50;
+            btn5[3, 3] = btn7[4, 4] = btn9[5, 5] = button51;
+            btn5[3, 4] = btn7[4, 5] = btn9[5, 6] = button52;
+            btn7[4, 6] = btn9[5, 7] = button53;
+            btn9[5, 8] = button54;
+            btn9[6, 0] = button55;
+            btn7[5, 0] = btn9[6, 1] = button56;
+            btn5[4, 0] = btn7[5, 1] = btn9[6, 2] = button57;
+            btn5[4, 1] = btn7[5, 2] = btn9[6, 3] = button58;
+            btn5[4, 2] = btn7[5, 3] = btn9[6, 4] = button59;
+            btn5[4, 3] = btn7[5, 4] = btn9[6, 5] = button60;
+            btn5[4, 4] = btn7[5, 5] = btn9[6, 6] = button61;
+            btn7[5, 6] = btn9[6, 7] = button62;
+            btn9[6, 8] = button63;
+            btn9[7, 0] = button64;
+            btn7[6, 0] = btn9[7, 1] = button65;
+            btn7[6, 1] = btn9[7, 2] = button66;
+            btn7[6, 2] = btn9[7, 3] = button67;
+            btn7[6, 3] = btn9[7, 4] = button68;
+            btn7[6, 4] = btn9[7, 5] = button69;
+            btn7[6, 5] = btn9[7, 6] = button70;
+            btn7[6, 6] = btn9[7, 7] = button71;
+            btn9[7, 8] = button72;
+            btn9[8, 0] = button73;
+            btn9[8, 1] = button74;
+            btn9[8, 2] = button75;
+            btn9[8, 3] = button76;
+            btn9[8, 4] = button77;
+            btn9[8, 5] = button78;
+            btn9[8, 6] = button79;
+            btn9[8, 7] = button80;
+            btn9[8, 8] = button81;
+
+            txt9[0, 0] = textBox1;
+            txt9[0, 1] = textBox2;
+            txt9[0, 2] = textBox3;
+            txt9[0, 3] = textBox4;
+            txt9[0, 4] = textBox5;
+            txt9[0, 5] = textBox6;
+            txt9[0, 6] = textBox7;
+            txt9[0, 7] = textBox8;
+            txt9[0, 8] = textBox9;
+            txt9[1, 0] = textBox10;
+            txt7[0, 0] = txt9[1, 1] = textBox11;
+            txt7[0, 1] = txt9[1, 2] = textBox12;
+            txt7[0, 2] = txt9[1, 3] = textBox13;
+            txt7[0, 3] = txt9[1, 4] = textBox14;
+            txt7[0, 4] = txt9[1, 5] = textBox15;
+            txt7[0, 5] = txt9[1, 6] = textBox16;
+            txt7[0, 6] = txt9[1, 7] = textBox17;
+            txt9[1, 8] = textBox18;
+            txt9[2, 0] = textBox19;
+            txt7[1, 0] = txt9[2, 1] = textBox20;
+            txt5[0, 0] = txt7[1, 1] = txt9[2, 2] = textBox21;
+            txt5[0, 1] = txt7[1, 2] = txt9[2, 3] = textBox22;
+            txt5[0, 2] = txt7[1, 3] = txt9[2, 4] = textBox23;
+            txt5[0, 3] = txt7[1, 4] = txt9[2, 5] = textBox24;
+            txt5[0, 4] = txt7[1, 5] = txt9[2, 6] = textBox25;
+            txt7[1, 6] = txt9[2, 7] = textBox26;
+            txt9[2, 8] = textBox27;
+            txt9[3, 0] = textBox28;
+            txt7[2, 0] = txt9[3, 1] = textBox29;
+            txt5[1, 0] = txt7[2, 1] = txt9[3, 2] = textBox30;
+            txt5[1, 1] = txt7[2, 2] = txt9[3, 3] = textBox31;
+            txt5[1, 2] = txt7[2, 3] = txt9[3, 4] = textBox32;
+            txt5[1, 3] = txt7[2, 4] = txt9[3, 5] = textBox33;
+            txt5[1, 4] = txt7[2, 5] = txt9[3, 6] = textBox34;
+            txt7[2, 6] = txt9[3, 7] = textBox35;
+            txt9[3, 8] = textBox36;
+            txt9[4, 0] = textBox37;
+            txt7[3, 0] = txt9[4, 1] = textBox38;
+            txt5[2, 0] = txt7[3, 1] = txt9[4, 2] = textBox39;
+            txt5[2, 1] = txt7[3, 2] = txt9[4, 3] = textBox40;
+            txt5[2, 2] = txt7[3, 3] = txt9[4, 4] = textBox41;
+            txt5[2, 3] = txt7[3, 4] = txt9[4, 5] = textBox42;
+            txt5[2, 4] = txt7[3, 5] = txt9[4, 6] = textBox43;
+            txt7[3, 6] = txt9[4, 7] = textBox44;
+            txt9[4, 8] = textBox45;
+            txt9[5, 0] = textBox46;
+            txt7[4, 0] = txt9[5, 1] = textBox47;
+            txt5[3, 0] = txt7[4, 1] = txt9[5, 2] = textBox48;
+            txt5[3, 1] = txt7[4, 2] = txt9[5, 3] = textBox49;
+            txt5[3, 2] = txt7[4, 3] = txt9[5, 4] = textBox50;
+            txt5[3, 3] = txt7[4, 4] = txt9[5, 5] = textBox51;
+            txt5[3, 4] = txt7[4, 5] = txt9[5, 6] = textBox52;
+            txt7[4, 6] = txt9[5, 7] = textBox53;
+            txt9[5, 8] = textBox54;
+            txt9[6, 0] = textBox55;
+            txt7[5, 0] = txt9[6, 1] = textBox56;
+            txt5[4, 0] = txt7[5, 1] = txt9[6, 2] = textBox57;
+            txt5[4, 1] = txt7[5, 2] = txt9[6, 3] = textBox58;
+            txt5[4, 2] = txt7[5, 3] = txt9[6, 4] = textBox59;
+            txt5[4, 3] = txt7[5, 4] = txt9[6, 5] = textBox60;
+            txt5[4, 4] = txt7[5, 5] = txt9[6, 6] = textBox61;
+            txt7[5, 6] = txt9[6, 7] = textBox62;
+            txt9[6, 8] = textBox63;
+            txt9[7, 0] = textBox64;
+            txt7[6, 0] = txt9[7, 1] = textBox65;
+            txt7[6, 1] = txt9[7, 2] = textBox66;
+            txt7[6, 2] = txt9[7, 3] = textBox67;
+            txt7[6, 3] = txt9[7, 4] = textBox68;
+            txt7[6, 4] = txt9[7, 5] = textBox69;
+            txt7[6, 5] = txt9[7, 6] = textBox70;
+            txt7[6, 6] = txt9[7, 7] = textBox71;
+            txt9[7, 8] = textBox72;
+            txt9[8, 0] = textBox73;
+            txt9[8, 1] = textBox74;
+            txt9[8, 2] = textBox75;
+            txt9[8, 3] = textBox76;
+            txt9[8, 4] = textBox77;
+            txt9[8, 5] = textBox78;
+            txt9[8, 6] = textBox79;
+            txt9[8, 7] = textBox80;
+            txt9[8, 8] = textBox81;
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    btn9[i, j].Visible = false;
+                    txt9[i, j].Visible = false;
+                }
+            }
+            //cek setting
+            List<int> ncom = new List<int>();
+            Random rnd = new Random();
+            int angka;
+            bool status = true;
+            int tmp;
+            for (int i = 0; i < stg * stg; i++)
+            {
+                do
+                {
+                    status = true; angka = rnd.Next(1, (stg * stg) + 1); tmp = angka;
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (ncom[j] == tmp) status = false;
+                    }
+                } while (status == false);
+                ncom.Add(tmp);
+            }
+            player = new int[stg, stg];
+            com = new int[stg, stg];
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++)
+                {
+                    com[i, j] = ncom[stg * i + j];
+                }
+            }
+        }
+
         private void BINGO_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
