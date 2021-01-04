@@ -405,6 +405,17 @@ namespace Menu_Utama
             }
 
             //cek setting
+            stg = 5;
+            string a;
+            string[] b;
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    btn5[i, j].Visible = true;
+                    txt5[i, j].Visible = true;
+                }
+            }
 
             List<int> ncom = new List<int>();
             Random rnd = new Random();
@@ -432,7 +443,21 @@ namespace Menu_Utama
                     com[i, j] = ncom[stg * i + j];
                 }
             }
+
             //masukkan angka
+            StreamReader sr2 = new StreamReader("angka.txt");
+            a = sr2.ReadLine();
+            b = a.Split();
+            //tergantung setting
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    btn5[i, j].Text = b[5 * i + j];
+                    player[i, j] = Convert.ToInt32(b[5 * i + j]);
+                    txt5[i, j].Text = com[i, j].ToString();
+                }
+            }
 
         }
 

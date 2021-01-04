@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Menu_Utama
 {
@@ -183,9 +184,15 @@ namespace Menu_Utama
         private void button3_Click(object sender, EventArgs e)
         {
             int stg = 5;
+
+            //cek setting
             xpengecekan(5, txt5);
+
             if (status)
             {
+                //isi angka(25-81)
+                isiangka(5, txt5);
+
                 BINGO_Main frm1 = new BINGO_Main();
                 this.Hide();
                 frm1.Show();
@@ -196,6 +203,13 @@ namespace Menu_Utama
             }
         }
 
+        public void isiangka(int ukur,TextBox[] txt)
+        {
+            if (!File.Exists("angka.txt")) File.Create("angka.txt").Close();
+            StreamWriter sw = new StreamWriter("angka.txt");
+            for (int i = 0; i < ukur * ukur; i++) sw.Write("{0} ", txt[i].Text.ToString());
+            sw.Close();
+        }
         private void BINGO_Angka_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
