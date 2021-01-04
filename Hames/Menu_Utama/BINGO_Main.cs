@@ -56,7 +56,10 @@ namespace Menu_Utama
                         }
                     }
                 }
+                
+                //taruh warna
                 txt5[kx, ky].BackColor = Color.Yellow;
+
                 com[kx, ky] = 0;
                 pcom += mcek(kx, ky, com, 2);
                 label4.Text = pplayer.ToString();
@@ -94,7 +97,7 @@ namespace Menu_Utama
             if ((pplayer >= stg) & (pcom >= stg))
             {
                 MessageBox.Show("Permainan imbang, silahkan coba lagi");
-
+                //ke daftar score
             }
             else if (pplayer >= stg)
             {
@@ -104,7 +107,7 @@ namespace Menu_Utama
             else if (pcom >= stg)
             {
                 MessageBox.Show("Anda kalah, silahkan coba lagi");
-
+                //ke daftar score
             }
         }
         public int mcek(int x,int y, int[,] posisi, int pemain)
@@ -128,6 +131,7 @@ namespace Menu_Utama
                 {
                     for (int i = 0; i < stg; i++)
                     {
+                        //perubahan warna
                         btn5[x, i].BackColor = Color.Green;
                     }
                 }
@@ -135,6 +139,7 @@ namespace Menu_Utama
                 {
                     for(int i = 0; i < stg; i++)
                     {
+                        //perubahan warna
                         txt5[x, i].BackColor = Color.Green;
                     }
                 }
@@ -156,6 +161,7 @@ namespace Menu_Utama
                 {
                     for (int i = 0; i < stg; i++)
                     {
+                        //perubahan warna
                         btn5[i, y].BackColor = Color.Green;
                     }
                 }
@@ -163,6 +169,7 @@ namespace Menu_Utama
                 {
                     for (int i = 0; i < stg; i++)
                     {
+                        //perubahan warna
                         txt5[i, y].BackColor = Color.Green;
                     }
                 }
@@ -181,10 +188,12 @@ namespace Menu_Utama
                     {
                         if (pemain==1)
                         {
+                            //perubahan warna
                             btn5[i, i].BackColor = Color.Green;
                         }
                         else if (pemain == 2)
                         {
+                            //perubahan warna
                             btn5[i, i].BackColor = Color.Green;
                         }
                     }
@@ -205,10 +214,12 @@ namespace Menu_Utama
                     {
                         if (pemain==1)
                         {
+                            //perubahan warna
                             btn5[i, stg - 1 - i].BackColor = Color.Green;
                         }
                         else if (pemain == 2)
                         {
+                            //perubahan warna
                             txt5[i, stg - 1 - i].BackColor = Color.Green;
                         }                      
                     }
@@ -392,7 +403,9 @@ namespace Menu_Utama
                     txt9[i, j].Visible = false;
                 }
             }
+
             //cek setting
+
             List<int> ncom = new List<int>();
             Random rnd = new Random();
             int angka;
@@ -419,11 +432,104 @@ namespace Menu_Utama
                     com[i, j] = ncom[stg * i + j];
                 }
             }
+            //masukkan angka
+
         }
 
         private void BINGO_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        public int cek(int[,] posisi)
+        {
+            int hitung = 0;
+            //cek horizontal
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++)
+                {
+                    if (posisi[i, j] == 0) hitung++;
+                }
+            }
+            //cek vertikal
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++)
+                {
+                    if (posisi[j, i] == 0) hitung++;
+                }
+            }
+            //cek diagonal (kiri ke kanan) (x=y)
+            for (int i = 0; i < stg; i++)
+            {
+                if (posisi[i, i] == 0) hitung++;
+            }
+            //cek diagonal (kanan ke kiri)(x=stg-1-y)
+            for (int i = 0; i < stg; i++)
+            {
+                if (posisi[i, stg - 1 - i] == 0) hitung++;
+            }
+            return hitung;
+        }
+        public void main2(int xstg)
+        {
+            int temp;
+            bool status;
+            if (tingkat == 1) status = false;
+            else if (tingkat == 3) status = false;
+            else status = true;
+
+            //insert algoritma
+
+            foreach (Control item in Controls)
+            {
+                if(item is Button)
+                {
+                    if (Convert.ToInt32(item.Text) == angkacom)
+                    {
+                        item.Enabled = false;
+                        item.BackColor = Color.Yellow;
+                    }
+                }
+            }
+            int kx = 0;
+            int ky = 0;
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++)
+                {
+                    if (angkacom == player[i, j])
+                    {
+                        kx = i;
+                        ky = j;
+                    }
+                }
+            }
+            player[kx, ky] = 0;
+            pplayer += mcek(kx, ky, player, 1);
+            kx = 0;
+            ky = 0;
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++)
+                {
+                    if (angkacom == com[i, j])
+                    {
+                        kx = i;
+                        ky = j;
+                    }
+                }
+            }
+            com[kx, ky] = 0;
+
+            //ubah warna
+            txt5[kx, ky].BackColor = Color.Yellow;
+
+            pcom += mcek(kx, ky, com, 2);
+            turn++;
+            if ((pplayer >= stg) | (pcom >= stg)) stop = true;
+            if (stop) selesai();
         }
     }
 }
