@@ -18,14 +18,25 @@ NB: User Story tidak berubah posisi. Akan tetapi, estimasi User Story no 5 dari 
 
 30 Desember 2020:
 Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO (lanjutan).
-Sylvia - Membuat papan untuk game SOS. (not commit)
+Sylvia - Membuat papan untuk game XOXO. (not commit)
 Anthony - Membuat papan permainan untuk meletakkan S dan O. (not commit)
 NB: User Story tidak berubah posisi.
 
 2-5 Januari 2021: Scrummaster - Sylvia Dewi Chaiyanti (171110690)
 2 Januari 2021:
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO (lanjutan).
+Sylvia - Melengkapi fitur yang ada dalam permainan XOXO (lanjutan)
+Anthony - Melengkapi fitur yang ada dalam permainan SOS (lanjutan) (not commit)
+NB: User Story 13,19 done dan sisanya masih on process.
+
 4 Januari 2021:
+Wilson - Melengkapi fitur yang ada dalam permainan BINGO (not commit).
+Sylvia - Melengkapi fitur yang ada dalam permainan XOXO . (not commit)
+Anthony - Memperbaiki dan melengkapi fitur yang ada dalam permainan SOS.
+NB: User Story tidak berubah posisi.
+
 5 Januari 2021:
+
 
 6-8 Januari 2021: Scrummaster - Anthony (171111245)
 6 Januari 2021:
