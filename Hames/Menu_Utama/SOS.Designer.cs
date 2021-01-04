@@ -240,6 +240,7 @@ namespace Menu_Utama
             this.bS.TabIndex = 1;
             this.bS.Text = "S";
             this.bS.UseVisualStyleBackColor = true;
+            this.bS.Click += new System.EventHandler(this.bS_Click);
             // 
             // bO
             // 
@@ -249,6 +250,7 @@ namespace Menu_Utama
             this.bO.TabIndex = 2;
             this.bO.Text = "O";
             this.bO.UseVisualStyleBackColor = true;
+            this.bO.Click += new System.EventHandler(this.bO_Click);
             // 
             // S
             // 
@@ -275,6 +277,7 @@ namespace Menu_Utama
             this.b1.Size = new System.Drawing.Size(26, 23);
             this.b1.TabIndex = 5;
             this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // b2
             // 
