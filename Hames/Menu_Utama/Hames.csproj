@@ -72,11 +72,23 @@
     <Compile Include="SOS_Menu.Designer.cs">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XOXO_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_Main.Designer.cs">
+      <DependentUpon>XOXO_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="XOXO_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XOXO_Menu.Designer.cs">
       <DependentUpon>XOXO_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XOXO_utama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_utama.Designer.cs">
+      <DependentUpon>XOXO_utama.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BINGO_Menu.resx">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
@@ -97,8 +109,14 @@
     <EmbeddedResource Include="SOS_Menu.resx">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_Main.resx">
+      <DependentUpon>XOXO_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XOXO_Menu.resx">
       <DependentUpon>XOXO_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_utama.resx">
+      <DependentUpon>XOXO_utama.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
