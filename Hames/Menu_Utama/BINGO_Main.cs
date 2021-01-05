@@ -57,7 +57,7 @@ namespace Menu_Utama
                     }
                 }
                 
-                //taruh warna
+                //taruh warna(tergantung setting)
                 txt5[kx, ky].BackColor = Color.Yellow;
 
                 com[kx, ky] = 0;
@@ -70,7 +70,7 @@ namespace Menu_Utama
             if (stop) selesai();
             else
             {
-                //mesin komputer
+                main2(stg);
             }
         }
         public Button[,] btn5 = new Button[5, 5];
@@ -426,7 +426,9 @@ namespace Menu_Utama
             {
                 do
                 {
-                    status = true; angka = rnd.Next(1, (stg * stg) + 1); tmp = angka;
+                    status = true;
+                    angka = rnd.Next(1, (stg * stg) + 1);
+                    tmp = angka;
                     for (int j = 0; j < i; j++)
                     {
                         if (ncom[j] == tmp) status = false;
@@ -448,6 +450,7 @@ namespace Menu_Utama
             StreamReader sr2 = new StreamReader("angka.txt");
             a = sr2.ReadLine();
             b = a.Split();
+
             //tergantung setting
             for (int i = 0; i < 5; i++)
             {
@@ -458,7 +461,8 @@ namespace Menu_Utama
                     txt5[i, j].Text = com[i, j].ToString();
                 }
             }
-
+            sr2.Close();
+            File.Delete("angka.txt");
         }
 
         private void BINGO_Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -506,6 +510,7 @@ namespace Menu_Utama
             else status = true;
 
             //insert algoritma
+            temp = alphabeta(com, tingkat + 1, -15000, 15000, status);
 
             foreach (Control item in Controls)
             {
@@ -551,10 +556,68 @@ namespace Menu_Utama
             //ubah warna
             txt5[kx, ky].BackColor = Color.Yellow;
 
+            label8.Text = angkacom.ToString();
             pcom += mcek(kx, ky, com, 2);
             turn++;
             if ((pplayer >= stg) | (pcom >= stg)) stop = true;
             if (stop) selesai();
+        }
+
+        public int alphabeta(int[,] node, int depth, int alpha, int beta, bool maximixingPlayer)
+        {
+            int bantu = 0;
+            int v = 0;
+            //jika kedalaman=0 maka return nilai bobot dari node
+            if (depth == 0) return cek(node);
+
+            int[,] child = new int[stg, stg];
+            for (int i = 0; i < stg; i++)
+            {
+                for (int j = 0; j < stg; j++) child[i, j] = node[i, j];
+            }
+            if (maximixingPlayer)
+            {
+                //v=-infinite
+                v = -15000;
+                for (int i = 0; i < stg; i++)
+                {
+                    for (int j = 0; j < stg; j++)
+                    {
+                        if (node[i, j] != 0)
+                        {
+                            child[i, j] = 0;
+                            bantu = alphabeta(child, depth - 1, alpha, beta, false);
+                            if (v < bantu) v = bantu;
+                            if (alpha < v) angkacom = node[i, j];
+                            if (alpha < v) alpha = v;
+                            child[i, j] = node[i, j];
+                            if (beta >= alpha) break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                //v=infinite
+                v = 15000;
+                for (int i = 0; i < stg; i++)
+                {
+                    for (int j = 0; j < stg; j++)
+                    {
+                        if (node[i, j] != 0)
+                        {
+                            child[i, j] = 0;
+                            bantu = alphabeta(child, depth - 1, alpha, beta, true);
+                            if (v > bantu) v = bantu;
+                            if (beta > v) angkacom = node[i, j];
+                            if (beta > v) beta = v;
+                            child[i, j] = node[i, j];
+                            if (beta >= alpha) break;
+                        }
+                    }
+                }
+            }
+            return v;
         }
     }
 }
