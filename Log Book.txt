@@ -30,13 +30,16 @@ Anthony - Melengkapi fitur yang ada dalam permainan SOS (lanjutan) (not commit)
 NB: User Story 13,19 done dan sisanya masih on process.
 
 4 Januari 2021:
-Wilson - Melengkapi fitur yang ada dalam permainan BINGO (not commit).
-Sylvia - Melengkapi fitur yang ada dalam permainan XOXO . (not commit)
+Wilson - Melengkapi fitur yang ada dalam permainan BINGO.
+Sylvia - Melengkapi fitur yang ada dalam permainan XOXO. (not commit)
 Anthony - Memperbaiki dan melengkapi fitur yang ada dalam permainan SOS.
 NB: User Story tidak berubah posisi.
 
 5 Januari 2021:
-
+Wilson - Melengkapi fitur yang ada dalam permainan BINGO(lanjutan).
+Sylvia - Mendesain ulang tampilan dan melengkapi fitur yang ada dalam permainan XOXO. 
+Anthony - Memperbaiki dan membuat dokumentasi permainan.
+NB: User Story 5,7,10,14,15,18 dan sisanya masih on process.
 
 6-8 Januari 2021: Scrummaster - Anthony (171111245)
 6 Januari 2021:
