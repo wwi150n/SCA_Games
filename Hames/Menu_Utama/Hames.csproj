@@ -52,6 +52,12 @@
     <Compile Include="BINGO_Angka.Designer.cs">
       <DependentUpon>BINGO_Angka.cs</DependentUpon>
     </Compile>
+    <Compile Include="BINGO_IsiNama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_IsiNama.Designer.cs">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
+    </Compile>
     <Compile Include="BINGO_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="BINGO_Angka.resx">
       <DependentUpon>BINGO_Angka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_IsiNama.resx">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BINGO_Main.resx">
       <DependentUpon>BINGO_Main.cs</DependentUpon>

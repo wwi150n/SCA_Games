@@ -101,8 +101,12 @@ namespace Menu_Utama
             }
             else if (pplayer >= stg)
             {
-                MessageBox.Show(turn.ToString());
-                //fitur isi nama
+                
+                File.Create("Nilai.txt").Close();
+                File.WriteAllText("Nilai.txt", (((float)nilai / turn) * 100).ToString("00.00"));
+                BINGO_IsiNama frm1 = new BINGO_IsiNama();
+                this.Hide();
+                frm1.Show();
             }
             else if (pcom >= stg)
             {
