@@ -43,6 +43,11 @@ NB: User Story 5,7,10,14,15,18 dan sisanya masih on process.
 
 6-8 Januari 2021: Scrummaster - Anthony (171111245)
 6 Januari 2021:
+Wilson - Update Fitur Isi Nama.
+Sylvia - Melengkapi fitur yang ada dalam XOXO (lanjutan) (not commit)
+Anthony - Melengkapi fitur dan memperbaiki fitur pada permainan SOS (lanjutan)
+NB : User Story tidak berubah posisi.
+
 7 Januari 2021:
 8 Januari 2021:
 
