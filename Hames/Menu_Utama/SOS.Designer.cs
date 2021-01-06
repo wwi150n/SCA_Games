@@ -34,9 +34,9 @@ namespace Menu_Utama
             this.scoreP1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bS = new System.Windows.Forms.Button();
-            this.bO = new System.Windows.Forms.Button();
-            this.S = new System.Windows.Forms.Button();
+            this.b145 = new System.Windows.Forms.Button();
+            this.b146 = new System.Windows.Forms.Button();
+            this.b147 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.b001 = new System.Windows.Forms.Button();
             this.b002 = new System.Windows.Forms.Button();
@@ -232,35 +232,35 @@ namespace Menu_Utama
             this.label1.TabIndex = 0;
             this.label1.Text = "Player 1";
             // 
-            // bS
+            // b145
             // 
-            this.bS.Location = new System.Drawing.Point(220, 61);
-            this.bS.Name = "bS";
-            this.bS.Size = new System.Drawing.Size(75, 23);
-            this.bS.TabIndex = 1;
-            this.bS.Text = "S";
-            this.bS.UseVisualStyleBackColor = true;
-            this.bS.Click += new System.EventHandler(this.bS_Click);
+            this.b145.Location = new System.Drawing.Point(220, 61);
+            this.b145.Name = "b145";
+            this.b145.Size = new System.Drawing.Size(75, 23);
+            this.b145.TabIndex = 1;
+            this.b145.Text = "S";
+            this.b145.UseVisualStyleBackColor = true;
+            this.b145.Click += new System.EventHandler(this.bS_Click);
             // 
-            // bO
+            // b146
             // 
-            this.bO.Location = new System.Drawing.Point(312, 61);
-            this.bO.Name = "bO";
-            this.bO.Size = new System.Drawing.Size(75, 23);
-            this.bO.TabIndex = 2;
-            this.bO.Text = "O";
-            this.bO.UseVisualStyleBackColor = true;
-            this.bO.Click += new System.EventHandler(this.bO_Click);
+            this.b146.Location = new System.Drawing.Point(312, 61);
+            this.b146.Name = "b146";
+            this.b146.Size = new System.Drawing.Size(75, 23);
+            this.b146.TabIndex = 2;
+            this.b146.Text = "O";
+            this.b146.UseVisualStyleBackColor = true;
+            this.b146.Click += new System.EventHandler(this.bO_Click);
             // 
-            // S
+            // b147
             // 
-            this.S.Location = new System.Drawing.Point(157, 501);
-            this.S.Name = "S";
-            this.S.Size = new System.Drawing.Size(134, 40);
-            this.S.TabIndex = 3;
-            this.S.Text = "Akhiri Permainan";
-            this.S.UseVisualStyleBackColor = true;
-            this.S.Click += new System.EventHandler(this.S_Click);
+            this.b147.Location = new System.Drawing.Point(157, 501);
+            this.b147.Name = "b147";
+            this.b147.Size = new System.Drawing.Size(134, 40);
+            this.b147.TabIndex = 3;
+            this.b147.Text = "Akhiri Permainan";
+            this.b147.UseVisualStyleBackColor = true;
+            this.b147.Click += new System.EventHandler(this.S_Click);
             // 
             // label3
             // 
@@ -1574,9 +1574,9 @@ namespace Menu_Utama
             this.Controls.Add(this.b002);
             this.Controls.Add(this.b001);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.S);
-            this.Controls.Add(this.bO);
-            this.Controls.Add(this.bS);
+            this.Controls.Add(this.b147);
+            this.Controls.Add(this.b146);
+            this.Controls.Add(this.b145);
             this.Controls.Add(this.groupBox1);
             this.Name = "SOS";
             this.Text = "SOS";
@@ -1595,9 +1595,9 @@ namespace Menu_Utama
     private System.Windows.Forms.TextBox scoreP1;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.Button bS;
-    private System.Windows.Forms.Button bO;
-    private System.Windows.Forms.Button S;
+    private System.Windows.Forms.Button b145;
+    private System.Windows.Forms.Button b146;
+    private System.Windows.Forms.Button b147;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Button b001;
     private System.Windows.Forms.Button b002;

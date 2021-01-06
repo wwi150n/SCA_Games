@@ -24,26 +24,41 @@ namespace Menu_Utama
               }
           }
     }
-    private bool bsWasClicked = false;
+    private bool bsWasClicked = true;
     private bool boWasClicked = false;
     public void main1(object sender, EventArgs e)
     {
       int[,] var = new int[12, 12];
-      int temp;
+      string temp;
       Button x = ((Button)sender);
       x.Enabled = false;
       x.BackColor = Color.Yellow;
-      temp = Convert.ToInt32(x.Name);
+      temp = x.Name.ToString();
       int baris, kolom;
-      baris = temp / 12;
-      kolom = temp % 12;
-      if(bsWasClicked)
+      int angka;
+      angka = Convert.ToInt32(temp.Remove(0, 1));
+      baris = (angka - 1) / 12;
+      kolom = (angka - 1) % 12;
+      if (baris != 12)
       {
-        var[baris, kolom] = 1;
-      }
-      else
-      {
-        var[baris, kolom] = 0;
+        if (bsWasClicked)
+        {
+          var[baris, kolom] = 1;
+          x.Text = "S";
+          b145.Enabled = true;
+          b146.Enabled = true;
+          b145.BackColor = Color.Green;
+          b146.BackColor = Color.White;
+        }
+        else
+        {
+          var[baris, kolom] = 0;
+          x.Text = "O";
+          b145.Enabled = true;
+          b146.Enabled = true;
+          b146.BackColor = Color.Green;
+          b145.BackColor = Color.White;
+        }
       }
       
     }
@@ -51,23 +66,6 @@ namespace Menu_Utama
     private void b001_Click(object sender, EventArgs e)
     {
     
-      
-      if (bsWasClicked)
-      {
-        b001.Text = "S";
-        b001.Enabled = false;
-      }
-      else if (boWasClicked)
-      {
-        b001.Text = "O";
-        b001.Enabled = false;
-      }
-      else
-      {
-        b001.Text = "";
-        b001.Enabled = false;
-      }
-
     }
 
     private void bS_Click(object sender, EventArgs e)
