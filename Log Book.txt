@@ -49,6 +49,11 @@ Anthony - Melengkapi fitur dan memperbaiki fitur pada permainan SOS (lanjutan)
 NB : User Story tidak berubah posisi.
 
 7 Januari 2021:
+Wilson - Membuat Fitur Nilai Tertinggi.
+Sylvia - Melengkapi fitur yang ada dalam XOXO (lanjutan) (not commit)
+Anthony - Menentukan S atau O dan S atau O tersebut ditempatkan.
+NB : User Story 16 dan 20 done.
+
 8 Januari 2021:
 
 9-12 Januari 2021: No Scrummaster (Finishing)
