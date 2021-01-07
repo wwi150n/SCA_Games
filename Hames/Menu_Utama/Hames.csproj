@@ -70,6 +70,12 @@
     <Compile Include="BINGO_Menu.Designer.cs">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.Designer.cs">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BINGO_Menu.resx">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_NilaiTertinggi.resx">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

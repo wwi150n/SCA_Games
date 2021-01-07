@@ -53,9 +53,9 @@
             // 
             this.button2.Location = new System.Drawing.Point(365, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 44);
+            this.button2.Size = new System.Drawing.Size(108, 44);
             this.button2.TabIndex = 0;
-            this.button2.Text = "DAFTAR SCORE";
+            this.button2.Text = "NILAI TERTINGGI";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -71,7 +71,7 @@
             // 
             this.button4.Location = new System.Drawing.Point(365, 62);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 44);
+            this.button4.Size = new System.Drawing.Size(108, 44);
             this.button4.TabIndex = 0;
             this.button4.Text = "BANTUAN";
             this.button4.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             // 
             this.button6.Location = new System.Drawing.Point(365, 112);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(102, 44);
+            this.button6.Size = new System.Drawing.Size(108, 44);
             this.button6.TabIndex = 0;
             this.button6.Text = "KELUAR HAMES";
             this.button6.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 162);
+            this.ClientSize = new System.Drawing.Size(481, 162);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

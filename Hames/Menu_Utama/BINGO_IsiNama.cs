@@ -70,7 +70,54 @@ namespace Menu_Utama
             if (!valid) MessageBox.Show("Nama tidak boleh kosong !!!");
             else
             {
+                List<double> lnilai=new List<double>();
+                List<string> lnama = new List<string>();
+                lnilai.Add(nilai);
+                lnama.Add(nama);
+                if (!File.Exists("Nama.txt"))
+                {
+                    File.Create("Nama.txt").Close();
+                }
+                else
+                {
+                    string a;
+                    string[] b;
+                    string tnama;
+                    double tnilai;
+                    StreamReader sr = new StreamReader("Nama.txt");
+                    do
+                    {
+                        a = sr.ReadLine();
+                        b = a.Split(' ');
+                        lnama.Add(b[0]);
+                        lnilai.Add(Convert.ToDouble(b[1]));
+                    } while (!sr.EndOfStream);
+                    sr.Close();
+                    File.Delete("Nama.txt");
+                    for (int i = 0; i < lnama.Count-1; i++)
+                    {
+                        if (lnilai[i] <= lnilai[i + 1])
+                        {
+                            tnama = lnama[i];
+                            tnilai = lnilai[i];
+                            lnama[i] = lnama[i + 1];
+                            lnilai[i] = lnilai[i + 1];
+                            lnama[i + 1] = tnama;
+                            lnilai[i+1] = tnilai;
+                        }
+                    }
+                }
+                File.Create("Nama.txt").Close() ;
+                StreamWriter sw = new StreamWriter("Nama.txt");
+                for (int i = 0; i < lnama.Count; i++)
+                {
+                    sw.WriteLine(lnama[i]+" "+lnilai[i]);
+                }
+                sw.Close();
                 //menu daftar score
+                BINGO_NilaiTertinggi frm = new BINGO_NilaiTertinggi();
+                this.Hide();
+                frm.Show();
             }
         }
     }
