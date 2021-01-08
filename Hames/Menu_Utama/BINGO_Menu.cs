@@ -28,5 +28,12 @@ namespace Menu_Utama
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BINGO_NilaiTertinggi frm = new BINGO_NilaiTertinggi();
+            this.Hide();
+            frm.Show();
+        }
     }
 }

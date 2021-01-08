@@ -46,6 +46,8 @@ namespace Menu_Utama
                     n += hitung.ToString()+"\t"+b[0]+"\t"+b[1];
                     hitung++;
                 } while (!sr.EndOfStream);
+                sr.Close();
+                richTextBox1.Text = n;
             }
 
         }
