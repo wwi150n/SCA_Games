@@ -1,4 +1,6 @@
-﻿namespace Menu_Utama
+﻿using System;
+
+namespace Menu_Utama
 {
     partial class XOXO_utama
     {
@@ -28,8 +30,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.scorep2 = new System.Windows.Forms.TextBox();
+            this.scorep1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.C3 = new System.Windows.Forms.Button();
@@ -43,26 +45,28 @@
             this.A1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.b01 = new System.Windows.Forms.Button();
+            this.b02 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox3
+            // scorep2
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox3.Location = new System.Drawing.Point(385, 109);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 41);
-            this.textBox3.TabIndex = 48;
+            this.scorep2.BackColor = System.Drawing.Color.LightSalmon;
+            this.scorep2.Location = new System.Drawing.Point(385, 109);
+            this.scorep2.Multiline = true;
+            this.scorep2.Name = "scorep2";
+            this.scorep2.Size = new System.Drawing.Size(64, 41);
+            this.scorep2.TabIndex = 48;
             // 
-            // textBox2
+            // scorep1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox2.Location = new System.Drawing.Point(23, 109);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(64, 41);
-            this.textBox2.TabIndex = 47;
+            this.scorep1.BackColor = System.Drawing.Color.LightSalmon;
+            this.scorep1.Location = new System.Drawing.Point(23, 109);
+            this.scorep1.Multiline = true;
+            this.scorep1.Name = "scorep1";
+            this.scorep1.Size = new System.Drawing.Size(64, 41);
+            this.scorep1.TabIndex = 47;
             // 
             // label3
             // 
@@ -197,12 +201,30 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Menu_Utama.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(121, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
+            // 
+            // b01
+            // 
+            this.b01.Location = new System.Drawing.Point(159, 42);
+            this.b01.Name = "b01";
+            this.b01.Size = new System.Drawing.Size(75, 23);
+            this.b01.TabIndex = 49;
+            this.b01.Text = "x";
+            this.b01.UseVisualStyleBackColor = true;
+            // 
+            // b02
+            // 
+            this.b02.Location = new System.Drawing.Point(253, 42);
+            this.b02.Name = "b02";
+            this.b02.Size = new System.Drawing.Size(75, 23);
+            this.b02.TabIndex = 50;
+            this.b02.Text = "O";
+            this.b02.UseVisualStyleBackColor = true;
             // 
             // XOXO_utama
             // 
@@ -210,8 +232,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(483, 324);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.b02);
+            this.Controls.Add(this.b01);
+            this.Controls.Add(this.scorep2);
+            this.Controls.Add(this.scorep1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.C3);
@@ -233,10 +257,15 @@
 
         }
 
+        private void button_click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox scorep2;
+        private System.Windows.Forms.TextBox scorep1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button C3;
@@ -250,5 +279,7 @@
         private System.Windows.Forms.Button A1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button b01;
+        private System.Windows.Forms.Button b02;
     }
 }

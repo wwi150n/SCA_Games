@@ -72,6 +72,7 @@
     <Compile Include="SOS_Menu.Designer.cs">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="StreamReader.cs" />
     <Compile Include="XOXO_Main.cs">
       <SubType>Form</SubType>
     </Compile>

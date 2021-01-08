@@ -12,14 +12,127 @@ namespace Menu_Utama
 {
     public partial class XOXO_utama : Form
     {
-        private bool turn;
-        private int turn_count;
-
         public XOXO_utama()
         {
             InitializeComponent();
+            foreach (Control item in Controls)
+            {
+                if (item is Button)
+                {
+                    item.Click += new EventHandler(main1);
+                }
+            }
+
         }
 
+        private bool xWasClicked = true;
+        private bool OWasClicked = false;
+        public int giliran = 1;
+        public int nilai = 0;
+        public int scorePemain1 = 0;
+        public int scorePemain2 = 0;
+        public int[,] var = new int[12, 12];
+
+
+        public void main1(object sender, EventArgs e)
+        {
+            string temp;
+            string textbox1, textbox2;
+            textbox1 = label2.Text;
+            textbox2 = label3.Text;
+            Button x = ((Button)sender);
+            x.Enabled = false;
+            x.BackColor = Color.Yellow;
+            temp = x.Name.ToString();
+            int baris, kolom;
+            int angka;
+            int gantian;
+            gantian = giliran % 2;
+            angka = Convert.ToInt32(temp.Remove(0, 1));
+            baris = (angka - 1) / 12;
+            kolom = (angka - 1) % 12;
+            if (baris != 12)
+            {
+                if (xWasClicked)
+                {
+                    var[baris, kolom] = 1;
+                    x.Text = "X";
+                    b01.Enabled = true;
+                    b02.Enabled = true;
+                    b01.BackColor = Color.White;
+                    b02.BackColor = Color.Pink;
+                }
+                else
+                {
+                    var[baris, kolom] = 0;
+                    x.Text = "O";
+                    //cek horizontal
+                    if ((kolom != 0) && (kolom != 11))
+                    {
+                        if (((var[baris, kolom - 1]) == 1) && ((var[baris, kolom + 1]) == 1))
+                        {
+                            nilai += 1;
+                            if (gantian == 1)
+                            {
+                                scorePemain1 += 1;
+                                scorep1.Text = Convert.ToString(scorePemain1);
+                                //ubah warna "O"
+
+                            }
+                            else if (gantian == 0)
+                            {
+                                scorePemain2 += 1;
+                                scorep2.Text = Convert.ToString(scorePemain2);
+                                x.ForeColor = Color.Indigo;
+                            }
+                        }
+                    }
+                    b01.Enabled = true;
+                    b02.Enabled = true;
+                    b01.BackColor = Color.White;
+                    b02.BackColor = Color.Pink;
+                }
+                giliran += 1;
+            }
+            else
+            {
+                if (xWasClicked)
+                {
+                    b01.BackColor = Color.White;
+                    b02.BackColor = Color.Pink;
+                }
+                else if (OWasClicked)
+                {
+                    b01.BackColor = Color.Pink;
+                    b02.BackColor = Color.White;
+                }
+            }
+            if (gantian != 1)
+            {
+                textbox2 = label3.Text;
+                label3.ForeColor = Color.Yellow;
+                label2.ForeColor = Color.Black;
+            }
+            else
+            {
+                textbox1 = label2.Text;
+                label2.ForeColor = Color.Yellow;
+                label3.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void b01_Click(object sender, EventArgs e)
+        {
+            xWasClicked = true;
+            OWasClicked = false;
+        }
+
+        private void b02_Click(object sender, EventArgs e)
+        {
+            xWasClicked = false;
+            OWasClicked = true;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -36,79 +149,21 @@ namespace Menu_Utama
             this.Hide();
             home.Show();
         }
-             private void button_click(object sender, EventArgs e)
+
+        private void XOXO_utama_Load(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
-            if (turn)
-                b.Text = "X";
-            else
-                b.Text = "O";
-
-            turn = !turn;
-            b.Enabled = false;
-            turn_count++;
-
-            checkForWinner();
-
-        }
-        private void checkForWinner()
-        {
-            bool there_is_a_winner = false;
-
-            // Horizontal
-            if ((A1.Text == A2.Text) && (A2.Text == A3.Text) && (!A1.Enabled))
-                there_is_a_winner = true;
-            else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (!B1.Enabled))
-                there_is_a_winner = true;
-            else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (!C1.Enabled))
-                there_is_a_winner = true;
 
 
-            // Vertikal
-            else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (!A1.Enabled))
-                there_is_a_winner = true;
-            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!A2.Enabled))
-                there_is_a_winner = true;
-            else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (!A3.Enabled))
-                there_is_a_winner = true;
 
-            // Diagonal
-            else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (!A1.Enabled))
-                there_is_a_winner = true;
-            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!C1.Enabled))
-                there_is_a_winner = true;
-
-            if (there_is_a_winner)
             {
-                disableButtons();
-               string winner = "";
-                if (turn)
-                    winner = "O";
-                else
-                    winner = "X";
-                MessageBox.Show(winner + "WIN!", "CONGRATS");
-            }//end if
-            else
-            {
-                if (turn_count == 9)
-                    MessageBox.Show("DRAW!", "UPS");
             }
-        }// end check for winner
-
-        private void disableButtons ()
-        {
-            try
-            {
-                foreach (Control c in Controls)
-                {
-                    Button b = (Button)c;
-                    b.Enabled = false;
-                }//end foreach
-            } // end try
-            catch{ }
-        
         }
-     
     }
-    }
+}
+
+    
+
+
+
+    
 
