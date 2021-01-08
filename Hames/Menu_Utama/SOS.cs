@@ -30,10 +30,10 @@ namespace Menu_Utama
     public int nilai = 0;
     public int scorePemain1 = 0;
     public int scorePemain2 = 0;
+    public int[,] var = new int[12, 12];
 
     public void main1(object sender, EventArgs e)
     {
-      int[,] var = new int[12, 12];
       string temp;
       string pemain1, pemain2;
       pemain1 = label1.Text;
@@ -75,11 +75,14 @@ namespace Menu_Utama
               {
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
+                //ubah warna "O"
+                
               }
               else if (gantian==0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
+                x.ForeColor = Color.Indigo;
               }
             }
           }
