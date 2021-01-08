@@ -32,7 +32,8 @@ namespace Menu_Utama
         public int scorePemain1 = 0;
         public int scorePemain2 = 0;
         public int[,] var = new int[12, 12];
-
+        private object oCount;
+        private object xCount;
 
         public void main1(object sender, EventArgs e)
         {
@@ -128,6 +129,8 @@ namespace Menu_Utama
             OWasClicked = false;
         }
 
+
+
         private void b02_Click(object sender, EventArgs e)
         {
             xWasClicked = false;
@@ -157,6 +160,11 @@ namespace Menu_Utama
 
             {
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
