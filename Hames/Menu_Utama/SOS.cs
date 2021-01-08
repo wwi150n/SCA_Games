@@ -59,16 +59,75 @@ namespace Menu_Utama
           {
             if (((var[baris, kolom - 1]) == 0) && ((var[baris, kolom - 2]) == 1))
             {
-                if (gantian == 1)
-                {
-                  scorePemain1 += 1;
-                  scoreP1.Text = Convert.ToString(scorePemain1);
-                }
-                else if (gantian == 0)
-                {
-                  scorePemain2 += 1;
-                  scoreP2.Text = Convert.ToString(scorePemain2);
-                }
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                x.BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+              }
+            }
+          }
+          //cek horizontal kanan
+          if (kolom <= 9)
+          {
+            if (((var[baris, kolom + 1]) == 0) && ((var[baris, kolom + 2]) == 1))
+            {
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                x.BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+              }
+            }
+          }
+          //cek atas
+          if (baris >= 2)
+          {
+            if (((var[baris-1, kolom]) == 0) && ((var[baris-2, kolom]) == 1))
+            {
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                x.BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+              }
+            }
+          }
+          //cek bawah
+          if (baris <=9)
+          {
+            if (((var[baris+1, kolom]) == 0) && ((var[baris+2, kolom]) == 1))
+            {
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                x.BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+              }
             }
           }
           b145.Enabled = true;
@@ -91,14 +150,32 @@ namespace Menu_Utama
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 //ubah warna "O"
                 x.BackColor = Color.AliceBlue;
-                
-                
               }
               else if (gantian==0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+              }
+            }
+            //cek bawah
+            if ((baris != 0) && (baris != 11))
+            {
+              if (((var[baris - 1, kolom]) == 1) && ((var[baris + 1, kolom]) == 1))
+              {
+                if (gantian == 1)
+                {
+                  scorePemain1 += 1;
+                  scoreP1.Text = Convert.ToString(scorePemain1);
+                  //ubah warna "O"
+                  x.BackColor = Color.AliceBlue;
+                }
+                else if (gantian == 0)
+                {
+                  scorePemain2 += 1;
+                  scoreP2.Text = Convert.ToString(scorePemain2);
+                  x.BackColor = Color.Gold;
+                }
               }
             }
           }
@@ -168,6 +245,13 @@ namespace Menu_Utama
       StreamReader sr2 = new StreamReader("nama2.txt");
       label2.Text = sr2.ReadLine();
       sr2.Close();
+      for (int i = 0; i < 12; i++)
+      {
+        for (int j = 0; j < 12; j++)
+        {
+          var[i, j] = 2;
+        }
+      }
     }
   }
 }
