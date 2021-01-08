@@ -55,5 +55,9 @@ Anthony - Menentukan S atau O dan S atau O tersebut ditempatkan.
 NB : User Story 16 dan 20 done.
 
 8 Januari 2021:
+Wilson - Membuat Fitur Nilai Tertinggi (lanjutan)
+Sylvia - Melengkapi fitur pada XOXO (lanjutan) (not commit)
+Anthony - Melengkapi fitur lihat score sementara.
+NB : User Story 6 dan 21 done.
 
 9-12 Januari 2021: No Scrummaster (Finishing)
