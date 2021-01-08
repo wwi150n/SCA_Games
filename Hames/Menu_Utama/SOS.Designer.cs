@@ -205,6 +205,7 @@ namespace Menu_Utama
             this.scoreP2.Name = "scoreP2";
             this.scoreP2.Size = new System.Drawing.Size(100, 20);
             this.scoreP2.TabIndex = 3;
+            this.scoreP2.Text = "0";
             // 
             // scoreP1
             // 
@@ -213,6 +214,7 @@ namespace Menu_Utama
             this.scoreP1.Name = "scoreP1";
             this.scoreP1.Size = new System.Drawing.Size(100, 20);
             this.scoreP1.TabIndex = 2;
+            this.scoreP1.Text = "0";
             // 
             // label2
             // 

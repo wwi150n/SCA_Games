@@ -27,17 +27,25 @@ namespace Menu_Utama
     private bool bsWasClicked = true;
     private bool boWasClicked = false;
     public int giliran = 1;
+    public int nilai = 0;
+    public int scorePemain1 = 0;
+    public int scorePemain2 = 0;
 
     public void main1(object sender, EventArgs e)
     {
       int[,] var = new int[12, 12];
       string temp;
+      string pemain1, pemain2;
+      pemain1 = label1.Text;
+      pemain2 = label2.Text;
       Button x = ((Button)sender);
       x.Enabled = false;
       x.BackColor = Color.Yellow;
       temp = x.Name.ToString();
       int baris, kolom;
       int angka;
+      int gantian;
+      gantian = giliran % 2;
       angka = Convert.ToInt32(temp.Remove(0, 1));
       baris = (angka - 1) / 12;
       kolom = (angka - 1) % 12;
@@ -58,11 +66,21 @@ namespace Menu_Utama
           var[baris, kolom] = 0;
           x.Text = "O";
           //cek horizontal
-          if ((kolom != 0) & (kolom != 11))
+          if ((kolom != 0) && (kolom != 11))
           {
             if (((var[baris, kolom - 1]) == 1) && ((var[baris, kolom + 1]) == 1))
             {
-
+              nilai += 1;
+              if (gantian==1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+              }
+              else if (gantian==0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+              }
             }
           }
           b145.Enabled = true;
@@ -85,13 +103,15 @@ namespace Menu_Utama
           b146.BackColor = Color.Green;
         }
       }
-      if (giliran % 2 != 1)
+      if (gantian != 1)
       {
+        pemain2 = label2.Text;
         label2.ForeColor = Color.Red;
         label1.ForeColor = Color.Black;
       }
       else
       {
+        pemain1 = label1.Text;
         label1.ForeColor = Color.Red;
         label2.ForeColor = Color.Black;
       }
