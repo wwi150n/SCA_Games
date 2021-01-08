@@ -12,13 +12,22 @@ namespace Menu_Utama
 {
     public partial class XOXO_Menu : Form
     {
+        public XOXO_Menu ()
+        {
+            InitializeComponent();
+            foreach (Control item in Controls)
+            {
+               
+                
+            }
+        }
+
+            
+
         bool turn = true; // true = x trun, false O turn
         int turn_count = 0;
 
-        public XOXO_Menu()
-        {
-            InitializeComponent();
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -73,6 +82,11 @@ namespace Menu_Utama
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
