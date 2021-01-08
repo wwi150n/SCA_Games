@@ -27,7 +27,6 @@ namespace Menu_Utama
     private bool bsWasClicked = true;
     private bool boWasClicked = false;
     public int giliran = 1;
-    public int nilai = 0;
     public int scorePemain1 = 0;
     public int scorePemain2 = 0;
     public int[,] var = new int[12, 12];
@@ -40,7 +39,6 @@ namespace Menu_Utama
       pemain2 = label2.Text;
       Button x = ((Button)sender);
       x.Enabled = false;
-      x.BackColor = Color.Yellow;
       temp = x.Name.ToString();
       int baris, kolom;
       int angka;
@@ -56,6 +54,23 @@ namespace Menu_Utama
         {
           var[baris, kolom] = 1;
           x.Text = "S";
+          //cek horizontal kiri
+          if (kolom >=2)
+          {
+            if (((var[baris, kolom - 1]) == 0) && ((var[baris, kolom - 2]) == 1))
+            {
+                if (gantian == 1)
+                {
+                  scorePemain1 += 1;
+                  scoreP1.Text = Convert.ToString(scorePemain1);
+                }
+                else if (gantian == 0)
+                {
+                  scorePemain2 += 1;
+                  scoreP2.Text = Convert.ToString(scorePemain2);
+                }
+            }
+          }
           b145.Enabled = true;
           b146.Enabled = true;
           b145.BackColor = Color.Green;
@@ -70,19 +85,20 @@ namespace Menu_Utama
           {
             if (((var[baris, kolom - 1]) == 1) && ((var[baris, kolom + 1]) == 1))
             {
-              nilai += 1;
               if (gantian==1)
               {
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 //ubah warna "O"
+                x.BackColor = Color.AliceBlue;
+                
                 
               }
               else if (gantian==0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
-                x.ForeColor = Color.Indigo;
+                x.BackColor = Color.Gold;
               }
             }
           }
