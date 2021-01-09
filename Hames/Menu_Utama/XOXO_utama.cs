@@ -31,16 +31,16 @@ namespace Menu_Utama
         public int nilai = 0;
         public int scorePemain1 = 0;
         public int scorePemain2 = 0;
-        public int[,] var = new int[12, 12];
-        private object oCount;
-        private object xCount;
+        public int[,] var = new int[5,5];
+        public Button[,] btn = new Button[5, 5];
+   
 
         public void main1(object sender, EventArgs e)
         {
             string temp;
-            string textbox1, textbox2;
-            textbox1 = label2.Text;
-            textbox2 = label3.Text;
+            string pemain1, pemain2;
+            pemain1 = label2.Text;
+            pemain2 = label3.Text;
             Button x = ((Button)sender);
             x.Enabled = false;
             x.BackColor = Color.Yellow;
@@ -50,25 +50,29 @@ namespace Menu_Utama
             int gantian;
             gantian = giliran % 2;
             angka = Convert.ToInt32(temp.Remove(0, 1));
-            baris = (angka - 1) / 12;
-            kolom = (angka - 1) % 12;
-            if (baris != 12)
+            baris = (angka - 1) / 5;
+            kolom = (angka - 1) % 5;
+            if (baris != 5)
             {
                 if (xWasClicked)
                 {
                     var[baris, kolom] = 1;
                     x.Text = "X";
-                    b01.Enabled = true;
-                    b02.Enabled = true;
-                    b01.BackColor = Color.White;
-                    b02.BackColor = Color.Pink;
+                    int brs = baris;
+                    int klm = kolom;
+                    int poin = 0;
+                    //cek horizontal
+                    while (poin != 5)
+                    {
+                        
+                    }
                 }
                 else
                 {
                     var[baris, kolom] = 0;
                     x.Text = "O";
                     //cek horizontal
-                    if ((kolom != 0) && (kolom != 11))
+                    if ((kolom != 0) && (kolom != 4))
                     {
                         if (((var[baris, kolom - 1]) == 1) && ((var[baris, kolom + 1]) == 1))
                         {
@@ -88,10 +92,10 @@ namespace Menu_Utama
                             }
                         }
                     }
-                    b01.Enabled = true;
-                    b02.Enabled = true;
-                    b01.BackColor = Color.White;
-                    b02.BackColor = Color.Pink;
+                    A26.Enabled = true;
+                    A27.Enabled = true;
+                    A26.BackColor = Color.White;
+                    A27.BackColor = Color.Pink;
                 }
                 giliran += 1;
             }
@@ -99,24 +103,24 @@ namespace Menu_Utama
             {
                 if (xWasClicked)
                 {
-                    b01.BackColor = Color.White;
-                    b02.BackColor = Color.Pink;
+                    A26.BackColor = Color.White;
+                    A27.BackColor = Color.Pink;
                 }
                 else if (OWasClicked)
                 {
-                    b01.BackColor = Color.Pink;
-                    b02.BackColor = Color.White;
+                    A26.BackColor = Color.Pink;
+                    A27.BackColor = Color.White;
                 }
             }
             if (gantian != 1)
             {
-                textbox2 = label3.Text;
+                pemain2 = label3.Text;
                 label3.ForeColor = Color.Yellow;
                 label2.ForeColor = Color.Black;
             }
             else
             {
-                textbox1 = label2.Text;
+                pemain1 = label2.Text;
                 label2.ForeColor = Color.Yellow;
                 label3.ForeColor = Color.Black;
             }
@@ -163,6 +167,26 @@ namespace Menu_Utama
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
