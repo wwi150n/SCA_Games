@@ -23,5 +23,10 @@ namespace Menu_Utama
       this.Hide();
       Sos.Show();
     }
+
+    private void Help_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      Application.Exit();
+    }
   }
 }

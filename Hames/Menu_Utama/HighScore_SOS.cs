@@ -28,5 +28,10 @@ namespace Menu_Utama
     {
 
     }
+
+    private void HighScore_SOS_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      Application.Exit();
+    }
   }
 }

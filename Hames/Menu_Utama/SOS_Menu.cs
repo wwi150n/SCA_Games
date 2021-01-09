@@ -73,5 +73,10 @@ namespace Menu_Utama
       this.Hide();
       dokumentasi.Show();
     }
+
+    private void SOS_Menu_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      Application.Exit();
+    }
   }
 }

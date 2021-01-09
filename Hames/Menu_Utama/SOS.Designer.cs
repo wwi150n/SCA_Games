@@ -182,6 +182,7 @@ namespace Menu_Utama
             this.b135 = new System.Windows.Forms.Button();
             this.b134 = new System.Windows.Forms.Button();
             this.b133 = new System.Windows.Forms.Button();
+            this.b150 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,7 +257,7 @@ namespace Menu_Utama
             // 
             // b147
             // 
-            this.b147.Location = new System.Drawing.Point(157, 501);
+            this.b147.Location = new System.Drawing.Point(237, 500);
             this.b147.Name = "b147";
             this.b147.Size = new System.Drawing.Size(134, 40);
             this.b147.TabIndex = 3;
@@ -1426,11 +1427,22 @@ namespace Menu_Utama
             this.b133.TabIndex = 159;
             this.b133.UseVisualStyleBackColor = true;
             // 
+            // b150
+            // 
+            this.b150.Location = new System.Drawing.Point(27, 500);
+            this.b150.Name = "b150";
+            this.b150.Size = new System.Drawing.Size(140, 40);
+            this.b150.TabIndex = 171;
+            this.b150.Text = "Kembali";
+            this.b150.UseVisualStyleBackColor = true;
+            this.b150.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 568);
+            this.Controls.Add(this.b150);
             this.Controls.Add(this.b144);
             this.Controls.Add(this.b143);
             this.Controls.Add(this.b142);
@@ -1582,6 +1594,7 @@ namespace Menu_Utama
             this.Controls.Add(this.groupBox1);
             this.Name = "SOS";
             this.Text = "SOS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SOS_FormClosed);
             this.Load += new System.EventHandler(this.SOS_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1745,5 +1758,6 @@ namespace Menu_Utama
     private System.Windows.Forms.Button b135;
     private System.Windows.Forms.Button b134;
     private System.Windows.Forms.Button b133;
+    private System.Windows.Forms.Button b150;
   }
 }

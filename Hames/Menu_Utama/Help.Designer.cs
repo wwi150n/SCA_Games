@@ -97,6 +97,7 @@ namespace Menu_Utama
             this.Controls.Add(this.groupBox1);
             this.Name = "Help";
             this.Text = "Help";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Help_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

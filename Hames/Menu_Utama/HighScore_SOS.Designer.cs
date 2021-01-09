@@ -104,7 +104,8 @@ namespace Menu_Utama
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HighScore_SOS";
-            this.Text = "HighScore_SOS";
+            this.Text = "HighScore";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HighScore_SOS_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
