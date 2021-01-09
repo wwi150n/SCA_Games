@@ -66,12 +66,15 @@ namespace Menu_Utama
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
                 btn[baris, kolom - 1].BackColor = Color.AliceBlue;
+                btn[baris, kolom - 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris, kolom - 1].BackColor = Color.Gold;
+                btn[baris, kolom - 2].BackColor = Color.Gold;
               }
             }
           }
@@ -85,12 +88,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris, kolom + 1].BackColor = Color.AliceBlue;
+                btn[baris, kolom + 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris, kolom + 1].BackColor = Color.Gold;
+                btn[baris, kolom + 2].BackColor = Color.Gold;
               }
             }
           }
@@ -104,12 +111,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris - 1, kolom].BackColor = Color.AliceBlue;
+                btn[baris - 2, kolom].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris - 1, kolom].BackColor = Color.Gold;
+                btn[baris - 2, kolom].BackColor = Color.Gold;
               }
             }
           }
@@ -123,12 +134,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris + 1, kolom].BackColor = Color.AliceBlue;
+                btn[baris + 2, kolom].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris + 1, kolom].BackColor = Color.Gold;
+                btn[baris + 2, kolom].BackColor = Color.Gold;
               }
             }
           }
@@ -142,12 +157,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris - 1, kolom - 1].BackColor = Color.AliceBlue;
+                btn[baris - 2, kolom - 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris - 1, kolom - 1].BackColor = Color.Gold;
+                btn[baris - 2, kolom - 2].BackColor = Color.Gold;
               }
             }
           }
@@ -161,12 +180,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris + 1, kolom - 1].BackColor = Color.AliceBlue;
+                btn[baris + 2, kolom - 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris + 1, kolom - 1].BackColor = Color.Gold;
+                btn[baris + 2, kolom - 2].BackColor = Color.Gold;
               }
             }
           }
@@ -180,12 +203,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris + 1, kolom + 1].BackColor = Color.AliceBlue;
+                btn[baris + 2, kolom + 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris + 1, kolom + 1].BackColor = Color.Gold;
+                btn[baris + 2, kolom + 2].BackColor = Color.Gold;
               }
             }
           }
@@ -199,12 +226,16 @@ namespace Menu_Utama
                 scorePemain1 += 1;
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 x.BackColor = Color.AliceBlue;
+                btn[baris - 1, kolom + 1].BackColor = Color.AliceBlue;
+                btn[baris - 2, kolom + 2].BackColor = Color.AliceBlue;
               }
               else if (gantian == 0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris - 1, kolom + 1].BackColor = Color.Gold;
+                btn[baris - 2, kolom + 2].BackColor = Color.Gold;
               }
             }
           }
@@ -228,12 +259,16 @@ namespace Menu_Utama
                 scoreP1.Text = Convert.ToString(scorePemain1);
                 //ubah warna "O"
                 x.BackColor = Color.AliceBlue;
+                btn[baris, kolom - 1].BackColor = Color.AliceBlue;
+                btn[baris, kolom + 1].BackColor = Color.AliceBlue;
               }
               else if (gantian==0)
               {
                 scorePemain2 += 1;
                 scoreP2.Text = Convert.ToString(scorePemain2);
                 x.BackColor = Color.Gold;
+                btn[baris, kolom - 1].BackColor = Color.Gold;
+                btn[baris, kolom + 1].BackColor = Color.Gold;
               }
             }
             //cek bawah
@@ -248,12 +283,15 @@ namespace Menu_Utama
                   //ubah warna "O"
                   x.BackColor = Color.AliceBlue;
                   btn[baris - 1, kolom].BackColor = Color.AliceBlue;
+                  btn[baris + 1, kolom].BackColor = Color.AliceBlue;
                 }
                 else if (gantian == 0)
                 {
                   scorePemain2 += 1;
                   scoreP2.Text = Convert.ToString(scorePemain2);
                   x.BackColor = Color.Gold;
+                  btn[baris - 1, kolom].BackColor = Color.Gold;
+                  btn[baris + 1, kolom].BackColor = Color.Gold;
                 }
               }
             }
@@ -269,12 +307,16 @@ namespace Menu_Utama
                   scoreP1.Text = Convert.ToString(scorePemain1);
                   //ubah warna "O"
                   x.BackColor = Color.AliceBlue;
+                  btn[baris - 1, kolom - 1].BackColor = Color.AliceBlue;
+                  btn[baris + 1, kolom + 1].BackColor = Color.AliceBlue;
                 }
                 else if (gantian == 0)
                 {
                   scorePemain2 += 1;
                   scoreP2.Text = Convert.ToString(scorePemain2);
                   x.BackColor = Color.Gold;
+                  btn[baris - 1, kolom - 1].BackColor = Color.Gold;
+                  btn[baris + 1, kolom + 1].BackColor = Color.Gold;
                 }
               }
             }
@@ -290,12 +332,16 @@ namespace Menu_Utama
                   scoreP1.Text = Convert.ToString(scorePemain1);
                   //ubah warna "O"
                   x.BackColor = Color.AliceBlue;
+                  btn[baris - 1, kolom + 1].BackColor = Color.AliceBlue;
+                  btn[baris + 1, kolom - 1].BackColor = Color.AliceBlue;
                 }
                 else if (gantian == 0)
                 {
                   scorePemain2 += 1;
                   scoreP2.Text = Convert.ToString(scorePemain2);
                   x.BackColor = Color.Gold;
+                  btn[baris - 1, kolom + 1].BackColor = Color.Gold;
+                  btn[baris + 1, kolom - 1].BackColor = Color.Gold;
                 }
               }
             }
@@ -355,7 +401,20 @@ namespace Menu_Utama
 
     private void S_Click(object sender, EventArgs e)
     {
-      Application.Exit();
+      if(scorePemain1>scorePemain2)
+      {
+        MessageBox.Show(label1.Text + "Menang !!! Dengan Score : " + scorePemain1.ToString());
+        HighScore_SOS frm = new HighScore_SOS();
+        this.Hide();
+        frm.Show();
+      }
+      else
+      {
+        MessageBox.Show(label2.Text + "Menang !!! Dengan Score : " + scorePemain2.ToString());
+        HighScore_SOS frm = new HighScore_SOS();
+        this.Hide();
+        frm.Show();
+      }
     }
 
     private void SOS_Load(object sender, EventArgs e)

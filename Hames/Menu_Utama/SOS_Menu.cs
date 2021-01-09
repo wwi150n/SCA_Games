@@ -52,14 +52,14 @@ namespace Menu_Utama
         File.Create("nama.txt").Close();
       }
       StreamWriter sw = new StreamWriter("nama.txt");
-      sw.Write("{0} :", textBox1.Text);
+      sw.Write("{0} ", textBox1.Text);
       sw.Close();
       if (!File.Exists("nama2.txt"))
       {
         File.Create("nama2.txt").Close();
       }
       StreamWriter sw2 = new StreamWriter("nama2.txt");
-      sw2.Write("{0} :", textBox2.Text);
+      sw2.Write("{0} ", textBox2.Text);
       sw2.Close();
       SOS sOS = new SOS();
       this.Hide();

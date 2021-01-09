@@ -261,7 +261,7 @@ namespace Menu_Utama
             this.b147.Name = "b147";
             this.b147.Size = new System.Drawing.Size(134, 40);
             this.b147.TabIndex = 3;
-            this.b147.Text = "Akhiri Permainan";
+            this.b147.Text = "Stop";
             this.b147.UseVisualStyleBackColor = true;
             this.b147.Click += new System.EventHandler(this.S_Click);
             // 
