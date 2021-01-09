@@ -26,7 +26,23 @@ namespace Menu_Utama
 
     private void button3_Click(object sender, EventArgs e)
     {
-
+      HighScore_SOS frm = new HighScore_SOS();
+      this.Hide();
+      frm.Show();
+      if (File.Exists("nama.txt") && File.Exists("nama2.txt"))
+      {
+        string a, b;
+        string[] c;
+        string[] d;
+        StreamReader sr = new StreamReader("nama.txt");
+        StreamReader sr2 = new StreamReader("nama2.txt");
+        a = sr.ReadLine();
+        b = sr2.ReadLine();
+        c = a.Split();
+        d = b.Split();
+        sr.Close();
+        sr2.Close();
+      }
     }
 
     private void button1_Click(object sender, EventArgs e)

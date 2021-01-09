@@ -130,6 +130,25 @@ namespace Menu_Utama
               }
             }
           }
+          //cek miring kiri
+          if (kolom >= 3 && baris <= 9)
+          {
+            if (((var[baris + 1, kolom + 1]) == 0) && ((var[baris, kolom]) == 1))
+            {
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                x.BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+              }
+            }
+          }
           b145.Enabled = true;
           b146.Enabled = true;
           b145.BackColor = Color.Green;

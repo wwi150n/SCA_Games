@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Menu_Utama
 {
-  public partial class Help : Form
+  public partial class HighScore_SOS : Form
   {
-    public Help()
+    public HighScore_SOS()
     {
       InitializeComponent();
     }
@@ -22,6 +22,11 @@ namespace Menu_Utama
       SOS_Menu Sos = new SOS_Menu();
       this.Hide();
       Sos.Show();
+    }
+
+    private void label1_Click(object sender, EventArgs e)
+    {
+
     }
   }
 }
