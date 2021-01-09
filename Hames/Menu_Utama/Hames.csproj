@@ -76,6 +76,12 @@
     <Compile Include="BINGO_NilaiTertinggi.Designer.cs">
       <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
     </Compile>
+    <Compile Include="BINGO_Pengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Pengaturan.Designer.cs">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BINGO_NilaiTertinggi.resx">
       <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Pengaturan.resx">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
