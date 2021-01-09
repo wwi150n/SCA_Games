@@ -187,6 +187,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BINGO_Pengaturan
             // 
@@ -204,6 +205,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BINGO_Pengaturan";
             this.Text = "Pengaturan";
+            this.Load += new System.EventHandler(this.BINGO_Pengaturan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

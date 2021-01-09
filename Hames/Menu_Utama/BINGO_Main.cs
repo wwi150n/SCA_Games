@@ -23,6 +23,92 @@ namespace Menu_Utama
                     item.Click += new EventHandler(main1);
                 }
             }
+            if (File.Exists("Pengaturan.txt"))
+            {
+                string a;
+                string[] b;
+                StreamReader sr = new StreamReader("Pengaturan.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[1] == "Putih")
+                {
+                    foreach (Button c in this.Controls.OfType<Button>())
+                    {
+                        c.BackColor = System.Drawing.Color.White;
+                    }
+                }
+                else if (b[1] == "Jingga")
+                {
+                    foreach (Button c in this.Controls.OfType<Button>())
+                    {
+                        c.BackColor = System.Drawing.Color.Orange;
+                    }
+                }
+                else if (b[1] == "Biru")
+                {
+                    foreach (Button c in this.Controls.OfType<Button>())
+                    {
+                        c.BackColor = System.Drawing.Color.LightBlue;
+                    }
+                }
+                sr.Close();
+            }
+            else
+            {
+                foreach (Button c in this.Controls.OfType<Button>())
+                {
+                    c.BackColor = System.Drawing.Color.LightBlue;
+                }
+            }
+            if (File.Exists("Pengaturan.txt"))
+            {
+                string a;
+                string[] b;
+                StreamReader sr = new StreamReader("Pengaturan.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[2] == "Putih")
+                {
+                    foreach (Control c in groupBox1.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            c.BackColor = System.Drawing.Color.White;
+                        }
+                    }
+                }
+                else if (b[2] == "Jingga")
+                {
+                    foreach (Control c in groupBox1.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            c.BackColor = System.Drawing.Color.Orange;
+                        }
+                    }
+                }
+                else if (b[2] == "Biru")
+                {
+                    foreach (Control c in groupBox1.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            c.BackColor = System.Drawing.Color.LightBlue;
+                        }
+                    }
+                }
+                sr.Close();
+            }
+            else
+            {
+                foreach (Control c in groupBox1.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        c.BackColor = System.Drawing.Color.White;
+                    }
+                }
+            }
         }
         public void main1(object sender,EventArgs e)
         {
@@ -93,15 +179,19 @@ namespace Menu_Utama
         public void selesai()
         {
             int nilai;
-            nilai = 17;
+            if (stg == 7) nilai = 33;
+            else if (stg == 9) nilai = 55;
+            else nilai = 17;
             if ((pplayer >= stg) & (pcom >= stg))
             {
                 MessageBox.Show("Permainan imbang, silahkan coba lagi");
-                //ke daftar score
+                BINGO_NilaiTertinggi frm = new BINGO_NilaiTertinggi();
+                this.Hide();
+                frm.Show();
             }
             else if (pplayer >= stg)
             {
-                
+                MessageBox.Show("Selamat, Anda telah memenangkan pertandingan !!!", "Informasi");
                 File.Create("Nilai.txt").Close();
                 File.WriteAllText("Nilai.txt", (((float)nilai / turn) * 100).ToString("00.00"));
                 BINGO_IsiNama frm1 = new BINGO_IsiNama();
@@ -111,7 +201,9 @@ namespace Menu_Utama
             else if (pcom >= stg)
             {
                 MessageBox.Show("Anda kalah, silahkan coba lagi");
-                //ke daftar score
+                BINGO_NilaiTertinggi frm = new BINGO_NilaiTertinggi();
+                this.Hide();
+                frm.Show();
             }
         }
         public int mcek(int x,int y, int[,] posisi, int pemain)
@@ -409,18 +501,72 @@ namespace Menu_Utama
             }
 
             //cek setting
-            stg = 5;
             string a;
             string[] b;
-            for (int i = 0; i < 5; i++)
+            if (File.Exists("Setting.txt"))
             {
-                for (int j = 0; j < 5; j++)
+                StreamReader sr = new StreamReader("Setting.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[0] == "7")
                 {
-                    btn5[i, j].Visible = true;
-                    txt5[i, j].Visible = true;
+                    stg = 7;
+                    for (int i = 0; i < 7; i++)
+                    {
+                        for (int j = 0; j < 7; j++)
+                        {
+                            btn7[i, j].Visible = true;
+                            txt7[i, j].Visible = true;
+                        }
+                    }
                 }
-            }
+                else if (b[0] == "9")
+                {
+                    stg = 9;
+                    for (int i = 0; i < 9; i++)
+                    {
+                        for (int j = 0; j < 9; j++)
+                        {
+                            btn9[i, j].Visible = true;
+                            txt9[i, j].Visible = true;
+                        }
+                    }
 
+                }
+                else
+                {
+                    stg = 5;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 5; j++)
+                        {
+                            btn5[i, j].Visible = true;
+                            txt5[i, j].Visible = true;
+                        }
+                    }
+                }
+                if (b.Length >= 4)
+                {
+                    if (b[3] == "Mudah") tingkat = 1;
+                    else if (b[3] == "Sulit") tingkat = 3;
+                }
+                sr.Close();
+            }
+            else
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        btn5[i, j].Visible = true;
+                        txt5[i, j].Visible = true;
+                    }
+                }
+                stg = 5;
+            }
+            if (stg == 5) label6.Text = "5";
+            else if (stg == 7) label6.Text = "7";
+            else if (stg == 9) label6.Text = "9";
             List<int> ncom = new List<int>();
             Random rnd = new Random();
             int angka;
