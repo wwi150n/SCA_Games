@@ -54,5 +54,12 @@ namespace Menu_Utama
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BINGO_Bantuan1 frm = new BINGO_Bantuan1();
+            this.Hide();
+            frm.Show();
+        }
     }
 }
