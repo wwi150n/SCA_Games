@@ -86,6 +86,7 @@
             this.button5.TabIndex = 0;
             this.button5.Text = "KELUAR BINGO";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -105,6 +106,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "KELUAR HAMES";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // BINGO_Menu
             // 

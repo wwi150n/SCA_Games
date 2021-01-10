@@ -164,6 +164,10 @@ namespace Menu_Utama
                 pcom += mcek(kx, ky, com, 2);
                 label4.Text = pplayer.ToString();
                 label5.Text = pcom.ToString();
+                progressBar1.Maximum = stg;
+                progressBar2.Maximum = stg;
+                progressBar1.Value = pplayer;
+                progressBar2.Value = pcom;
                 if ((pplayer >= stg) | (pcom >= stg)) stop = true;
             }
             turn++;
@@ -777,6 +781,10 @@ namespace Menu_Utama
             pcom += mcek(kx, ky, com, 2);
             label4.Text = pplayer.ToString();
             label5.Text = pcom.ToString();
+            progressBar1.Maximum = stg;
+            progressBar2.Maximum = stg;
+            progressBar1.Value = pplayer;
+            progressBar2.Value = pcom;
             turn++;
             if ((pplayer >= stg) | (pcom >= stg)) stop = true;
             if (stop) selesai();

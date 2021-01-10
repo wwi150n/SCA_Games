@@ -120,7 +120,31 @@ namespace Menu_Utama
             {
                 txt9[i].Visible = false;
             }
-            xlabel(5, txt5);
+            if (File.Exists("Setting.txt"))
+            {
+                string a;
+                string[] b;
+                StreamReader sr = new StreamReader("Setting.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[0] == "7")
+                {
+                    xlabel(7, txt7);
+                }
+                else if (b[0] == "9")
+                {
+                    xlabel(9, txt9);
+                }
+                else
+                {
+                    xlabel(5, txt5);
+                }
+                sr.Close();
+            }
+            else
+            {
+                xlabel(5, txt5);
+            }
         }
 
         public void xpengecekan(int ukur, TextBox[] txt)
@@ -186,12 +210,25 @@ namespace Menu_Utama
             int stg = 5;
 
             //cek setting
-            xpengecekan(5, txt5);
-
+            if (File.Exists("Pengaturan.txt"))
+            {
+                StreamReader sr = new StreamReader("Pengaturan.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[0] == "7") stg = 7;
+                else if (b[0] == "9") stg = 9;
+                else stg = 5;
+                sr.Close();
+            }
+            if (stg == 5) xpengecekan(5, txt5);
+            else if (stg == 7) xpengecekan(7, txt7);
+            else if (stg == 9) xpengecekan(9, txt9);
             if (status)
             {
                 //isi angka(25-81)
-                isiangka(5, txt5);
+                if (stg == 5) isiangka(5, txt5);
+                else if (stg == 7) isiangka(7, txt7);
+                else if (stg == 9) isiangka(9, txt9);
 
                 BINGO_Main frm1 = new BINGO_Main();
                 this.Hide();
@@ -213,6 +250,47 @@ namespace Menu_Utama
         private void BINGO_Angka_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        public void xrandom(int ukur, TextBox[] txt)
+        {
+            Random rnd = new Random(); int angka; bool status = true; string tmp;
+            for (int i = 0; i < ukur * ukur; i++)
+            {
+                do
+                {
+                    status = true; angka = rnd.Next(1, (ukur * ukur) + 1); tmp = angka.ToString();
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (txt[j].Text == tmp) status = false;
+                    }
+                } while (status == false);
+                txt[i].BackColor = Color.GreenYellow;
+                txt[i].Text = tmp;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BINGO_Menu frm = new BINGO_Menu();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (File.Exists("Pengaturan.txt"))
+            {
+                string a;
+                string[] b;
+                StreamReader sr = new StreamReader("Pengaturan.txt");
+                a = sr.ReadLine();
+                b = a.Split();
+                if (b[0] == "7") xrandom(7, txt7);
+                else if (b[0] == "9") xrandom(9, txt9);
+                else xrandom(5, txt5);
+                sr.Close();
+            }
+            else xrandom(5, txt5);
         }
     }
 }

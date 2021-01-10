@@ -42,5 +42,17 @@ namespace Menu_Utama
             this.Hide();
             frm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Menu frm = new Menu_Utama.Menu();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
