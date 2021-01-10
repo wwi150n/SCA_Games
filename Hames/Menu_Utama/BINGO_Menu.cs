@@ -35,5 +35,12 @@ namespace Menu_Utama
             this.Hide();
             frm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BINGO_Pengaturan frm = new BINGO_Pengaturan();
+            this.Hide();
+            frm.Show();
+        }
     }
 }

@@ -77,5 +77,10 @@ namespace Menu_Utama
                 sr.Close();
             }
         }
+
+        private void BINGO_Pengaturan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

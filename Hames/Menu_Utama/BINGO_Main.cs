@@ -142,9 +142,23 @@ namespace Menu_Utama
                         }
                     }
                 }
-                
+
                 //taruh warna(tergantung setting)
-                txt5[kx, ky].BackColor = Color.Yellow;
+                if (stg==5)
+                {
+                    txt5[kx, ky].BackColor = Color.Yellow;
+                    
+                }
+                else if (stg == 7)
+                {
+                    txt7[kx, ky].BackColor = Color.Yellow;
+                    
+                }
+                else if (stg == 9)
+                {
+                    txt9[kx, ky].BackColor = Color.Yellow;
+                    
+                }
 
                 com[kx, ky] = 0;
                 pcom += mcek(kx, ky, com, 2);
@@ -228,7 +242,9 @@ namespace Menu_Utama
                     for (int i = 0; i < stg; i++)
                     {
                         //perubahan warna
-                        btn5[x, i].BackColor = Color.Green;
+                        if(stg==5) btn5[x, i].BackColor = Color.Green;
+                        else if (stg == 7) btn7[x, i].BackColor = Color.Green;
+                        else if (stg == 9) btn9[x, i].BackColor = Color.Green;
                     }
                 }
                 else if(pemain == 2)
@@ -236,7 +252,9 @@ namespace Menu_Utama
                     for(int i = 0; i < stg; i++)
                     {
                         //perubahan warna
-                        txt5[x, i].BackColor = Color.Green;
+                        if (stg == 5) txt5[x, i].BackColor = Color.Green;
+                        else if (stg == 7) txt7[x, i].BackColor = Color.Green;
+                        else if (stg == 9) txt9[x, i].BackColor = Color.Green;
                     }
                 }
             }
@@ -258,7 +276,9 @@ namespace Menu_Utama
                     for (int i = 0; i < stg; i++)
                     {
                         //perubahan warna
-                        btn5[i, y].BackColor = Color.Green;
+                        if (stg == 5) btn5[i, y].BackColor = Color.Green;
+                        else if (stg == 7) btn7[i, y].BackColor = Color.Green;
+                        else if (stg == 9) btn9[i, y].BackColor = Color.Green;
                     }
                 }
                 else if (pemain == 2)
@@ -266,7 +286,9 @@ namespace Menu_Utama
                     for (int i = 0; i < stg; i++)
                     {
                         //perubahan warna
-                        txt5[i, y].BackColor = Color.Green;
+                        if (stg == 5) txt5[i, y].BackColor = Color.Green;
+                        else if (stg == 7) txt7[i, y].BackColor = Color.Green;
+                        else if (stg == 9) txt9[i, y].BackColor = Color.Green;
                     }
                 }
             }
@@ -285,12 +307,16 @@ namespace Menu_Utama
                         if (pemain==1)
                         {
                             //perubahan warna
-                            btn5[i, i].BackColor = Color.Green;
+                            if (stg == 5) btn5[i, i].BackColor = Color.Green;
+                            else if (stg == 7) btn7[i, i].BackColor = Color.Green;
+                            else if (stg == 9) btn9[i, i].BackColor = Color.Green;
                         }
                         else if (pemain == 2)
                         {
                             //perubahan warna
-                            btn5[i, i].BackColor = Color.Green;
+                            if(stg==5) txt5[i, i].BackColor = Color.Green;
+                            else if (stg == 7) txt7[i, i].BackColor = Color.Green;
+                            else if (stg == 9) txt9[i, i].BackColor = Color.Green;
                         }
                     }
                     hitung += 1;
@@ -311,12 +337,16 @@ namespace Menu_Utama
                         if (pemain==1)
                         {
                             //perubahan warna
-                            btn5[i, stg - 1 - i].BackColor = Color.Green;
+                            if(stg==5) btn5[i, stg - 1 - i].BackColor = Color.Green;
+                            else if (stg == 7) btn7[i, stg - 1 - i].BackColor = Color.Green;
+                            else if (stg == 9) btn9[i, stg - 1 - i].BackColor = Color.Green;
                         }
                         else if (pemain == 2)
                         {
                             //perubahan warna
-                            txt5[i, stg - 1 - i].BackColor = Color.Green;
+                            if(stg==5) txt5[i, stg - 1 - i].BackColor = Color.Green;
+                            else if (stg == 7) txt7[i, stg - 1 - i].BackColor = Color.Green;
+                            else if (stg == 9) txt9[i, stg - 1 - i].BackColor = Color.Green;
                         }                      
                     }
                     hitung += 1;
@@ -503,9 +533,9 @@ namespace Menu_Utama
             //cek setting
             string a;
             string[] b;
-            if (File.Exists("Setting.txt"))
+            if (File.Exists("Pengaturan.txt"))
             {
-                StreamReader sr = new StreamReader("Setting.txt");
+                StreamReader sr = new StreamReader("Pengaturan.txt");
                 a = sr.ReadLine();
                 b = a.Split();
                 if (b[0] == "7")
@@ -602,13 +632,40 @@ namespace Menu_Utama
             b = a.Split();
 
             //tergantung setting
-            for (int i = 0; i < 5; i++)
+            if (stg == 7)
             {
-                for (int j = 0; j < 5; j++)
+                for (int i = 0; i < 7; i++)
                 {
-                    btn5[i, j].Text = b[5 * i + j];
-                    player[i, j] = Convert.ToInt32(b[5 * i + j]);
-                    txt5[i, j].Text = com[i, j].ToString();
+                    for (int j = 0; j < 7; j++)
+                    {
+                        btn7[i, j].Text = b[7 * i + j];
+                        player[i, j] = Convert.ToInt32(b[7 * i + j]);
+                        //txt7[i, j].Text = com[i, j].ToString();
+                    }
+                }
+            }
+            else if (stg == 9)
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        btn9[i, j].Text = b[9 * i + j];
+                        player[i, j] = Convert.ToInt32(b[9 * i + j]);
+                        //txt9[i, j].Text = com[i, j].ToString();
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        btn5[i, j].Text = b[5 * i + j];
+                        player[i, j] = Convert.ToInt32(b[5 * i + j]);
+                        txt5[i, j].Text = com[i, j].ToString();
+                    }
                 }
             }
             sr2.Close();
@@ -704,10 +761,22 @@ namespace Menu_Utama
             com[kx, ky] = 0;
 
             //ubah warna
-            txt5[kx, ky].BackColor = Color.Yellow;
-
+            if (stg == 7)
+            {
+                txt7[kx, ky].BackColor = Color.Yellow;
+            }
+            else if (stg == 9)
+            {
+                txt9[kx, ky].BackColor = Color.Yellow;
+            }
+            else
+            {
+                txt5[kx, ky].BackColor = Color.Yellow;
+            }
             label8.Text = angkacom.ToString();
             pcom += mcek(kx, ky, com, 2);
+            label4.Text = pplayer.ToString();
+            label5.Text = pcom.ToString();
             turn++;
             if ((pplayer >= stg) | (pcom >= stg)) stop = true;
             if (stop) selesai();
