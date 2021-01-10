@@ -60,7 +60,7 @@ namespace Menu_Utama
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 22);
             this.button3.TabIndex = 2;
-            this.button3.Text = "History";
+            this.button3.Text = "Highscore";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

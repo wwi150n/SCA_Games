@@ -106,6 +106,7 @@ namespace Menu_Utama
             this.Name = "HighScore_SOS";
             this.Text = "HighScore";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HighScore_SOS_FormClosed);
+            this.Load += new System.EventHandler(this.HighScore_SOS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

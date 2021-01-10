@@ -271,30 +271,7 @@ namespace Menu_Utama
                 btn[baris, kolom + 1].BackColor = Color.Gold;
               }
             }
-            //cek bawah
-            if ((baris != 0) && (baris != 11))
-            {
-              if (((var[baris - 1, kolom]) == 1) && ((var[baris + 1, kolom]) == 1))
-              {
-                if (gantian == 1)
-                {
-                  scorePemain1 += 1;
-                  scoreP1.Text = Convert.ToString(scorePemain1);
-                  //ubah warna "O"
-                  x.BackColor = Color.AliceBlue;
-                  btn[baris - 1, kolom].BackColor = Color.AliceBlue;
-                  btn[baris + 1, kolom].BackColor = Color.AliceBlue;
-                }
-                else if (gantian == 0)
-                {
-                  scorePemain2 += 1;
-                  scoreP2.Text = Convert.ToString(scorePemain2);
-                  x.BackColor = Color.Gold;
-                  btn[baris - 1, kolom].BackColor = Color.Gold;
-                  btn[baris + 1, kolom].BackColor = Color.Gold;
-                }
-              }
-            }
+            
             //cek diagonal
             if ((baris != 0) && (baris != 11))
             {
@@ -346,6 +323,31 @@ namespace Menu_Utama
               }
             }
           }
+          //cek bawah
+          if ((baris >= 1) && (baris <= 10))
+          {
+            if (((var[baris - 1, kolom]) == 1) && ((var[baris + 1, kolom]) == 1))
+            {
+              if (gantian == 1)
+              {
+                scorePemain1 += 1;
+                scoreP1.Text = Convert.ToString(scorePemain1);
+                //ubah warna "O"
+                x.BackColor = Color.AliceBlue;
+                btn[baris - 1, kolom].BackColor = Color.AliceBlue;
+                btn[baris + 1, kolom].BackColor = Color.AliceBlue;
+              }
+              else if (gantian == 0)
+              {
+                scorePemain2 += 1;
+                scoreP2.Text = Convert.ToString(scorePemain2);
+                x.BackColor = Color.Gold;
+                btn[baris - 1, kolom].BackColor = Color.Gold;
+                btn[baris + 1, kolom].BackColor = Color.Gold;
+              }
+            }
+          }
+
           b145.Enabled = true;
           b146.Enabled = true;
           b146.BackColor = Color.Green;
@@ -577,7 +579,6 @@ namespace Menu_Utama
       btn[11, 10] = b143;
       btn[11, 11] = b144;
     }
-
     private void button1_Click(object sender, EventArgs e)
     {
       SOS_Menu Sos = new SOS_Menu();
