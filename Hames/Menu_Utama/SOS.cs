@@ -403,16 +403,32 @@ namespace Menu_Utama
 
     private void S_Click(object sender, EventArgs e)
     {
-      if(scorePemain1>scorePemain2)
+      if (!File.Exists("pemenang.txt"))
+      {
+        File.Create("pemenang.txt").Close();
+      }
+      StreamWriter sw = new StreamWriter("pemenang.txt");
+      if (scorePemain1>scorePemain2)
       {
         MessageBox.Show(label1.Text + "Menang !!! Dengan Score : " + scorePemain1.ToString());
+        sw.Write("{0} ", label1.Text);
+        sw.Close();
+        HighScore_SOS frm = new HighScore_SOS();
+        this.Hide();
+        frm.Show();
+      }
+      else if(scorePemain1 < scorePemain2)
+      {
+        MessageBox.Show(label2.Text + "Menang !!! Dengan Score : " + scorePemain2.ToString());
+        sw.Write("{0} ", label2.Text);
+        sw.Close();
         HighScore_SOS frm = new HighScore_SOS();
         this.Hide();
         frm.Show();
       }
       else
       {
-        MessageBox.Show(label2.Text + "Menang !!! Dengan Score : " + scorePemain2.ToString());
+        MessageBox.Show("Draw !!! Tidak ada yang Menang dan Kalah ");
         HighScore_SOS frm = new HighScore_SOS();
         this.Hide();
         frm.Show();

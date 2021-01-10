@@ -37,19 +37,16 @@ namespace Menu_Utama
 
     private void HighScore_SOS_Load(object sender, EventArgs e)
     {
-      if (File.Exists("nama.txt") && File.Exists("nama2.txt"))
+      if (File.Exists("pemenang.txt"))
       {
-        string a, b;
+        string a;
         string[] c;
         string[] d;
-        StreamReader sr = new StreamReader("nama.txt");
-        StreamReader sr2 = new StreamReader("nama2.txt");
+        StreamReader sr = new StreamReader("pemenang.txt");
         a = sr.ReadLine();
-        b = sr2.ReadLine();
         c = a.Split();
-        d = b.Split();
         sr.Close();
-        sr2.Close();
+        textBox1.Enabled = false;
         textBox1.Text = a;
       }
     }
