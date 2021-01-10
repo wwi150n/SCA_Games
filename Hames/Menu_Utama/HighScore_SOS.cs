@@ -44,11 +44,16 @@ namespace Menu_Utama
         string[] d;
         StreamReader sr = new StreamReader("pemenang.txt");
         a = sr.ReadLine();
-        c = a.Split();
+        c = a.Split(' ');
         sr.Close();
         textBox1.Enabled = false;
-        textBox1.Text = a;
+        textBox1.Text = "\t"+c[0]+"\t\t\t"+c[1];
       }
+    }
+
+    private void label3_Click(object sender, EventArgs e)
+    {
+
     }
   }
 }

@@ -411,7 +411,7 @@ namespace Menu_Utama
       if (scorePemain1>scorePemain2)
       {
         MessageBox.Show(label1.Text + "Menang !!! Dengan Score : " + scorePemain1.ToString());
-        sw.Write("{0} ", label1.Text);
+        sw.Write(label1.Text + scorePemain1.ToString());
         sw.Close();
         HighScore_SOS frm = new HighScore_SOS();
         this.Hide();
@@ -420,7 +420,7 @@ namespace Menu_Utama
       else if(scorePemain1 < scorePemain2)
       {
         MessageBox.Show(label2.Text + "Menang !!! Dengan Score : " + scorePemain2.ToString());
-        sw.Write("{0} ", label2.Text);
+        sw.Write(label2.Text + scorePemain2.ToString());
         sw.Close();
         HighScore_SOS frm = new HighScore_SOS();
         this.Hide();
