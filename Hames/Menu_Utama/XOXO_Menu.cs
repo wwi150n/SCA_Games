@@ -120,6 +120,19 @@ namespace Menu_Utama
                 label4.Text = "O";
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            XOXO_Main str = new XOXO_Main();
+            this.Hide();
+            str.Show();
+
+        }
     }
     }
 

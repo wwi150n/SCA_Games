@@ -413,7 +413,7 @@ namespace Menu_Utama
             // 
             this.A228.BackColor = System.Drawing.Color.Tomato;
             this.A228.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
-            this.A228.Location = new System.Drawing.Point(691, 13);
+            this.A228.Location = new System.Drawing.Point(723, 27);
             this.A228.Name = "A228";
             this.A228.Size = new System.Drawing.Size(90, 25);
             this.A228.TabIndex = 35;
@@ -2621,7 +2621,7 @@ namespace Menu_Utama
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(799, 691);
+            this.ClientSize = new System.Drawing.Size(841, 718);
             this.Controls.Add(this.A225);
             this.Controls.Add(this.A224);
             this.Controls.Add(this.A223);
