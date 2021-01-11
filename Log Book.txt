@@ -62,10 +62,14 @@ NB : User Story 6 dan 21 done.
 
 9 Januari 2021 (Scrummaster: Wilson)
 Wilson - Membuat Fitur Pengaturan
-Sylvia - Membuat papan untuk meletakkan X dan O.
+Sylvia - Memperbaiki papan untuk meletakkan X dan O.
 Anthony - Membuat fitur papan score.
 NB: User Story tidak perubah posisi
 
 11 Januari 2021 (Scrummaster: Sylvia Dewi Chaiyanti)
+Wilson - Membuat fitur pengaturan dan memperbaiki bug (lanjutan)
+Sylvia - Membuat  fitur history score.
+Anthony - Memperbaiki bug dan membuat fitur high score.
+NB: User Story 9 dan 12 done.
 
 12 Januari 2021 (Scrummaster : Anthony)
