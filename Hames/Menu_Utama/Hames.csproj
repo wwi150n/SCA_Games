@@ -134,6 +134,27 @@
   <ItemGroup>
     <None Include="Resources\LOGO2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_static_tumblr_static_e1l41iv9zi80skkcc0ooo4gk0_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastelgalaxytumblr-l-7ef72673bb99ae03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4936936fea49aedc199e2806de1c9431.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c80790896f341f0acf96e8f5b93ad97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcaf37ba1cd5f6a12ca327a017260675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

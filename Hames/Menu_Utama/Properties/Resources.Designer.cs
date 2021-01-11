@@ -63,9 +63,79 @@ namespace Menu_Utama.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1c80790896f341f0acf96e8f5b93ad97 {
+            get {
+                object obj = ResourceManager.GetObject("1c80790896f341f0acf96e8f5b93ad97", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4936936fea49aedc199e2806de1c9431 {
+            get {
+                object obj = ResourceManager.GetObject("4936936fea49aedc199e2806de1c9431", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bcaf37ba1cd5f6a12ca327a017260675 {
+            get {
+                object obj = ResourceManager.GetObject("bcaf37ba1cd5f6a12ca327a017260675", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap index {
+            get {
+                object obj = ResourceManager.GetObject("index", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO {
             get {
                 object obj = ResourceManager.GetObject("LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap original {
+            get {
+                object obj = ResourceManager.GetObject("original", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastelgalaxytumblr_l_7ef72673bb99ae03 {
+            get {
+                object obj = ResourceManager.GetObject("pastelgalaxytumblr-l-7ef72673bb99ae03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tumblr_static_tumblr_static_e1l41iv9zi80skkcc0ooo4gk0_640 {
+            get {
+                object obj = ResourceManager.GetObject("tumblr_static_tumblr_static_e1l41iv9zi80skkcc0ooo4gk0_640", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

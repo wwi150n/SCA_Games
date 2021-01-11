@@ -270,9 +270,10 @@ namespace Menu_Utama
             // 
             this.scorep2.BackColor = System.Drawing.Color.LightSalmon;
             this.scorep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scorep2.Location = new System.Drawing.Point(723, 269);
+            this.scorep2.Location = new System.Drawing.Point(745, 248);
+            this.scorep2.Multiline = true;
             this.scorep2.Name = "scorep2";
-            this.scorep2.Size = new System.Drawing.Size(58, 31);
+            this.scorep2.Size = new System.Drawing.Size(80, 33);
             this.scorep2.TabIndex = 48;
             this.scorep2.Text = "0";
             this.scorep2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -281,9 +282,10 @@ namespace Menu_Utama
             // 
             this.scorep1.BackColor = System.Drawing.Color.LightSalmon;
             this.scorep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scorep1.Location = new System.Drawing.Point(26, 270);
+            this.scorep1.Location = new System.Drawing.Point(24, 231);
+            this.scorep1.Multiline = true;
             this.scorep1.Name = "scorep1";
-            this.scorep1.Size = new System.Drawing.Size(58, 31);
+            this.scorep1.Size = new System.Drawing.Size(80, 33);
             this.scorep1.TabIndex = 47;
             this.scorep1.Text = "0";
             this.scorep1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -291,10 +293,11 @@ namespace Menu_Utama
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(712, 243);
+            this.label3.BackColor = System.Drawing.Color.LightPink;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(720, 218);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.Size = new System.Drawing.Size(121, 22);
             this.label3.TabIndex = 46;
             this.label3.Text = "Player 2 Score";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -302,10 +305,11 @@ namespace Menu_Utama
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.Location = new System.Drawing.Point(15, 242);
+            this.label2.BackColor = System.Drawing.Color.LightPink;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 200);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.Size = new System.Drawing.Size(121, 22);
             this.label2.TabIndex = 45;
             this.label2.Text = "Player 1 Score";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -314,7 +318,7 @@ namespace Menu_Utama
             // 
             this.A033.BackColor = System.Drawing.Color.BlueViolet;
             this.A033.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A033.Location = new System.Drawing.Point(185, 160);
+            this.A033.Location = new System.Drawing.Point(199, 160);
             this.A033.Name = "A033";
             this.A033.Size = new System.Drawing.Size(40, 40);
             this.A033.TabIndex = 44;
@@ -325,7 +329,7 @@ namespace Menu_Utama
             // 
             this.A018.BackColor = System.Drawing.Color.BlueViolet;
             this.A018.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A018.Location = new System.Drawing.Point(185, 120);
+            this.A018.Location = new System.Drawing.Point(199, 120);
             this.A018.Name = "A018";
             this.A018.Size = new System.Drawing.Size(40, 40);
             this.A018.TabIndex = 43;
@@ -336,7 +340,7 @@ namespace Menu_Utama
             // 
             this.A003.BackColor = System.Drawing.Color.BlueViolet;
             this.A003.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A003.Location = new System.Drawing.Point(185, 80);
+            this.A003.Location = new System.Drawing.Point(199, 80);
             this.A003.Name = "A003";
             this.A003.Size = new System.Drawing.Size(40, 40);
             this.A003.TabIndex = 42;
@@ -347,7 +351,7 @@ namespace Menu_Utama
             // 
             this.A032.BackColor = System.Drawing.Color.BlueViolet;
             this.A032.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A032.Location = new System.Drawing.Point(145, 160);
+            this.A032.Location = new System.Drawing.Point(159, 160);
             this.A032.Name = "A032";
             this.A032.Size = new System.Drawing.Size(40, 40);
             this.A032.TabIndex = 41;
@@ -358,7 +362,7 @@ namespace Menu_Utama
             // 
             this.A017.BackColor = System.Drawing.Color.BlueViolet;
             this.A017.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A017.Location = new System.Drawing.Point(145, 120);
+            this.A017.Location = new System.Drawing.Point(159, 120);
             this.A017.Name = "A017";
             this.A017.Size = new System.Drawing.Size(40, 40);
             this.A017.TabIndex = 40;
@@ -369,7 +373,7 @@ namespace Menu_Utama
             // 
             this.A002.BackColor = System.Drawing.Color.BlueViolet;
             this.A002.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A002.Location = new System.Drawing.Point(145, 80);
+            this.A002.Location = new System.Drawing.Point(159, 80);
             this.A002.Name = "A002";
             this.A002.Size = new System.Drawing.Size(40, 40);
             this.A002.TabIndex = 39;
@@ -380,7 +384,7 @@ namespace Menu_Utama
             // 
             this.A031.BackColor = System.Drawing.Color.BlueViolet;
             this.A031.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A031.Location = new System.Drawing.Point(105, 160);
+            this.A031.Location = new System.Drawing.Point(119, 160);
             this.A031.Name = "A031";
             this.A031.Size = new System.Drawing.Size(40, 40);
             this.A031.TabIndex = 38;
@@ -391,7 +395,7 @@ namespace Menu_Utama
             // 
             this.A016.BackColor = System.Drawing.Color.BlueViolet;
             this.A016.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A016.Location = new System.Drawing.Point(105, 120);
+            this.A016.Location = new System.Drawing.Point(119, 120);
             this.A016.Name = "A016";
             this.A016.Size = new System.Drawing.Size(40, 40);
             this.A016.TabIndex = 37;
@@ -402,7 +406,7 @@ namespace Menu_Utama
             // 
             this.A001.BackColor = System.Drawing.Color.BlueViolet;
             this.A001.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A001.Location = new System.Drawing.Point(105, 80);
+            this.A001.Location = new System.Drawing.Point(119, 80);
             this.A001.Name = "A001";
             this.A001.Size = new System.Drawing.Size(40, 40);
             this.A001.TabIndex = 36;
@@ -411,9 +415,10 @@ namespace Menu_Utama
             // 
             // A228
             // 
-            this.A228.BackColor = System.Drawing.Color.Tomato;
+            this.A228.BackColor = System.Drawing.Color.Maroon;
             this.A228.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
-            this.A228.Location = new System.Drawing.Point(723, 27);
+            this.A228.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.A228.Location = new System.Drawing.Point(738, 13);
             this.A228.Name = "A228";
             this.A228.Size = new System.Drawing.Size(90, 25);
             this.A228.TabIndex = 35;
@@ -423,9 +428,9 @@ namespace Menu_Utama
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Menu_Utama.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(356, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(76, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
@@ -433,22 +438,22 @@ namespace Menu_Utama
             // 
             // A226
             // 
-            this.A226.BackColor = System.Drawing.Color.Red;
-            this.A226.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.A226.Location = new System.Drawing.Point(356, 44);
+            this.A226.BackColor = System.Drawing.Color.OrangeRed;
+            this.A226.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A226.Location = new System.Drawing.Point(350, 24);
             this.A226.Name = "A226";
-            this.A226.Size = new System.Drawing.Size(40, 30);
+            this.A226.Size = new System.Drawing.Size(60, 50);
             this.A226.TabIndex = 49;
             this.A226.Text = "X";
             this.A226.UseVisualStyleBackColor = false;
             // 
             // A227
             // 
-            this.A227.BackColor = System.Drawing.Color.Red;
-            this.A227.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.A227.Location = new System.Drawing.Point(425, 44);
+            this.A227.BackColor = System.Drawing.Color.OrangeRed;
+            this.A227.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A227.Location = new System.Drawing.Point(445, 24);
             this.A227.Name = "A227";
-            this.A227.Size = new System.Drawing.Size(40, 30);
+            this.A227.Size = new System.Drawing.Size(60, 50);
             this.A227.TabIndex = 50;
             this.A227.Text = "O";
             this.A227.UseVisualStyleBackColor = false;
@@ -457,7 +462,7 @@ namespace Menu_Utama
             // 
             this.A004.BackColor = System.Drawing.Color.BlueViolet;
             this.A004.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A004.Location = new System.Drawing.Point(225, 80);
+            this.A004.Location = new System.Drawing.Point(239, 80);
             this.A004.Name = "A004";
             this.A004.Size = new System.Drawing.Size(40, 40);
             this.A004.TabIndex = 51;
@@ -467,7 +472,7 @@ namespace Menu_Utama
             // 
             this.A005.BackColor = System.Drawing.Color.BlueViolet;
             this.A005.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A005.Location = new System.Drawing.Point(265, 80);
+            this.A005.Location = new System.Drawing.Point(279, 80);
             this.A005.Name = "A005";
             this.A005.Size = new System.Drawing.Size(40, 40);
             this.A005.TabIndex = 52;
@@ -477,7 +482,7 @@ namespace Menu_Utama
             // 
             this.A019.BackColor = System.Drawing.Color.BlueViolet;
             this.A019.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A019.Location = new System.Drawing.Point(225, 120);
+            this.A019.Location = new System.Drawing.Point(239, 120);
             this.A019.Name = "A019";
             this.A019.Size = new System.Drawing.Size(40, 40);
             this.A019.TabIndex = 53;
@@ -488,7 +493,7 @@ namespace Menu_Utama
             // 
             this.A020.BackColor = System.Drawing.Color.BlueViolet;
             this.A020.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A020.Location = new System.Drawing.Point(265, 120);
+            this.A020.Location = new System.Drawing.Point(279, 120);
             this.A020.Name = "A020";
             this.A020.Size = new System.Drawing.Size(40, 40);
             this.A020.TabIndex = 54;
@@ -498,7 +503,7 @@ namespace Menu_Utama
             // 
             this.A034.BackColor = System.Drawing.Color.BlueViolet;
             this.A034.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A034.Location = new System.Drawing.Point(225, 160);
+            this.A034.Location = new System.Drawing.Point(239, 160);
             this.A034.Name = "A034";
             this.A034.Size = new System.Drawing.Size(40, 40);
             this.A034.TabIndex = 55;
@@ -508,7 +513,7 @@ namespace Menu_Utama
             // 
             this.A035.BackColor = System.Drawing.Color.BlueViolet;
             this.A035.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A035.Location = new System.Drawing.Point(265, 160);
+            this.A035.Location = new System.Drawing.Point(279, 160);
             this.A035.Name = "A035";
             this.A035.Size = new System.Drawing.Size(40, 40);
             this.A035.TabIndex = 56;
@@ -518,7 +523,7 @@ namespace Menu_Utama
             // 
             this.A046.BackColor = System.Drawing.Color.BlueViolet;
             this.A046.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A046.Location = new System.Drawing.Point(105, 200);
+            this.A046.Location = new System.Drawing.Point(119, 200);
             this.A046.Name = "A046";
             this.A046.Size = new System.Drawing.Size(40, 40);
             this.A046.TabIndex = 57;
@@ -528,7 +533,7 @@ namespace Menu_Utama
             // 
             this.A061.BackColor = System.Drawing.Color.BlueViolet;
             this.A061.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A061.Location = new System.Drawing.Point(105, 240);
+            this.A061.Location = new System.Drawing.Point(119, 240);
             this.A061.Name = "A061";
             this.A061.Size = new System.Drawing.Size(40, 40);
             this.A061.TabIndex = 58;
@@ -539,7 +544,7 @@ namespace Menu_Utama
             // 
             this.A047.BackColor = System.Drawing.Color.BlueViolet;
             this.A047.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A047.Location = new System.Drawing.Point(145, 200);
+            this.A047.Location = new System.Drawing.Point(159, 200);
             this.A047.Name = "A047";
             this.A047.Size = new System.Drawing.Size(40, 40);
             this.A047.TabIndex = 59;
@@ -549,7 +554,7 @@ namespace Menu_Utama
             // 
             this.A048.BackColor = System.Drawing.Color.BlueViolet;
             this.A048.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A048.Location = new System.Drawing.Point(185, 200);
+            this.A048.Location = new System.Drawing.Point(199, 200);
             this.A048.Name = "A048";
             this.A048.Size = new System.Drawing.Size(40, 40);
             this.A048.TabIndex = 60;
@@ -559,7 +564,7 @@ namespace Menu_Utama
             // 
             this.A049.BackColor = System.Drawing.Color.BlueViolet;
             this.A049.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A049.Location = new System.Drawing.Point(225, 200);
+            this.A049.Location = new System.Drawing.Point(239, 200);
             this.A049.Name = "A049";
             this.A049.Size = new System.Drawing.Size(40, 40);
             this.A049.TabIndex = 61;
@@ -569,7 +574,7 @@ namespace Menu_Utama
             // 
             this.A050.BackColor = System.Drawing.Color.BlueViolet;
             this.A050.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A050.Location = new System.Drawing.Point(265, 200);
+            this.A050.Location = new System.Drawing.Point(279, 200);
             this.A050.Name = "A050";
             this.A050.Size = new System.Drawing.Size(40, 40);
             this.A050.TabIndex = 62;
@@ -579,7 +584,7 @@ namespace Menu_Utama
             // 
             this.A062.BackColor = System.Drawing.Color.BlueViolet;
             this.A062.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A062.Location = new System.Drawing.Point(145, 240);
+            this.A062.Location = new System.Drawing.Point(159, 240);
             this.A062.Name = "A062";
             this.A062.Size = new System.Drawing.Size(40, 40);
             this.A062.TabIndex = 63;
@@ -589,7 +594,7 @@ namespace Menu_Utama
             // 
             this.A063.BackColor = System.Drawing.Color.BlueViolet;
             this.A063.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A063.Location = new System.Drawing.Point(185, 240);
+            this.A063.Location = new System.Drawing.Point(199, 240);
             this.A063.Name = "A063";
             this.A063.Size = new System.Drawing.Size(40, 40);
             this.A063.TabIndex = 64;
@@ -599,7 +604,7 @@ namespace Menu_Utama
             // 
             this.A064.BackColor = System.Drawing.Color.BlueViolet;
             this.A064.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A064.Location = new System.Drawing.Point(225, 240);
+            this.A064.Location = new System.Drawing.Point(239, 240);
             this.A064.Name = "A064";
             this.A064.Size = new System.Drawing.Size(40, 40);
             this.A064.TabIndex = 65;
@@ -609,7 +614,7 @@ namespace Menu_Utama
             // 
             this.A065.BackColor = System.Drawing.Color.BlueViolet;
             this.A065.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A065.Location = new System.Drawing.Point(265, 240);
+            this.A065.Location = new System.Drawing.Point(279, 240);
             this.A065.Name = "A065";
             this.A065.Size = new System.Drawing.Size(40, 40);
             this.A065.TabIndex = 66;
@@ -619,7 +624,7 @@ namespace Menu_Utama
             // 
             this.A070.BackColor = System.Drawing.Color.BlueViolet;
             this.A070.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A070.Location = new System.Drawing.Point(465, 240);
+            this.A070.Location = new System.Drawing.Point(479, 240);
             this.A070.Name = "A070";
             this.A070.Size = new System.Drawing.Size(40, 40);
             this.A070.TabIndex = 91;
@@ -629,7 +634,7 @@ namespace Menu_Utama
             // 
             this.A069.BackColor = System.Drawing.Color.BlueViolet;
             this.A069.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A069.Location = new System.Drawing.Point(425, 240);
+            this.A069.Location = new System.Drawing.Point(439, 240);
             this.A069.Name = "A069";
             this.A069.Size = new System.Drawing.Size(40, 40);
             this.A069.TabIndex = 90;
@@ -639,7 +644,7 @@ namespace Menu_Utama
             // 
             this.A068.BackColor = System.Drawing.Color.BlueViolet;
             this.A068.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A068.Location = new System.Drawing.Point(385, 240);
+            this.A068.Location = new System.Drawing.Point(399, 240);
             this.A068.Name = "A068";
             this.A068.Size = new System.Drawing.Size(40, 40);
             this.A068.TabIndex = 89;
@@ -649,7 +654,7 @@ namespace Menu_Utama
             // 
             this.A067.BackColor = System.Drawing.Color.BlueViolet;
             this.A067.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A067.Location = new System.Drawing.Point(345, 240);
+            this.A067.Location = new System.Drawing.Point(359, 240);
             this.A067.Name = "A067";
             this.A067.Size = new System.Drawing.Size(40, 40);
             this.A067.TabIndex = 88;
@@ -659,7 +664,7 @@ namespace Menu_Utama
             // 
             this.A055.BackColor = System.Drawing.Color.BlueViolet;
             this.A055.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A055.Location = new System.Drawing.Point(465, 200);
+            this.A055.Location = new System.Drawing.Point(479, 200);
             this.A055.Name = "A055";
             this.A055.Size = new System.Drawing.Size(40, 40);
             this.A055.TabIndex = 87;
@@ -669,7 +674,7 @@ namespace Menu_Utama
             // 
             this.A054.BackColor = System.Drawing.Color.BlueViolet;
             this.A054.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A054.Location = new System.Drawing.Point(425, 200);
+            this.A054.Location = new System.Drawing.Point(439, 200);
             this.A054.Name = "A054";
             this.A054.Size = new System.Drawing.Size(40, 40);
             this.A054.TabIndex = 86;
@@ -679,7 +684,7 @@ namespace Menu_Utama
             // 
             this.A053.BackColor = System.Drawing.Color.BlueViolet;
             this.A053.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A053.Location = new System.Drawing.Point(385, 200);
+            this.A053.Location = new System.Drawing.Point(399, 200);
             this.A053.Name = "A053";
             this.A053.Size = new System.Drawing.Size(40, 40);
             this.A053.TabIndex = 85;
@@ -689,7 +694,7 @@ namespace Menu_Utama
             // 
             this.A052.BackColor = System.Drawing.Color.BlueViolet;
             this.A052.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A052.Location = new System.Drawing.Point(345, 200);
+            this.A052.Location = new System.Drawing.Point(359, 200);
             this.A052.Name = "A052";
             this.A052.Size = new System.Drawing.Size(40, 40);
             this.A052.TabIndex = 84;
@@ -699,7 +704,7 @@ namespace Menu_Utama
             // 
             this.A066.BackColor = System.Drawing.Color.BlueViolet;
             this.A066.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A066.Location = new System.Drawing.Point(305, 240);
+            this.A066.Location = new System.Drawing.Point(319, 240);
             this.A066.Name = "A066";
             this.A066.Size = new System.Drawing.Size(40, 40);
             this.A066.TabIndex = 83;
@@ -709,7 +714,7 @@ namespace Menu_Utama
             // 
             this.A051.BackColor = System.Drawing.Color.BlueViolet;
             this.A051.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A051.Location = new System.Drawing.Point(305, 200);
+            this.A051.Location = new System.Drawing.Point(319, 200);
             this.A051.Name = "A051";
             this.A051.Size = new System.Drawing.Size(40, 40);
             this.A051.TabIndex = 82;
@@ -719,7 +724,7 @@ namespace Menu_Utama
             // 
             this.A040.BackColor = System.Drawing.Color.BlueViolet;
             this.A040.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A040.Location = new System.Drawing.Point(465, 160);
+            this.A040.Location = new System.Drawing.Point(479, 160);
             this.A040.Name = "A040";
             this.A040.Size = new System.Drawing.Size(40, 40);
             this.A040.TabIndex = 81;
@@ -729,7 +734,7 @@ namespace Menu_Utama
             // 
             this.A039.BackColor = System.Drawing.Color.BlueViolet;
             this.A039.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A039.Location = new System.Drawing.Point(425, 160);
+            this.A039.Location = new System.Drawing.Point(439, 160);
             this.A039.Name = "A039";
             this.A039.Size = new System.Drawing.Size(40, 40);
             this.A039.TabIndex = 80;
@@ -739,7 +744,7 @@ namespace Menu_Utama
             // 
             this.A025.BackColor = System.Drawing.Color.BlueViolet;
             this.A025.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A025.Location = new System.Drawing.Point(465, 120);
+            this.A025.Location = new System.Drawing.Point(479, 120);
             this.A025.Name = "A025";
             this.A025.Size = new System.Drawing.Size(40, 40);
             this.A025.TabIndex = 79;
@@ -749,7 +754,7 @@ namespace Menu_Utama
             // 
             this.A024.BackColor = System.Drawing.Color.BlueViolet;
             this.A024.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A024.Location = new System.Drawing.Point(425, 120);
+            this.A024.Location = new System.Drawing.Point(439, 120);
             this.A024.Name = "A024";
             this.A024.Size = new System.Drawing.Size(40, 40);
             this.A024.TabIndex = 78;
@@ -759,7 +764,7 @@ namespace Menu_Utama
             // 
             this.A010.BackColor = System.Drawing.Color.BlueViolet;
             this.A010.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A010.Location = new System.Drawing.Point(465, 80);
+            this.A010.Location = new System.Drawing.Point(479, 80);
             this.A010.Name = "A010";
             this.A010.Size = new System.Drawing.Size(40, 40);
             this.A010.TabIndex = 77;
@@ -769,7 +774,7 @@ namespace Menu_Utama
             // 
             this.A009.BackColor = System.Drawing.Color.BlueViolet;
             this.A009.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A009.Location = new System.Drawing.Point(425, 80);
+            this.A009.Location = new System.Drawing.Point(439, 80);
             this.A009.Name = "A009";
             this.A009.Size = new System.Drawing.Size(40, 40);
             this.A009.TabIndex = 76;
@@ -780,7 +785,7 @@ namespace Menu_Utama
             // 
             this.A038.BackColor = System.Drawing.Color.BlueViolet;
             this.A038.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A038.Location = new System.Drawing.Point(385, 160);
+            this.A038.Location = new System.Drawing.Point(399, 160);
             this.A038.Name = "A038";
             this.A038.Size = new System.Drawing.Size(40, 40);
             this.A038.TabIndex = 75;
@@ -790,7 +795,7 @@ namespace Menu_Utama
             // 
             this.A023.BackColor = System.Drawing.Color.BlueViolet;
             this.A023.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A023.Location = new System.Drawing.Point(385, 120);
+            this.A023.Location = new System.Drawing.Point(399, 120);
             this.A023.Name = "A023";
             this.A023.Size = new System.Drawing.Size(40, 40);
             this.A023.TabIndex = 74;
@@ -800,7 +805,7 @@ namespace Menu_Utama
             // 
             this.A008.BackColor = System.Drawing.Color.BlueViolet;
             this.A008.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A008.Location = new System.Drawing.Point(385, 80);
+            this.A008.Location = new System.Drawing.Point(399, 80);
             this.A008.Name = "A008";
             this.A008.Size = new System.Drawing.Size(40, 40);
             this.A008.TabIndex = 73;
@@ -810,7 +815,7 @@ namespace Menu_Utama
             // 
             this.A037.BackColor = System.Drawing.Color.BlueViolet;
             this.A037.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A037.Location = new System.Drawing.Point(345, 160);
+            this.A037.Location = new System.Drawing.Point(359, 160);
             this.A037.Name = "A037";
             this.A037.Size = new System.Drawing.Size(40, 40);
             this.A037.TabIndex = 72;
@@ -820,7 +825,7 @@ namespace Menu_Utama
             // 
             this.A022.BackColor = System.Drawing.Color.BlueViolet;
             this.A022.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A022.Location = new System.Drawing.Point(345, 120);
+            this.A022.Location = new System.Drawing.Point(359, 120);
             this.A022.Name = "A022";
             this.A022.Size = new System.Drawing.Size(40, 40);
             this.A022.TabIndex = 71;
@@ -830,7 +835,7 @@ namespace Menu_Utama
             // 
             this.A007.BackColor = System.Drawing.Color.BlueViolet;
             this.A007.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A007.Location = new System.Drawing.Point(345, 80);
+            this.A007.Location = new System.Drawing.Point(359, 80);
             this.A007.Name = "A007";
             this.A007.Size = new System.Drawing.Size(40, 40);
             this.A007.TabIndex = 70;
@@ -840,7 +845,7 @@ namespace Menu_Utama
             // 
             this.A036.BackColor = System.Drawing.Color.BlueViolet;
             this.A036.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A036.Location = new System.Drawing.Point(305, 160);
+            this.A036.Location = new System.Drawing.Point(319, 160);
             this.A036.Name = "A036";
             this.A036.Size = new System.Drawing.Size(40, 40);
             this.A036.TabIndex = 69;
@@ -850,7 +855,7 @@ namespace Menu_Utama
             // 
             this.A021.BackColor = System.Drawing.Color.BlueViolet;
             this.A021.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A021.Location = new System.Drawing.Point(305, 120);
+            this.A021.Location = new System.Drawing.Point(319, 120);
             this.A021.Name = "A021";
             this.A021.Size = new System.Drawing.Size(40, 40);
             this.A021.TabIndex = 68;
@@ -860,7 +865,7 @@ namespace Menu_Utama
             // 
             this.A006.BackColor = System.Drawing.Color.BlueViolet;
             this.A006.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A006.Location = new System.Drawing.Point(305, 80);
+            this.A006.Location = new System.Drawing.Point(319, 80);
             this.A006.Name = "A006";
             this.A006.Size = new System.Drawing.Size(40, 40);
             this.A006.TabIndex = 67;
@@ -870,7 +875,7 @@ namespace Menu_Utama
             // 
             this.A145.BackColor = System.Drawing.Color.BlueViolet;
             this.A145.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A145.Location = new System.Drawing.Point(465, 440);
+            this.A145.Location = new System.Drawing.Point(479, 440);
             this.A145.Name = "A145";
             this.A145.Size = new System.Drawing.Size(40, 40);
             this.A145.TabIndex = 141;
@@ -880,7 +885,7 @@ namespace Menu_Utama
             // 
             this.A144.BackColor = System.Drawing.Color.BlueViolet;
             this.A144.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A144.Location = new System.Drawing.Point(425, 440);
+            this.A144.Location = new System.Drawing.Point(439, 440);
             this.A144.Name = "A144";
             this.A144.Size = new System.Drawing.Size(40, 40);
             this.A144.TabIndex = 140;
@@ -890,7 +895,7 @@ namespace Menu_Utama
             // 
             this.A143.BackColor = System.Drawing.Color.BlueViolet;
             this.A143.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A143.Location = new System.Drawing.Point(385, 440);
+            this.A143.Location = new System.Drawing.Point(399, 440);
             this.A143.Name = "A143";
             this.A143.Size = new System.Drawing.Size(40, 40);
             this.A143.TabIndex = 139;
@@ -900,7 +905,7 @@ namespace Menu_Utama
             // 
             this.A142.BackColor = System.Drawing.Color.BlueViolet;
             this.A142.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A142.Location = new System.Drawing.Point(345, 440);
+            this.A142.Location = new System.Drawing.Point(359, 440);
             this.A142.Name = "A142";
             this.A142.Size = new System.Drawing.Size(40, 40);
             this.A142.TabIndex = 138;
@@ -910,7 +915,7 @@ namespace Menu_Utama
             // 
             this.A130.BackColor = System.Drawing.Color.BlueViolet;
             this.A130.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A130.Location = new System.Drawing.Point(465, 400);
+            this.A130.Location = new System.Drawing.Point(479, 400);
             this.A130.Name = "A130";
             this.A130.Size = new System.Drawing.Size(40, 40);
             this.A130.TabIndex = 137;
@@ -920,7 +925,7 @@ namespace Menu_Utama
             // 
             this.A129.BackColor = System.Drawing.Color.BlueViolet;
             this.A129.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A129.Location = new System.Drawing.Point(425, 400);
+            this.A129.Location = new System.Drawing.Point(439, 400);
             this.A129.Name = "A129";
             this.A129.Size = new System.Drawing.Size(40, 40);
             this.A129.TabIndex = 136;
@@ -930,7 +935,7 @@ namespace Menu_Utama
             // 
             this.A128.BackColor = System.Drawing.Color.BlueViolet;
             this.A128.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A128.Location = new System.Drawing.Point(385, 400);
+            this.A128.Location = new System.Drawing.Point(399, 400);
             this.A128.Name = "A128";
             this.A128.Size = new System.Drawing.Size(40, 40);
             this.A128.TabIndex = 135;
@@ -940,7 +945,7 @@ namespace Menu_Utama
             // 
             this.A127.BackColor = System.Drawing.Color.BlueViolet;
             this.A127.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A127.Location = new System.Drawing.Point(345, 400);
+            this.A127.Location = new System.Drawing.Point(359, 400);
             this.A127.Name = "A127";
             this.A127.Size = new System.Drawing.Size(40, 40);
             this.A127.TabIndex = 134;
@@ -950,7 +955,7 @@ namespace Menu_Utama
             // 
             this.A141.BackColor = System.Drawing.Color.BlueViolet;
             this.A141.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A141.Location = new System.Drawing.Point(305, 440);
+            this.A141.Location = new System.Drawing.Point(319, 440);
             this.A141.Name = "A141";
             this.A141.Size = new System.Drawing.Size(40, 40);
             this.A141.TabIndex = 133;
@@ -960,7 +965,7 @@ namespace Menu_Utama
             // 
             this.A126.BackColor = System.Drawing.Color.BlueViolet;
             this.A126.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A126.Location = new System.Drawing.Point(305, 400);
+            this.A126.Location = new System.Drawing.Point(319, 400);
             this.A126.Name = "A126";
             this.A126.Size = new System.Drawing.Size(40, 40);
             this.A126.TabIndex = 132;
@@ -970,7 +975,7 @@ namespace Menu_Utama
             // 
             this.A115.BackColor = System.Drawing.Color.BlueViolet;
             this.A115.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A115.Location = new System.Drawing.Point(465, 360);
+            this.A115.Location = new System.Drawing.Point(479, 360);
             this.A115.Name = "A115";
             this.A115.Size = new System.Drawing.Size(40, 40);
             this.A115.TabIndex = 131;
@@ -980,7 +985,7 @@ namespace Menu_Utama
             // 
             this.A114.BackColor = System.Drawing.Color.BlueViolet;
             this.A114.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A114.Location = new System.Drawing.Point(425, 360);
+            this.A114.Location = new System.Drawing.Point(439, 360);
             this.A114.Name = "A114";
             this.A114.Size = new System.Drawing.Size(40, 40);
             this.A114.TabIndex = 130;
@@ -990,7 +995,7 @@ namespace Menu_Utama
             // 
             this.A100.BackColor = System.Drawing.Color.BlueViolet;
             this.A100.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A100.Location = new System.Drawing.Point(465, 320);
+            this.A100.Location = new System.Drawing.Point(479, 320);
             this.A100.Name = "A100";
             this.A100.Size = new System.Drawing.Size(40, 40);
             this.A100.TabIndex = 129;
@@ -1000,7 +1005,7 @@ namespace Menu_Utama
             // 
             this.A099.BackColor = System.Drawing.Color.BlueViolet;
             this.A099.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A099.Location = new System.Drawing.Point(425, 320);
+            this.A099.Location = new System.Drawing.Point(439, 320);
             this.A099.Name = "A099";
             this.A099.Size = new System.Drawing.Size(40, 40);
             this.A099.TabIndex = 128;
@@ -1010,7 +1015,7 @@ namespace Menu_Utama
             // 
             this.A085.BackColor = System.Drawing.Color.BlueViolet;
             this.A085.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A085.Location = new System.Drawing.Point(465, 280);
+            this.A085.Location = new System.Drawing.Point(479, 280);
             this.A085.Name = "A085";
             this.A085.Size = new System.Drawing.Size(40, 40);
             this.A085.TabIndex = 127;
@@ -1020,7 +1025,7 @@ namespace Menu_Utama
             // 
             this.A084.BackColor = System.Drawing.Color.BlueViolet;
             this.A084.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A084.Location = new System.Drawing.Point(425, 280);
+            this.A084.Location = new System.Drawing.Point(439, 280);
             this.A084.Name = "A084";
             this.A084.Size = new System.Drawing.Size(40, 40);
             this.A084.TabIndex = 126;
@@ -1030,7 +1035,7 @@ namespace Menu_Utama
             // 
             this.A113.BackColor = System.Drawing.Color.BlueViolet;
             this.A113.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A113.Location = new System.Drawing.Point(385, 360);
+            this.A113.Location = new System.Drawing.Point(399, 360);
             this.A113.Name = "A113";
             this.A113.Size = new System.Drawing.Size(40, 40);
             this.A113.TabIndex = 125;
@@ -1040,7 +1045,7 @@ namespace Menu_Utama
             // 
             this.A098.BackColor = System.Drawing.Color.BlueViolet;
             this.A098.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A098.Location = new System.Drawing.Point(385, 320);
+            this.A098.Location = new System.Drawing.Point(399, 320);
             this.A098.Name = "A098";
             this.A098.Size = new System.Drawing.Size(40, 40);
             this.A098.TabIndex = 124;
@@ -1050,7 +1055,7 @@ namespace Menu_Utama
             // 
             this.A083.BackColor = System.Drawing.Color.BlueViolet;
             this.A083.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A083.Location = new System.Drawing.Point(385, 280);
+            this.A083.Location = new System.Drawing.Point(399, 280);
             this.A083.Name = "A083";
             this.A083.Size = new System.Drawing.Size(40, 40);
             this.A083.TabIndex = 123;
@@ -1060,7 +1065,7 @@ namespace Menu_Utama
             // 
             this.A112.BackColor = System.Drawing.Color.BlueViolet;
             this.A112.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A112.Location = new System.Drawing.Point(345, 360);
+            this.A112.Location = new System.Drawing.Point(359, 360);
             this.A112.Name = "A112";
             this.A112.Size = new System.Drawing.Size(40, 40);
             this.A112.TabIndex = 122;
@@ -1070,7 +1075,7 @@ namespace Menu_Utama
             // 
             this.A097.BackColor = System.Drawing.Color.BlueViolet;
             this.A097.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A097.Location = new System.Drawing.Point(345, 320);
+            this.A097.Location = new System.Drawing.Point(359, 320);
             this.A097.Name = "A097";
             this.A097.Size = new System.Drawing.Size(40, 40);
             this.A097.TabIndex = 121;
@@ -1080,7 +1085,7 @@ namespace Menu_Utama
             // 
             this.A082.BackColor = System.Drawing.Color.BlueViolet;
             this.A082.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A082.Location = new System.Drawing.Point(345, 280);
+            this.A082.Location = new System.Drawing.Point(359, 280);
             this.A082.Name = "A082";
             this.A082.Size = new System.Drawing.Size(40, 40);
             this.A082.TabIndex = 120;
@@ -1090,7 +1095,7 @@ namespace Menu_Utama
             // 
             this.A111.BackColor = System.Drawing.Color.BlueViolet;
             this.A111.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A111.Location = new System.Drawing.Point(305, 360);
+            this.A111.Location = new System.Drawing.Point(319, 360);
             this.A111.Name = "A111";
             this.A111.Size = new System.Drawing.Size(40, 40);
             this.A111.TabIndex = 119;
@@ -1100,7 +1105,7 @@ namespace Menu_Utama
             // 
             this.A096.BackColor = System.Drawing.Color.BlueViolet;
             this.A096.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A096.Location = new System.Drawing.Point(305, 320);
+            this.A096.Location = new System.Drawing.Point(319, 320);
             this.A096.Name = "A096";
             this.A096.Size = new System.Drawing.Size(40, 40);
             this.A096.TabIndex = 118;
@@ -1110,7 +1115,7 @@ namespace Menu_Utama
             // 
             this.A081.BackColor = System.Drawing.Color.BlueViolet;
             this.A081.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A081.Location = new System.Drawing.Point(305, 280);
+            this.A081.Location = new System.Drawing.Point(319, 280);
             this.A081.Name = "A081";
             this.A081.Size = new System.Drawing.Size(40, 40);
             this.A081.TabIndex = 117;
@@ -1120,7 +1125,7 @@ namespace Menu_Utama
             // 
             this.A140.BackColor = System.Drawing.Color.BlueViolet;
             this.A140.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A140.Location = new System.Drawing.Point(265, 440);
+            this.A140.Location = new System.Drawing.Point(279, 440);
             this.A140.Name = "A140";
             this.A140.Size = new System.Drawing.Size(40, 40);
             this.A140.TabIndex = 116;
@@ -1130,7 +1135,7 @@ namespace Menu_Utama
             // 
             this.A139.BackColor = System.Drawing.Color.BlueViolet;
             this.A139.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A139.Location = new System.Drawing.Point(225, 440);
+            this.A139.Location = new System.Drawing.Point(239, 440);
             this.A139.Name = "A139";
             this.A139.Size = new System.Drawing.Size(40, 40);
             this.A139.TabIndex = 115;
@@ -1140,7 +1145,7 @@ namespace Menu_Utama
             // 
             this.A138.BackColor = System.Drawing.Color.BlueViolet;
             this.A138.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A138.Location = new System.Drawing.Point(185, 440);
+            this.A138.Location = new System.Drawing.Point(199, 440);
             this.A138.Name = "A138";
             this.A138.Size = new System.Drawing.Size(40, 40);
             this.A138.TabIndex = 114;
@@ -1150,7 +1155,7 @@ namespace Menu_Utama
             // 
             this.A137.BackColor = System.Drawing.Color.BlueViolet;
             this.A137.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A137.Location = new System.Drawing.Point(145, 440);
+            this.A137.Location = new System.Drawing.Point(159, 440);
             this.A137.Name = "A137";
             this.A137.Size = new System.Drawing.Size(40, 40);
             this.A137.TabIndex = 113;
@@ -1160,7 +1165,7 @@ namespace Menu_Utama
             // 
             this.A125.BackColor = System.Drawing.Color.BlueViolet;
             this.A125.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A125.Location = new System.Drawing.Point(265, 400);
+            this.A125.Location = new System.Drawing.Point(279, 400);
             this.A125.Name = "A125";
             this.A125.Size = new System.Drawing.Size(40, 40);
             this.A125.TabIndex = 112;
@@ -1170,7 +1175,7 @@ namespace Menu_Utama
             // 
             this.A124.BackColor = System.Drawing.Color.BlueViolet;
             this.A124.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A124.Location = new System.Drawing.Point(225, 400);
+            this.A124.Location = new System.Drawing.Point(239, 400);
             this.A124.Name = "A124";
             this.A124.Size = new System.Drawing.Size(40, 40);
             this.A124.TabIndex = 111;
@@ -1180,7 +1185,7 @@ namespace Menu_Utama
             // 
             this.A123.BackColor = System.Drawing.Color.BlueViolet;
             this.A123.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A123.Location = new System.Drawing.Point(185, 400);
+            this.A123.Location = new System.Drawing.Point(199, 400);
             this.A123.Name = "A123";
             this.A123.Size = new System.Drawing.Size(40, 40);
             this.A123.TabIndex = 110;
@@ -1190,7 +1195,7 @@ namespace Menu_Utama
             // 
             this.A122.BackColor = System.Drawing.Color.BlueViolet;
             this.A122.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A122.Location = new System.Drawing.Point(145, 400);
+            this.A122.Location = new System.Drawing.Point(159, 400);
             this.A122.Name = "A122";
             this.A122.Size = new System.Drawing.Size(40, 40);
             this.A122.TabIndex = 109;
@@ -1200,7 +1205,7 @@ namespace Menu_Utama
             // 
             this.A136.BackColor = System.Drawing.Color.BlueViolet;
             this.A136.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A136.Location = new System.Drawing.Point(105, 440);
+            this.A136.Location = new System.Drawing.Point(119, 440);
             this.A136.Name = "A136";
             this.A136.Size = new System.Drawing.Size(40, 40);
             this.A136.TabIndex = 108;
@@ -1210,7 +1215,7 @@ namespace Menu_Utama
             // 
             this.A121.BackColor = System.Drawing.Color.BlueViolet;
             this.A121.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A121.Location = new System.Drawing.Point(105, 400);
+            this.A121.Location = new System.Drawing.Point(119, 400);
             this.A121.Name = "A121";
             this.A121.Size = new System.Drawing.Size(40, 40);
             this.A121.TabIndex = 107;
@@ -1220,7 +1225,7 @@ namespace Menu_Utama
             // 
             this.A110.BackColor = System.Drawing.Color.BlueViolet;
             this.A110.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A110.Location = new System.Drawing.Point(265, 360);
+            this.A110.Location = new System.Drawing.Point(279, 360);
             this.A110.Name = "A110";
             this.A110.Size = new System.Drawing.Size(40, 40);
             this.A110.TabIndex = 106;
@@ -1230,7 +1235,7 @@ namespace Menu_Utama
             // 
             this.A109.BackColor = System.Drawing.Color.BlueViolet;
             this.A109.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A109.Location = new System.Drawing.Point(225, 360);
+            this.A109.Location = new System.Drawing.Point(239, 360);
             this.A109.Name = "A109";
             this.A109.Size = new System.Drawing.Size(40, 40);
             this.A109.TabIndex = 105;
@@ -1240,7 +1245,7 @@ namespace Menu_Utama
             // 
             this.A095.BackColor = System.Drawing.Color.BlueViolet;
             this.A095.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A095.Location = new System.Drawing.Point(265, 320);
+            this.A095.Location = new System.Drawing.Point(279, 320);
             this.A095.Name = "A095";
             this.A095.Size = new System.Drawing.Size(40, 40);
             this.A095.TabIndex = 104;
@@ -1250,7 +1255,7 @@ namespace Menu_Utama
             // 
             this.A094.BackColor = System.Drawing.Color.BlueViolet;
             this.A094.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A094.Location = new System.Drawing.Point(225, 320);
+            this.A094.Location = new System.Drawing.Point(239, 320);
             this.A094.Name = "A094";
             this.A094.Size = new System.Drawing.Size(40, 40);
             this.A094.TabIndex = 103;
@@ -1260,7 +1265,7 @@ namespace Menu_Utama
             // 
             this.A080.BackColor = System.Drawing.Color.BlueViolet;
             this.A080.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A080.Location = new System.Drawing.Point(265, 280);
+            this.A080.Location = new System.Drawing.Point(279, 280);
             this.A080.Name = "A080";
             this.A080.Size = new System.Drawing.Size(40, 40);
             this.A080.TabIndex = 102;
@@ -1270,7 +1275,7 @@ namespace Menu_Utama
             // 
             this.A079.BackColor = System.Drawing.Color.BlueViolet;
             this.A079.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A079.Location = new System.Drawing.Point(225, 280);
+            this.A079.Location = new System.Drawing.Point(239, 280);
             this.A079.Name = "A079";
             this.A079.Size = new System.Drawing.Size(40, 40);
             this.A079.TabIndex = 101;
@@ -1280,7 +1285,7 @@ namespace Menu_Utama
             // 
             this.A108.BackColor = System.Drawing.Color.BlueViolet;
             this.A108.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A108.Location = new System.Drawing.Point(185, 360);
+            this.A108.Location = new System.Drawing.Point(199, 360);
             this.A108.Name = "A108";
             this.A108.Size = new System.Drawing.Size(40, 40);
             this.A108.TabIndex = 100;
@@ -1290,7 +1295,7 @@ namespace Menu_Utama
             // 
             this.A093.BackColor = System.Drawing.Color.BlueViolet;
             this.A093.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A093.Location = new System.Drawing.Point(185, 320);
+            this.A093.Location = new System.Drawing.Point(199, 320);
             this.A093.Name = "A093";
             this.A093.Size = new System.Drawing.Size(40, 40);
             this.A093.TabIndex = 99;
@@ -1300,7 +1305,7 @@ namespace Menu_Utama
             // 
             this.A078.BackColor = System.Drawing.Color.BlueViolet;
             this.A078.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A078.Location = new System.Drawing.Point(185, 280);
+            this.A078.Location = new System.Drawing.Point(199, 280);
             this.A078.Name = "A078";
             this.A078.Size = new System.Drawing.Size(40, 40);
             this.A078.TabIndex = 98;
@@ -1310,7 +1315,7 @@ namespace Menu_Utama
             // 
             this.A107.BackColor = System.Drawing.Color.BlueViolet;
             this.A107.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A107.Location = new System.Drawing.Point(145, 360);
+            this.A107.Location = new System.Drawing.Point(159, 360);
             this.A107.Name = "A107";
             this.A107.Size = new System.Drawing.Size(40, 40);
             this.A107.TabIndex = 97;
@@ -1320,7 +1325,7 @@ namespace Menu_Utama
             // 
             this.A092.BackColor = System.Drawing.Color.BlueViolet;
             this.A092.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A092.Location = new System.Drawing.Point(145, 320);
+            this.A092.Location = new System.Drawing.Point(159, 320);
             this.A092.Name = "A092";
             this.A092.Size = new System.Drawing.Size(40, 40);
             this.A092.TabIndex = 96;
@@ -1330,7 +1335,7 @@ namespace Menu_Utama
             // 
             this.A077.BackColor = System.Drawing.Color.BlueViolet;
             this.A077.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A077.Location = new System.Drawing.Point(145, 280);
+            this.A077.Location = new System.Drawing.Point(159, 280);
             this.A077.Name = "A077";
             this.A077.Size = new System.Drawing.Size(40, 40);
             this.A077.TabIndex = 95;
@@ -1340,7 +1345,7 @@ namespace Menu_Utama
             // 
             this.A106.BackColor = System.Drawing.Color.BlueViolet;
             this.A106.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A106.Location = new System.Drawing.Point(105, 360);
+            this.A106.Location = new System.Drawing.Point(119, 360);
             this.A106.Name = "A106";
             this.A106.Size = new System.Drawing.Size(40, 40);
             this.A106.TabIndex = 94;
@@ -1350,7 +1355,7 @@ namespace Menu_Utama
             // 
             this.A091.BackColor = System.Drawing.Color.BlueViolet;
             this.A091.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A091.Location = new System.Drawing.Point(105, 320);
+            this.A091.Location = new System.Drawing.Point(119, 320);
             this.A091.Name = "A091";
             this.A091.Size = new System.Drawing.Size(40, 40);
             this.A091.TabIndex = 93;
@@ -1360,7 +1365,7 @@ namespace Menu_Utama
             // 
             this.A076.BackColor = System.Drawing.Color.BlueViolet;
             this.A076.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A076.Location = new System.Drawing.Point(105, 280);
+            this.A076.Location = new System.Drawing.Point(119, 280);
             this.A076.Name = "A076";
             this.A076.Size = new System.Drawing.Size(40, 40);
             this.A076.TabIndex = 92;
@@ -1370,7 +1375,7 @@ namespace Menu_Utama
             // 
             this.A150.BackColor = System.Drawing.Color.BlueViolet;
             this.A150.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A150.Location = new System.Drawing.Point(665, 440);
+            this.A150.Location = new System.Drawing.Point(679, 440);
             this.A150.Name = "A150";
             this.A150.Size = new System.Drawing.Size(40, 40);
             this.A150.TabIndex = 191;
@@ -1380,7 +1385,7 @@ namespace Menu_Utama
             // 
             this.A149.BackColor = System.Drawing.Color.BlueViolet;
             this.A149.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A149.Location = new System.Drawing.Point(625, 440);
+            this.A149.Location = new System.Drawing.Point(639, 440);
             this.A149.Name = "A149";
             this.A149.Size = new System.Drawing.Size(40, 40);
             this.A149.TabIndex = 190;
@@ -1390,7 +1395,7 @@ namespace Menu_Utama
             // 
             this.A148.BackColor = System.Drawing.Color.BlueViolet;
             this.A148.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A148.Location = new System.Drawing.Point(585, 440);
+            this.A148.Location = new System.Drawing.Point(599, 440);
             this.A148.Name = "A148";
             this.A148.Size = new System.Drawing.Size(40, 40);
             this.A148.TabIndex = 189;
@@ -1400,7 +1405,7 @@ namespace Menu_Utama
             // 
             this.A147.BackColor = System.Drawing.Color.BlueViolet;
             this.A147.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A147.Location = new System.Drawing.Point(545, 440);
+            this.A147.Location = new System.Drawing.Point(559, 440);
             this.A147.Name = "A147";
             this.A147.Size = new System.Drawing.Size(40, 40);
             this.A147.TabIndex = 188;
@@ -1410,7 +1415,7 @@ namespace Menu_Utama
             // 
             this.A135.BackColor = System.Drawing.Color.BlueViolet;
             this.A135.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A135.Location = new System.Drawing.Point(665, 400);
+            this.A135.Location = new System.Drawing.Point(679, 400);
             this.A135.Name = "A135";
             this.A135.Size = new System.Drawing.Size(40, 40);
             this.A135.TabIndex = 187;
@@ -1420,7 +1425,7 @@ namespace Menu_Utama
             // 
             this.A134.BackColor = System.Drawing.Color.BlueViolet;
             this.A134.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A134.Location = new System.Drawing.Point(625, 400);
+            this.A134.Location = new System.Drawing.Point(639, 400);
             this.A134.Name = "A134";
             this.A134.Size = new System.Drawing.Size(40, 40);
             this.A134.TabIndex = 186;
@@ -1430,7 +1435,7 @@ namespace Menu_Utama
             // 
             this.A133.BackColor = System.Drawing.Color.BlueViolet;
             this.A133.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A133.Location = new System.Drawing.Point(585, 400);
+            this.A133.Location = new System.Drawing.Point(599, 400);
             this.A133.Name = "A133";
             this.A133.Size = new System.Drawing.Size(40, 40);
             this.A133.TabIndex = 185;
@@ -1440,7 +1445,7 @@ namespace Menu_Utama
             // 
             this.A132.BackColor = System.Drawing.Color.BlueViolet;
             this.A132.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A132.Location = new System.Drawing.Point(545, 400);
+            this.A132.Location = new System.Drawing.Point(559, 400);
             this.A132.Name = "A132";
             this.A132.Size = new System.Drawing.Size(40, 40);
             this.A132.TabIndex = 184;
@@ -1450,7 +1455,7 @@ namespace Menu_Utama
             // 
             this.A146.BackColor = System.Drawing.Color.BlueViolet;
             this.A146.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A146.Location = new System.Drawing.Point(505, 440);
+            this.A146.Location = new System.Drawing.Point(519, 440);
             this.A146.Name = "A146";
             this.A146.Size = new System.Drawing.Size(40, 40);
             this.A146.TabIndex = 183;
@@ -1460,7 +1465,7 @@ namespace Menu_Utama
             // 
             this.A131.BackColor = System.Drawing.Color.BlueViolet;
             this.A131.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A131.Location = new System.Drawing.Point(505, 400);
+            this.A131.Location = new System.Drawing.Point(519, 400);
             this.A131.Name = "A131";
             this.A131.Size = new System.Drawing.Size(40, 40);
             this.A131.TabIndex = 182;
@@ -1470,7 +1475,7 @@ namespace Menu_Utama
             // 
             this.A120.BackColor = System.Drawing.Color.BlueViolet;
             this.A120.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A120.Location = new System.Drawing.Point(665, 360);
+            this.A120.Location = new System.Drawing.Point(679, 360);
             this.A120.Name = "A120";
             this.A120.Size = new System.Drawing.Size(40, 40);
             this.A120.TabIndex = 181;
@@ -1480,7 +1485,7 @@ namespace Menu_Utama
             // 
             this.A119.BackColor = System.Drawing.Color.BlueViolet;
             this.A119.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A119.Location = new System.Drawing.Point(625, 360);
+            this.A119.Location = new System.Drawing.Point(639, 360);
             this.A119.Name = "A119";
             this.A119.Size = new System.Drawing.Size(40, 40);
             this.A119.TabIndex = 180;
@@ -1490,7 +1495,7 @@ namespace Menu_Utama
             // 
             this.A105.BackColor = System.Drawing.Color.BlueViolet;
             this.A105.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A105.Location = new System.Drawing.Point(665, 320);
+            this.A105.Location = new System.Drawing.Point(679, 320);
             this.A105.Name = "A105";
             this.A105.Size = new System.Drawing.Size(40, 40);
             this.A105.TabIndex = 179;
@@ -1500,7 +1505,7 @@ namespace Menu_Utama
             // 
             this.A104.BackColor = System.Drawing.Color.BlueViolet;
             this.A104.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A104.Location = new System.Drawing.Point(625, 320);
+            this.A104.Location = new System.Drawing.Point(639, 320);
             this.A104.Name = "A104";
             this.A104.Size = new System.Drawing.Size(40, 40);
             this.A104.TabIndex = 178;
@@ -1510,7 +1515,7 @@ namespace Menu_Utama
             // 
             this.A090.BackColor = System.Drawing.Color.BlueViolet;
             this.A090.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A090.Location = new System.Drawing.Point(665, 280);
+            this.A090.Location = new System.Drawing.Point(679, 280);
             this.A090.Name = "A090";
             this.A090.Size = new System.Drawing.Size(40, 40);
             this.A090.TabIndex = 177;
@@ -1520,7 +1525,7 @@ namespace Menu_Utama
             // 
             this.A089.BackColor = System.Drawing.Color.BlueViolet;
             this.A089.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A089.Location = new System.Drawing.Point(625, 280);
+            this.A089.Location = new System.Drawing.Point(639, 280);
             this.A089.Name = "A089";
             this.A089.Size = new System.Drawing.Size(40, 40);
             this.A089.TabIndex = 176;
@@ -1530,7 +1535,7 @@ namespace Menu_Utama
             // 
             this.A118.BackColor = System.Drawing.Color.BlueViolet;
             this.A118.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A118.Location = new System.Drawing.Point(585, 360);
+            this.A118.Location = new System.Drawing.Point(599, 360);
             this.A118.Name = "A118";
             this.A118.Size = new System.Drawing.Size(40, 40);
             this.A118.TabIndex = 175;
@@ -1540,7 +1545,7 @@ namespace Menu_Utama
             // 
             this.A103.BackColor = System.Drawing.Color.BlueViolet;
             this.A103.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A103.Location = new System.Drawing.Point(585, 320);
+            this.A103.Location = new System.Drawing.Point(599, 320);
             this.A103.Name = "A103";
             this.A103.Size = new System.Drawing.Size(40, 40);
             this.A103.TabIndex = 174;
@@ -1550,7 +1555,7 @@ namespace Menu_Utama
             // 
             this.A088.BackColor = System.Drawing.Color.BlueViolet;
             this.A088.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A088.Location = new System.Drawing.Point(585, 280);
+            this.A088.Location = new System.Drawing.Point(599, 280);
             this.A088.Name = "A088";
             this.A088.Size = new System.Drawing.Size(40, 40);
             this.A088.TabIndex = 173;
@@ -1560,7 +1565,7 @@ namespace Menu_Utama
             // 
             this.A117.BackColor = System.Drawing.Color.BlueViolet;
             this.A117.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A117.Location = new System.Drawing.Point(545, 360);
+            this.A117.Location = new System.Drawing.Point(559, 360);
             this.A117.Name = "A117";
             this.A117.Size = new System.Drawing.Size(40, 40);
             this.A117.TabIndex = 172;
@@ -1570,7 +1575,7 @@ namespace Menu_Utama
             // 
             this.A102.BackColor = System.Drawing.Color.BlueViolet;
             this.A102.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A102.Location = new System.Drawing.Point(545, 320);
+            this.A102.Location = new System.Drawing.Point(559, 320);
             this.A102.Name = "A102";
             this.A102.Size = new System.Drawing.Size(40, 40);
             this.A102.TabIndex = 171;
@@ -1580,7 +1585,7 @@ namespace Menu_Utama
             // 
             this.A087.BackColor = System.Drawing.Color.BlueViolet;
             this.A087.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A087.Location = new System.Drawing.Point(545, 280);
+            this.A087.Location = new System.Drawing.Point(559, 280);
             this.A087.Name = "A087";
             this.A087.Size = new System.Drawing.Size(40, 40);
             this.A087.TabIndex = 170;
@@ -1590,7 +1595,7 @@ namespace Menu_Utama
             // 
             this.A116.BackColor = System.Drawing.Color.BlueViolet;
             this.A116.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A116.Location = new System.Drawing.Point(505, 360);
+            this.A116.Location = new System.Drawing.Point(519, 360);
             this.A116.Name = "A116";
             this.A116.Size = new System.Drawing.Size(40, 40);
             this.A116.TabIndex = 169;
@@ -1600,7 +1605,7 @@ namespace Menu_Utama
             // 
             this.A101.BackColor = System.Drawing.Color.BlueViolet;
             this.A101.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A101.Location = new System.Drawing.Point(505, 320);
+            this.A101.Location = new System.Drawing.Point(519, 320);
             this.A101.Name = "A101";
             this.A101.Size = new System.Drawing.Size(40, 40);
             this.A101.TabIndex = 168;
@@ -1610,7 +1615,7 @@ namespace Menu_Utama
             // 
             this.A086.BackColor = System.Drawing.Color.BlueViolet;
             this.A086.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A086.Location = new System.Drawing.Point(505, 280);
+            this.A086.Location = new System.Drawing.Point(519, 280);
             this.A086.Name = "A086";
             this.A086.Size = new System.Drawing.Size(40, 40);
             this.A086.TabIndex = 167;
@@ -1620,7 +1625,7 @@ namespace Menu_Utama
             // 
             this.A075.BackColor = System.Drawing.Color.BlueViolet;
             this.A075.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A075.Location = new System.Drawing.Point(665, 240);
+            this.A075.Location = new System.Drawing.Point(679, 240);
             this.A075.Name = "A075";
             this.A075.Size = new System.Drawing.Size(40, 40);
             this.A075.TabIndex = 166;
@@ -1630,7 +1635,7 @@ namespace Menu_Utama
             // 
             this.A074.BackColor = System.Drawing.Color.BlueViolet;
             this.A074.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A074.Location = new System.Drawing.Point(625, 240);
+            this.A074.Location = new System.Drawing.Point(639, 240);
             this.A074.Name = "A074";
             this.A074.Size = new System.Drawing.Size(40, 40);
             this.A074.TabIndex = 165;
@@ -1640,7 +1645,7 @@ namespace Menu_Utama
             // 
             this.A073.BackColor = System.Drawing.Color.BlueViolet;
             this.A073.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A073.Location = new System.Drawing.Point(585, 240);
+            this.A073.Location = new System.Drawing.Point(599, 240);
             this.A073.Name = "A073";
             this.A073.Size = new System.Drawing.Size(40, 40);
             this.A073.TabIndex = 164;
@@ -1650,7 +1655,7 @@ namespace Menu_Utama
             // 
             this.A072.BackColor = System.Drawing.Color.BlueViolet;
             this.A072.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A072.Location = new System.Drawing.Point(545, 240);
+            this.A072.Location = new System.Drawing.Point(559, 240);
             this.A072.Name = "A072";
             this.A072.Size = new System.Drawing.Size(40, 40);
             this.A072.TabIndex = 163;
@@ -1660,7 +1665,7 @@ namespace Menu_Utama
             // 
             this.A060.BackColor = System.Drawing.Color.BlueViolet;
             this.A060.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A060.Location = new System.Drawing.Point(665, 200);
+            this.A060.Location = new System.Drawing.Point(679, 200);
             this.A060.Name = "A060";
             this.A060.Size = new System.Drawing.Size(40, 40);
             this.A060.TabIndex = 162;
@@ -1670,7 +1675,7 @@ namespace Menu_Utama
             // 
             this.A059.BackColor = System.Drawing.Color.BlueViolet;
             this.A059.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A059.Location = new System.Drawing.Point(625, 200);
+            this.A059.Location = new System.Drawing.Point(639, 200);
             this.A059.Name = "A059";
             this.A059.Size = new System.Drawing.Size(40, 40);
             this.A059.TabIndex = 161;
@@ -1680,7 +1685,7 @@ namespace Menu_Utama
             // 
             this.A058.BackColor = System.Drawing.Color.BlueViolet;
             this.A058.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A058.Location = new System.Drawing.Point(585, 200);
+            this.A058.Location = new System.Drawing.Point(599, 200);
             this.A058.Name = "A058";
             this.A058.Size = new System.Drawing.Size(40, 40);
             this.A058.TabIndex = 160;
@@ -1690,7 +1695,7 @@ namespace Menu_Utama
             // 
             this.A057.BackColor = System.Drawing.Color.BlueViolet;
             this.A057.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A057.Location = new System.Drawing.Point(545, 200);
+            this.A057.Location = new System.Drawing.Point(559, 200);
             this.A057.Name = "A057";
             this.A057.Size = new System.Drawing.Size(40, 40);
             this.A057.TabIndex = 159;
@@ -1700,7 +1705,7 @@ namespace Menu_Utama
             // 
             this.A071.BackColor = System.Drawing.Color.BlueViolet;
             this.A071.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A071.Location = new System.Drawing.Point(505, 240);
+            this.A071.Location = new System.Drawing.Point(519, 240);
             this.A071.Name = "A071";
             this.A071.Size = new System.Drawing.Size(40, 40);
             this.A071.TabIndex = 158;
@@ -1710,7 +1715,7 @@ namespace Menu_Utama
             // 
             this.A056.BackColor = System.Drawing.Color.BlueViolet;
             this.A056.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A056.Location = new System.Drawing.Point(505, 200);
+            this.A056.Location = new System.Drawing.Point(519, 200);
             this.A056.Name = "A056";
             this.A056.Size = new System.Drawing.Size(40, 40);
             this.A056.TabIndex = 157;
@@ -1720,7 +1725,7 @@ namespace Menu_Utama
             // 
             this.A045.BackColor = System.Drawing.Color.BlueViolet;
             this.A045.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A045.Location = new System.Drawing.Point(665, 160);
+            this.A045.Location = new System.Drawing.Point(679, 160);
             this.A045.Name = "A045";
             this.A045.Size = new System.Drawing.Size(40, 40);
             this.A045.TabIndex = 156;
@@ -1730,7 +1735,7 @@ namespace Menu_Utama
             // 
             this.A044.BackColor = System.Drawing.Color.BlueViolet;
             this.A044.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A044.Location = new System.Drawing.Point(625, 160);
+            this.A044.Location = new System.Drawing.Point(639, 160);
             this.A044.Name = "A044";
             this.A044.Size = new System.Drawing.Size(40, 40);
             this.A044.TabIndex = 155;
@@ -1740,7 +1745,7 @@ namespace Menu_Utama
             // 
             this.A030.BackColor = System.Drawing.Color.BlueViolet;
             this.A030.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A030.Location = new System.Drawing.Point(665, 120);
+            this.A030.Location = new System.Drawing.Point(679, 120);
             this.A030.Name = "A030";
             this.A030.Size = new System.Drawing.Size(40, 40);
             this.A030.TabIndex = 154;
@@ -1750,7 +1755,7 @@ namespace Menu_Utama
             // 
             this.A029.BackColor = System.Drawing.Color.BlueViolet;
             this.A029.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A029.Location = new System.Drawing.Point(625, 120);
+            this.A029.Location = new System.Drawing.Point(639, 120);
             this.A029.Name = "A029";
             this.A029.Size = new System.Drawing.Size(40, 40);
             this.A029.TabIndex = 153;
@@ -1760,7 +1765,7 @@ namespace Menu_Utama
             // 
             this.A015.BackColor = System.Drawing.Color.BlueViolet;
             this.A015.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A015.Location = new System.Drawing.Point(665, 80);
+            this.A015.Location = new System.Drawing.Point(679, 80);
             this.A015.Name = "A015";
             this.A015.Size = new System.Drawing.Size(40, 40);
             this.A015.TabIndex = 152;
@@ -1770,7 +1775,7 @@ namespace Menu_Utama
             // 
             this.A014.BackColor = System.Drawing.Color.BlueViolet;
             this.A014.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A014.Location = new System.Drawing.Point(625, 80);
+            this.A014.Location = new System.Drawing.Point(639, 80);
             this.A014.Name = "A014";
             this.A014.Size = new System.Drawing.Size(40, 40);
             this.A014.TabIndex = 151;
@@ -1780,7 +1785,7 @@ namespace Menu_Utama
             // 
             this.A043.BackColor = System.Drawing.Color.BlueViolet;
             this.A043.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A043.Location = new System.Drawing.Point(585, 160);
+            this.A043.Location = new System.Drawing.Point(599, 160);
             this.A043.Name = "A043";
             this.A043.Size = new System.Drawing.Size(40, 40);
             this.A043.TabIndex = 150;
@@ -1790,7 +1795,7 @@ namespace Menu_Utama
             // 
             this.A028.BackColor = System.Drawing.Color.BlueViolet;
             this.A028.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A028.Location = new System.Drawing.Point(585, 120);
+            this.A028.Location = new System.Drawing.Point(599, 120);
             this.A028.Name = "A028";
             this.A028.Size = new System.Drawing.Size(40, 40);
             this.A028.TabIndex = 149;
@@ -1800,7 +1805,7 @@ namespace Menu_Utama
             // 
             this.A013.BackColor = System.Drawing.Color.BlueViolet;
             this.A013.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A013.Location = new System.Drawing.Point(585, 80);
+            this.A013.Location = new System.Drawing.Point(599, 80);
             this.A013.Name = "A013";
             this.A013.Size = new System.Drawing.Size(40, 40);
             this.A013.TabIndex = 148;
@@ -1810,7 +1815,7 @@ namespace Menu_Utama
             // 
             this.A042.BackColor = System.Drawing.Color.BlueViolet;
             this.A042.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A042.Location = new System.Drawing.Point(545, 160);
+            this.A042.Location = new System.Drawing.Point(559, 160);
             this.A042.Name = "A042";
             this.A042.Size = new System.Drawing.Size(40, 40);
             this.A042.TabIndex = 147;
@@ -1820,7 +1825,7 @@ namespace Menu_Utama
             // 
             this.A027.BackColor = System.Drawing.Color.BlueViolet;
             this.A027.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A027.Location = new System.Drawing.Point(545, 120);
+            this.A027.Location = new System.Drawing.Point(559, 120);
             this.A027.Name = "A027";
             this.A027.Size = new System.Drawing.Size(40, 40);
             this.A027.TabIndex = 146;
@@ -1830,7 +1835,7 @@ namespace Menu_Utama
             // 
             this.A012.BackColor = System.Drawing.Color.BlueViolet;
             this.A012.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A012.Location = new System.Drawing.Point(545, 80);
+            this.A012.Location = new System.Drawing.Point(559, 80);
             this.A012.Name = "A012";
             this.A012.Size = new System.Drawing.Size(40, 40);
             this.A012.TabIndex = 145;
@@ -1840,7 +1845,7 @@ namespace Menu_Utama
             // 
             this.A041.BackColor = System.Drawing.Color.BlueViolet;
             this.A041.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A041.Location = new System.Drawing.Point(505, 160);
+            this.A041.Location = new System.Drawing.Point(519, 160);
             this.A041.Name = "A041";
             this.A041.Size = new System.Drawing.Size(40, 40);
             this.A041.TabIndex = 144;
@@ -1850,7 +1855,7 @@ namespace Menu_Utama
             // 
             this.A026.BackColor = System.Drawing.Color.BlueViolet;
             this.A026.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A026.Location = new System.Drawing.Point(505, 120);
+            this.A026.Location = new System.Drawing.Point(519, 120);
             this.A026.Name = "A026";
             this.A026.Size = new System.Drawing.Size(40, 40);
             this.A026.TabIndex = 143;
@@ -1860,7 +1865,7 @@ namespace Menu_Utama
             // 
             this.A011.BackColor = System.Drawing.Color.BlueViolet;
             this.A011.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A011.Location = new System.Drawing.Point(505, 80);
+            this.A011.Location = new System.Drawing.Point(519, 80);
             this.A011.Name = "A011";
             this.A011.Size = new System.Drawing.Size(40, 40);
             this.A011.TabIndex = 142;
@@ -1870,7 +1875,7 @@ namespace Menu_Utama
             // 
             this.A225.BackColor = System.Drawing.Color.BlueViolet;
             this.A225.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A225.Location = new System.Drawing.Point(665, 640);
+            this.A225.Location = new System.Drawing.Point(679, 640);
             this.A225.Name = "A225";
             this.A225.Size = new System.Drawing.Size(40, 40);
             this.A225.TabIndex = 266;
@@ -1880,7 +1885,7 @@ namespace Menu_Utama
             // 
             this.A224.BackColor = System.Drawing.Color.BlueViolet;
             this.A224.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A224.Location = new System.Drawing.Point(625, 640);
+            this.A224.Location = new System.Drawing.Point(639, 641);
             this.A224.Name = "A224";
             this.A224.Size = new System.Drawing.Size(40, 40);
             this.A224.TabIndex = 265;
@@ -1890,7 +1895,7 @@ namespace Menu_Utama
             // 
             this.A223.BackColor = System.Drawing.Color.BlueViolet;
             this.A223.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A223.Location = new System.Drawing.Point(585, 640);
+            this.A223.Location = new System.Drawing.Point(599, 641);
             this.A223.Name = "A223";
             this.A223.Size = new System.Drawing.Size(40, 40);
             this.A223.TabIndex = 264;
@@ -1900,7 +1905,7 @@ namespace Menu_Utama
             // 
             this.A222.BackColor = System.Drawing.Color.BlueViolet;
             this.A222.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A222.Location = new System.Drawing.Point(545, 640);
+            this.A222.Location = new System.Drawing.Point(559, 641);
             this.A222.Name = "A222";
             this.A222.Size = new System.Drawing.Size(40, 40);
             this.A222.TabIndex = 263;
@@ -1910,7 +1915,7 @@ namespace Menu_Utama
             // 
             this.A210.BackColor = System.Drawing.Color.BlueViolet;
             this.A210.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A210.Location = new System.Drawing.Point(665, 600);
+            this.A210.Location = new System.Drawing.Point(679, 600);
             this.A210.Name = "A210";
             this.A210.Size = new System.Drawing.Size(40, 40);
             this.A210.TabIndex = 262;
@@ -1920,7 +1925,7 @@ namespace Menu_Utama
             // 
             this.A209.BackColor = System.Drawing.Color.BlueViolet;
             this.A209.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A209.Location = new System.Drawing.Point(625, 600);
+            this.A209.Location = new System.Drawing.Point(639, 600);
             this.A209.Name = "A209";
             this.A209.Size = new System.Drawing.Size(40, 40);
             this.A209.TabIndex = 261;
@@ -1930,7 +1935,7 @@ namespace Menu_Utama
             // 
             this.A208.BackColor = System.Drawing.Color.BlueViolet;
             this.A208.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A208.Location = new System.Drawing.Point(585, 600);
+            this.A208.Location = new System.Drawing.Point(599, 600);
             this.A208.Name = "A208";
             this.A208.Size = new System.Drawing.Size(40, 40);
             this.A208.TabIndex = 260;
@@ -1940,7 +1945,7 @@ namespace Menu_Utama
             // 
             this.A207.BackColor = System.Drawing.Color.BlueViolet;
             this.A207.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A207.Location = new System.Drawing.Point(545, 600);
+            this.A207.Location = new System.Drawing.Point(559, 600);
             this.A207.Name = "A207";
             this.A207.Size = new System.Drawing.Size(40, 40);
             this.A207.TabIndex = 259;
@@ -1950,7 +1955,7 @@ namespace Menu_Utama
             // 
             this.A221.BackColor = System.Drawing.Color.BlueViolet;
             this.A221.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A221.Location = new System.Drawing.Point(505, 640);
+            this.A221.Location = new System.Drawing.Point(519, 640);
             this.A221.Name = "A221";
             this.A221.Size = new System.Drawing.Size(40, 40);
             this.A221.TabIndex = 258;
@@ -1960,7 +1965,7 @@ namespace Menu_Utama
             // 
             this.A206.BackColor = System.Drawing.Color.BlueViolet;
             this.A206.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A206.Location = new System.Drawing.Point(505, 600);
+            this.A206.Location = new System.Drawing.Point(519, 600);
             this.A206.Name = "A206";
             this.A206.Size = new System.Drawing.Size(40, 40);
             this.A206.TabIndex = 257;
@@ -1970,7 +1975,7 @@ namespace Menu_Utama
             // 
             this.A195.BackColor = System.Drawing.Color.BlueViolet;
             this.A195.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A195.Location = new System.Drawing.Point(665, 560);
+            this.A195.Location = new System.Drawing.Point(679, 560);
             this.A195.Name = "A195";
             this.A195.Size = new System.Drawing.Size(40, 40);
             this.A195.TabIndex = 256;
@@ -1980,7 +1985,7 @@ namespace Menu_Utama
             // 
             this.A194.BackColor = System.Drawing.Color.BlueViolet;
             this.A194.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A194.Location = new System.Drawing.Point(625, 560);
+            this.A194.Location = new System.Drawing.Point(639, 560);
             this.A194.Name = "A194";
             this.A194.Size = new System.Drawing.Size(40, 40);
             this.A194.TabIndex = 255;
@@ -1990,7 +1995,7 @@ namespace Menu_Utama
             // 
             this.A180.BackColor = System.Drawing.Color.BlueViolet;
             this.A180.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A180.Location = new System.Drawing.Point(665, 520);
+            this.A180.Location = new System.Drawing.Point(679, 520);
             this.A180.Name = "A180";
             this.A180.Size = new System.Drawing.Size(40, 40);
             this.A180.TabIndex = 254;
@@ -2000,7 +2005,7 @@ namespace Menu_Utama
             // 
             this.A179.BackColor = System.Drawing.Color.BlueViolet;
             this.A179.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A179.Location = new System.Drawing.Point(625, 520);
+            this.A179.Location = new System.Drawing.Point(639, 520);
             this.A179.Name = "A179";
             this.A179.Size = new System.Drawing.Size(40, 40);
             this.A179.TabIndex = 253;
@@ -2010,7 +2015,7 @@ namespace Menu_Utama
             // 
             this.A165.BackColor = System.Drawing.Color.BlueViolet;
             this.A165.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A165.Location = new System.Drawing.Point(665, 480);
+            this.A165.Location = new System.Drawing.Point(679, 480);
             this.A165.Name = "A165";
             this.A165.Size = new System.Drawing.Size(40, 40);
             this.A165.TabIndex = 252;
@@ -2020,7 +2025,7 @@ namespace Menu_Utama
             // 
             this.A164.BackColor = System.Drawing.Color.BlueViolet;
             this.A164.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A164.Location = new System.Drawing.Point(625, 480);
+            this.A164.Location = new System.Drawing.Point(639, 480);
             this.A164.Name = "A164";
             this.A164.Size = new System.Drawing.Size(40, 40);
             this.A164.TabIndex = 251;
@@ -2030,7 +2035,7 @@ namespace Menu_Utama
             // 
             this.A193.BackColor = System.Drawing.Color.BlueViolet;
             this.A193.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A193.Location = new System.Drawing.Point(585, 560);
+            this.A193.Location = new System.Drawing.Point(599, 560);
             this.A193.Name = "A193";
             this.A193.Size = new System.Drawing.Size(40, 40);
             this.A193.TabIndex = 250;
@@ -2040,7 +2045,7 @@ namespace Menu_Utama
             // 
             this.A178.BackColor = System.Drawing.Color.BlueViolet;
             this.A178.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A178.Location = new System.Drawing.Point(585, 520);
+            this.A178.Location = new System.Drawing.Point(599, 520);
             this.A178.Name = "A178";
             this.A178.Size = new System.Drawing.Size(40, 40);
             this.A178.TabIndex = 249;
@@ -2050,7 +2055,7 @@ namespace Menu_Utama
             // 
             this.A163.BackColor = System.Drawing.Color.BlueViolet;
             this.A163.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A163.Location = new System.Drawing.Point(585, 480);
+            this.A163.Location = new System.Drawing.Point(599, 480);
             this.A163.Name = "A163";
             this.A163.Size = new System.Drawing.Size(40, 40);
             this.A163.TabIndex = 248;
@@ -2060,7 +2065,7 @@ namespace Menu_Utama
             // 
             this.A192.BackColor = System.Drawing.Color.BlueViolet;
             this.A192.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A192.Location = new System.Drawing.Point(545, 560);
+            this.A192.Location = new System.Drawing.Point(559, 560);
             this.A192.Name = "A192";
             this.A192.Size = new System.Drawing.Size(40, 40);
             this.A192.TabIndex = 247;
@@ -2070,7 +2075,7 @@ namespace Menu_Utama
             // 
             this.A177.BackColor = System.Drawing.Color.BlueViolet;
             this.A177.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A177.Location = new System.Drawing.Point(545, 520);
+            this.A177.Location = new System.Drawing.Point(559, 520);
             this.A177.Name = "A177";
             this.A177.Size = new System.Drawing.Size(40, 40);
             this.A177.TabIndex = 246;
@@ -2080,7 +2085,7 @@ namespace Menu_Utama
             // 
             this.A162.BackColor = System.Drawing.Color.BlueViolet;
             this.A162.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A162.Location = new System.Drawing.Point(545, 480);
+            this.A162.Location = new System.Drawing.Point(559, 480);
             this.A162.Name = "A162";
             this.A162.Size = new System.Drawing.Size(40, 40);
             this.A162.TabIndex = 245;
@@ -2090,7 +2095,7 @@ namespace Menu_Utama
             // 
             this.A191.BackColor = System.Drawing.Color.BlueViolet;
             this.A191.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A191.Location = new System.Drawing.Point(505, 560);
+            this.A191.Location = new System.Drawing.Point(519, 560);
             this.A191.Name = "A191";
             this.A191.Size = new System.Drawing.Size(40, 40);
             this.A191.TabIndex = 244;
@@ -2100,7 +2105,7 @@ namespace Menu_Utama
             // 
             this.A176.BackColor = System.Drawing.Color.BlueViolet;
             this.A176.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A176.Location = new System.Drawing.Point(505, 520);
+            this.A176.Location = new System.Drawing.Point(519, 520);
             this.A176.Name = "A176";
             this.A176.Size = new System.Drawing.Size(40, 40);
             this.A176.TabIndex = 243;
@@ -2110,7 +2115,7 @@ namespace Menu_Utama
             // 
             this.A161.BackColor = System.Drawing.Color.BlueViolet;
             this.A161.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A161.Location = new System.Drawing.Point(505, 480);
+            this.A161.Location = new System.Drawing.Point(519, 480);
             this.A161.Name = "A161";
             this.A161.Size = new System.Drawing.Size(40, 40);
             this.A161.TabIndex = 242;
@@ -2120,7 +2125,7 @@ namespace Menu_Utama
             // 
             this.A220.BackColor = System.Drawing.Color.BlueViolet;
             this.A220.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A220.Location = new System.Drawing.Point(465, 640);
+            this.A220.Location = new System.Drawing.Point(479, 640);
             this.A220.Name = "A220";
             this.A220.Size = new System.Drawing.Size(40, 40);
             this.A220.TabIndex = 241;
@@ -2130,7 +2135,7 @@ namespace Menu_Utama
             // 
             this.A219.BackColor = System.Drawing.Color.BlueViolet;
             this.A219.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A219.Location = new System.Drawing.Point(425, 640);
+            this.A219.Location = new System.Drawing.Point(439, 639);
             this.A219.Name = "A219";
             this.A219.Size = new System.Drawing.Size(40, 40);
             this.A219.TabIndex = 240;
@@ -2140,7 +2145,7 @@ namespace Menu_Utama
             // 
             this.A218.BackColor = System.Drawing.Color.BlueViolet;
             this.A218.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A218.Location = new System.Drawing.Point(385, 640);
+            this.A218.Location = new System.Drawing.Point(399, 638);
             this.A218.Name = "A218";
             this.A218.Size = new System.Drawing.Size(40, 40);
             this.A218.TabIndex = 239;
@@ -2150,7 +2155,7 @@ namespace Menu_Utama
             // 
             this.A217.BackColor = System.Drawing.Color.BlueViolet;
             this.A217.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A217.Location = new System.Drawing.Point(345, 640);
+            this.A217.Location = new System.Drawing.Point(359, 640);
             this.A217.Name = "A217";
             this.A217.Size = new System.Drawing.Size(40, 40);
             this.A217.TabIndex = 238;
@@ -2160,7 +2165,7 @@ namespace Menu_Utama
             // 
             this.A205.BackColor = System.Drawing.Color.BlueViolet;
             this.A205.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A205.Location = new System.Drawing.Point(465, 600);
+            this.A205.Location = new System.Drawing.Point(479, 600);
             this.A205.Name = "A205";
             this.A205.Size = new System.Drawing.Size(40, 40);
             this.A205.TabIndex = 237;
@@ -2170,7 +2175,7 @@ namespace Menu_Utama
             // 
             this.A204.BackColor = System.Drawing.Color.BlueViolet;
             this.A204.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A204.Location = new System.Drawing.Point(425, 600);
+            this.A204.Location = new System.Drawing.Point(439, 600);
             this.A204.Name = "A204";
             this.A204.Size = new System.Drawing.Size(40, 40);
             this.A204.TabIndex = 236;
@@ -2180,7 +2185,7 @@ namespace Menu_Utama
             // 
             this.A203.BackColor = System.Drawing.Color.BlueViolet;
             this.A203.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A203.Location = new System.Drawing.Point(385, 600);
+            this.A203.Location = new System.Drawing.Point(399, 600);
             this.A203.Name = "A203";
             this.A203.Size = new System.Drawing.Size(40, 40);
             this.A203.TabIndex = 235;
@@ -2190,7 +2195,7 @@ namespace Menu_Utama
             // 
             this.A202.BackColor = System.Drawing.Color.BlueViolet;
             this.A202.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A202.Location = new System.Drawing.Point(345, 600);
+            this.A202.Location = new System.Drawing.Point(359, 600);
             this.A202.Name = "A202";
             this.A202.Size = new System.Drawing.Size(40, 40);
             this.A202.TabIndex = 234;
@@ -2200,7 +2205,7 @@ namespace Menu_Utama
             // 
             this.A216.BackColor = System.Drawing.Color.BlueViolet;
             this.A216.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A216.Location = new System.Drawing.Point(305, 640);
+            this.A216.Location = new System.Drawing.Point(319, 639);
             this.A216.Name = "A216";
             this.A216.Size = new System.Drawing.Size(40, 40);
             this.A216.TabIndex = 233;
@@ -2210,7 +2215,7 @@ namespace Menu_Utama
             // 
             this.A201.BackColor = System.Drawing.Color.BlueViolet;
             this.A201.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A201.Location = new System.Drawing.Point(305, 600);
+            this.A201.Location = new System.Drawing.Point(319, 600);
             this.A201.Name = "A201";
             this.A201.Size = new System.Drawing.Size(40, 40);
             this.A201.TabIndex = 232;
@@ -2220,7 +2225,7 @@ namespace Menu_Utama
             // 
             this.A190.BackColor = System.Drawing.Color.BlueViolet;
             this.A190.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A190.Location = new System.Drawing.Point(465, 560);
+            this.A190.Location = new System.Drawing.Point(479, 560);
             this.A190.Name = "A190";
             this.A190.Size = new System.Drawing.Size(40, 40);
             this.A190.TabIndex = 231;
@@ -2230,7 +2235,7 @@ namespace Menu_Utama
             // 
             this.A189.BackColor = System.Drawing.Color.BlueViolet;
             this.A189.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A189.Location = new System.Drawing.Point(425, 560);
+            this.A189.Location = new System.Drawing.Point(439, 560);
             this.A189.Name = "A189";
             this.A189.Size = new System.Drawing.Size(40, 40);
             this.A189.TabIndex = 230;
@@ -2240,7 +2245,7 @@ namespace Menu_Utama
             // 
             this.A175.BackColor = System.Drawing.Color.BlueViolet;
             this.A175.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A175.Location = new System.Drawing.Point(465, 520);
+            this.A175.Location = new System.Drawing.Point(479, 520);
             this.A175.Name = "A175";
             this.A175.Size = new System.Drawing.Size(40, 40);
             this.A175.TabIndex = 229;
@@ -2250,7 +2255,7 @@ namespace Menu_Utama
             // 
             this.A174.BackColor = System.Drawing.Color.BlueViolet;
             this.A174.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A174.Location = new System.Drawing.Point(425, 520);
+            this.A174.Location = new System.Drawing.Point(439, 520);
             this.A174.Name = "A174";
             this.A174.Size = new System.Drawing.Size(40, 40);
             this.A174.TabIndex = 228;
@@ -2260,7 +2265,7 @@ namespace Menu_Utama
             // 
             this.A160.BackColor = System.Drawing.Color.BlueViolet;
             this.A160.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A160.Location = new System.Drawing.Point(465, 480);
+            this.A160.Location = new System.Drawing.Point(479, 480);
             this.A160.Name = "A160";
             this.A160.Size = new System.Drawing.Size(40, 40);
             this.A160.TabIndex = 227;
@@ -2270,7 +2275,7 @@ namespace Menu_Utama
             // 
             this.A159.BackColor = System.Drawing.Color.BlueViolet;
             this.A159.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A159.Location = new System.Drawing.Point(425, 480);
+            this.A159.Location = new System.Drawing.Point(439, 480);
             this.A159.Name = "A159";
             this.A159.Size = new System.Drawing.Size(40, 40);
             this.A159.TabIndex = 226;
@@ -2280,7 +2285,7 @@ namespace Menu_Utama
             // 
             this.A188.BackColor = System.Drawing.Color.BlueViolet;
             this.A188.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A188.Location = new System.Drawing.Point(385, 560);
+            this.A188.Location = new System.Drawing.Point(399, 560);
             this.A188.Name = "A188";
             this.A188.Size = new System.Drawing.Size(40, 40);
             this.A188.TabIndex = 225;
@@ -2290,7 +2295,7 @@ namespace Menu_Utama
             // 
             this.A173.BackColor = System.Drawing.Color.BlueViolet;
             this.A173.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A173.Location = new System.Drawing.Point(385, 520);
+            this.A173.Location = new System.Drawing.Point(399, 520);
             this.A173.Name = "A173";
             this.A173.Size = new System.Drawing.Size(40, 40);
             this.A173.TabIndex = 224;
@@ -2300,7 +2305,7 @@ namespace Menu_Utama
             // 
             this.A158.BackColor = System.Drawing.Color.BlueViolet;
             this.A158.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A158.Location = new System.Drawing.Point(385, 480);
+            this.A158.Location = new System.Drawing.Point(399, 480);
             this.A158.Name = "A158";
             this.A158.Size = new System.Drawing.Size(40, 40);
             this.A158.TabIndex = 223;
@@ -2310,7 +2315,7 @@ namespace Menu_Utama
             // 
             this.A187.BackColor = System.Drawing.Color.BlueViolet;
             this.A187.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A187.Location = new System.Drawing.Point(345, 560);
+            this.A187.Location = new System.Drawing.Point(359, 560);
             this.A187.Name = "A187";
             this.A187.Size = new System.Drawing.Size(40, 40);
             this.A187.TabIndex = 222;
@@ -2320,7 +2325,7 @@ namespace Menu_Utama
             // 
             this.A172.BackColor = System.Drawing.Color.BlueViolet;
             this.A172.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A172.Location = new System.Drawing.Point(345, 520);
+            this.A172.Location = new System.Drawing.Point(359, 520);
             this.A172.Name = "A172";
             this.A172.Size = new System.Drawing.Size(40, 40);
             this.A172.TabIndex = 221;
@@ -2330,7 +2335,7 @@ namespace Menu_Utama
             // 
             this.A157.BackColor = System.Drawing.Color.BlueViolet;
             this.A157.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A157.Location = new System.Drawing.Point(345, 480);
+            this.A157.Location = new System.Drawing.Point(359, 480);
             this.A157.Name = "A157";
             this.A157.Size = new System.Drawing.Size(40, 40);
             this.A157.TabIndex = 220;
@@ -2340,7 +2345,7 @@ namespace Menu_Utama
             // 
             this.A186.BackColor = System.Drawing.Color.BlueViolet;
             this.A186.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A186.Location = new System.Drawing.Point(305, 560);
+            this.A186.Location = new System.Drawing.Point(319, 560);
             this.A186.Name = "A186";
             this.A186.Size = new System.Drawing.Size(40, 40);
             this.A186.TabIndex = 219;
@@ -2350,7 +2355,7 @@ namespace Menu_Utama
             // 
             this.A171.BackColor = System.Drawing.Color.BlueViolet;
             this.A171.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A171.Location = new System.Drawing.Point(305, 520);
+            this.A171.Location = new System.Drawing.Point(319, 520);
             this.A171.Name = "A171";
             this.A171.Size = new System.Drawing.Size(40, 40);
             this.A171.TabIndex = 218;
@@ -2360,7 +2365,7 @@ namespace Menu_Utama
             // 
             this.A156.BackColor = System.Drawing.Color.BlueViolet;
             this.A156.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A156.Location = new System.Drawing.Point(305, 480);
+            this.A156.Location = new System.Drawing.Point(319, 480);
             this.A156.Name = "A156";
             this.A156.Size = new System.Drawing.Size(40, 40);
             this.A156.TabIndex = 217;
@@ -2370,7 +2375,7 @@ namespace Menu_Utama
             // 
             this.A215.BackColor = System.Drawing.Color.BlueViolet;
             this.A215.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A215.Location = new System.Drawing.Point(265, 640);
+            this.A215.Location = new System.Drawing.Point(279, 639);
             this.A215.Name = "A215";
             this.A215.Size = new System.Drawing.Size(40, 40);
             this.A215.TabIndex = 216;
@@ -2380,7 +2385,7 @@ namespace Menu_Utama
             // 
             this.A214.BackColor = System.Drawing.Color.BlueViolet;
             this.A214.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A214.Location = new System.Drawing.Point(225, 640);
+            this.A214.Location = new System.Drawing.Point(239, 641);
             this.A214.Name = "A214";
             this.A214.Size = new System.Drawing.Size(40, 40);
             this.A214.TabIndex = 215;
@@ -2390,7 +2395,7 @@ namespace Menu_Utama
             // 
             this.A213.BackColor = System.Drawing.Color.BlueViolet;
             this.A213.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A213.Location = new System.Drawing.Point(185, 640);
+            this.A213.Location = new System.Drawing.Point(199, 639);
             this.A213.Name = "A213";
             this.A213.Size = new System.Drawing.Size(40, 40);
             this.A213.TabIndex = 214;
@@ -2400,7 +2405,7 @@ namespace Menu_Utama
             // 
             this.A212.BackColor = System.Drawing.Color.BlueViolet;
             this.A212.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A212.Location = new System.Drawing.Point(145, 640);
+            this.A212.Location = new System.Drawing.Point(159, 639);
             this.A212.Name = "A212";
             this.A212.Size = new System.Drawing.Size(40, 40);
             this.A212.TabIndex = 213;
@@ -2410,7 +2415,7 @@ namespace Menu_Utama
             // 
             this.A200.BackColor = System.Drawing.Color.BlueViolet;
             this.A200.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A200.Location = new System.Drawing.Point(265, 600);
+            this.A200.Location = new System.Drawing.Point(279, 600);
             this.A200.Name = "A200";
             this.A200.Size = new System.Drawing.Size(40, 40);
             this.A200.TabIndex = 212;
@@ -2420,7 +2425,7 @@ namespace Menu_Utama
             // 
             this.A199.BackColor = System.Drawing.Color.BlueViolet;
             this.A199.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A199.Location = new System.Drawing.Point(225, 600);
+            this.A199.Location = new System.Drawing.Point(239, 600);
             this.A199.Name = "A199";
             this.A199.Size = new System.Drawing.Size(40, 40);
             this.A199.TabIndex = 211;
@@ -2430,7 +2435,7 @@ namespace Menu_Utama
             // 
             this.A198.BackColor = System.Drawing.Color.BlueViolet;
             this.A198.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A198.Location = new System.Drawing.Point(185, 600);
+            this.A198.Location = new System.Drawing.Point(199, 600);
             this.A198.Name = "A198";
             this.A198.Size = new System.Drawing.Size(40, 40);
             this.A198.TabIndex = 210;
@@ -2440,7 +2445,7 @@ namespace Menu_Utama
             // 
             this.A197.BackColor = System.Drawing.Color.BlueViolet;
             this.A197.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A197.Location = new System.Drawing.Point(145, 600);
+            this.A197.Location = new System.Drawing.Point(159, 600);
             this.A197.Name = "A197";
             this.A197.Size = new System.Drawing.Size(40, 40);
             this.A197.TabIndex = 209;
@@ -2450,7 +2455,7 @@ namespace Menu_Utama
             // 
             this.A211.BackColor = System.Drawing.Color.BlueViolet;
             this.A211.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A211.Location = new System.Drawing.Point(105, 640);
+            this.A211.Location = new System.Drawing.Point(119, 639);
             this.A211.Name = "A211";
             this.A211.Size = new System.Drawing.Size(40, 40);
             this.A211.TabIndex = 208;
@@ -2460,7 +2465,7 @@ namespace Menu_Utama
             // 
             this.A196.BackColor = System.Drawing.Color.BlueViolet;
             this.A196.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A196.Location = new System.Drawing.Point(105, 600);
+            this.A196.Location = new System.Drawing.Point(119, 600);
             this.A196.Name = "A196";
             this.A196.Size = new System.Drawing.Size(40, 40);
             this.A196.TabIndex = 207;
@@ -2470,7 +2475,7 @@ namespace Menu_Utama
             // 
             this.A185.BackColor = System.Drawing.Color.BlueViolet;
             this.A185.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A185.Location = new System.Drawing.Point(265, 560);
+            this.A185.Location = new System.Drawing.Point(279, 560);
             this.A185.Name = "A185";
             this.A185.Size = new System.Drawing.Size(40, 40);
             this.A185.TabIndex = 206;
@@ -2480,7 +2485,7 @@ namespace Menu_Utama
             // 
             this.A184.BackColor = System.Drawing.Color.BlueViolet;
             this.A184.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A184.Location = new System.Drawing.Point(225, 560);
+            this.A184.Location = new System.Drawing.Point(239, 560);
             this.A184.Name = "A184";
             this.A184.Size = new System.Drawing.Size(40, 40);
             this.A184.TabIndex = 205;
@@ -2490,7 +2495,7 @@ namespace Menu_Utama
             // 
             this.A170.BackColor = System.Drawing.Color.BlueViolet;
             this.A170.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A170.Location = new System.Drawing.Point(265, 520);
+            this.A170.Location = new System.Drawing.Point(279, 520);
             this.A170.Name = "A170";
             this.A170.Size = new System.Drawing.Size(40, 40);
             this.A170.TabIndex = 204;
@@ -2500,7 +2505,7 @@ namespace Menu_Utama
             // 
             this.A169.BackColor = System.Drawing.Color.BlueViolet;
             this.A169.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A169.Location = new System.Drawing.Point(225, 520);
+            this.A169.Location = new System.Drawing.Point(239, 520);
             this.A169.Name = "A169";
             this.A169.Size = new System.Drawing.Size(40, 40);
             this.A169.TabIndex = 203;
@@ -2510,7 +2515,7 @@ namespace Menu_Utama
             // 
             this.A155.BackColor = System.Drawing.Color.BlueViolet;
             this.A155.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A155.Location = new System.Drawing.Point(265, 480);
+            this.A155.Location = new System.Drawing.Point(279, 480);
             this.A155.Name = "A155";
             this.A155.Size = new System.Drawing.Size(40, 40);
             this.A155.TabIndex = 202;
@@ -2520,7 +2525,7 @@ namespace Menu_Utama
             // 
             this.A154.BackColor = System.Drawing.Color.BlueViolet;
             this.A154.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A154.Location = new System.Drawing.Point(225, 480);
+            this.A154.Location = new System.Drawing.Point(239, 480);
             this.A154.Name = "A154";
             this.A154.Size = new System.Drawing.Size(40, 40);
             this.A154.TabIndex = 201;
@@ -2530,7 +2535,7 @@ namespace Menu_Utama
             // 
             this.A183.BackColor = System.Drawing.Color.BlueViolet;
             this.A183.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A183.Location = new System.Drawing.Point(185, 560);
+            this.A183.Location = new System.Drawing.Point(199, 560);
             this.A183.Name = "A183";
             this.A183.Size = new System.Drawing.Size(40, 40);
             this.A183.TabIndex = 200;
@@ -2540,7 +2545,7 @@ namespace Menu_Utama
             // 
             this.A168.BackColor = System.Drawing.Color.BlueViolet;
             this.A168.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A168.Location = new System.Drawing.Point(185, 520);
+            this.A168.Location = new System.Drawing.Point(199, 520);
             this.A168.Name = "A168";
             this.A168.Size = new System.Drawing.Size(40, 40);
             this.A168.TabIndex = 199;
@@ -2550,7 +2555,7 @@ namespace Menu_Utama
             // 
             this.A153.BackColor = System.Drawing.Color.BlueViolet;
             this.A153.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A153.Location = new System.Drawing.Point(185, 480);
+            this.A153.Location = new System.Drawing.Point(199, 480);
             this.A153.Name = "A153";
             this.A153.Size = new System.Drawing.Size(40, 40);
             this.A153.TabIndex = 198;
@@ -2560,7 +2565,7 @@ namespace Menu_Utama
             // 
             this.A182.BackColor = System.Drawing.Color.BlueViolet;
             this.A182.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A182.Location = new System.Drawing.Point(145, 560);
+            this.A182.Location = new System.Drawing.Point(159, 560);
             this.A182.Name = "A182";
             this.A182.Size = new System.Drawing.Size(40, 40);
             this.A182.TabIndex = 197;
@@ -2570,7 +2575,7 @@ namespace Menu_Utama
             // 
             this.A167.BackColor = System.Drawing.Color.BlueViolet;
             this.A167.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A167.Location = new System.Drawing.Point(145, 520);
+            this.A167.Location = new System.Drawing.Point(159, 520);
             this.A167.Name = "A167";
             this.A167.Size = new System.Drawing.Size(40, 40);
             this.A167.TabIndex = 196;
@@ -2580,7 +2585,7 @@ namespace Menu_Utama
             // 
             this.A152.BackColor = System.Drawing.Color.BlueViolet;
             this.A152.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A152.Location = new System.Drawing.Point(145, 480);
+            this.A152.Location = new System.Drawing.Point(159, 480);
             this.A152.Name = "A152";
             this.A152.Size = new System.Drawing.Size(40, 40);
             this.A152.TabIndex = 195;
@@ -2590,7 +2595,7 @@ namespace Menu_Utama
             // 
             this.A181.BackColor = System.Drawing.Color.BlueViolet;
             this.A181.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A181.Location = new System.Drawing.Point(105, 560);
+            this.A181.Location = new System.Drawing.Point(119, 560);
             this.A181.Name = "A181";
             this.A181.Size = new System.Drawing.Size(40, 40);
             this.A181.TabIndex = 194;
@@ -2600,7 +2605,7 @@ namespace Menu_Utama
             // 
             this.A166.BackColor = System.Drawing.Color.BlueViolet;
             this.A166.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.A166.Location = new System.Drawing.Point(105, 520);
+            this.A166.Location = new System.Drawing.Point(119, 520);
             this.A166.Name = "A166";
             this.A166.Size = new System.Drawing.Size(40, 40);
             this.A166.TabIndex = 193;
@@ -2610,7 +2615,7 @@ namespace Menu_Utama
             // 
             this.A151.BackColor = System.Drawing.Color.BlueViolet;
             this.A151.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A151.Location = new System.Drawing.Point(105, 480);
+            this.A151.Location = new System.Drawing.Point(119, 480);
             this.A151.Name = "A151";
             this.A151.Size = new System.Drawing.Size(40, 40);
             this.A151.TabIndex = 192;
@@ -2621,6 +2626,7 @@ namespace Menu_Utama
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
+            this.BackgroundImage = global::Menu_Utama.Properties.Resources.index;
             this.ClientSize = new System.Drawing.Size(841, 718);
             this.Controls.Add(this.A225);
             this.Controls.Add(this.A224);
