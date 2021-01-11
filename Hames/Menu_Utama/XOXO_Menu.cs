@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Menu_Utama
 {
@@ -61,6 +62,21 @@ namespace Menu_Utama
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!File.Exists("Namax.txt"))
+            {
+                File.Create("Namax.txt").Close();
+            }
+            StreamWriter sw = new StreamWriter("Namax.txt");
+            sw.WriteLine(textBox1.Text + " " + textBox2.Text);
+            sw.Close();
+
+            if (!File.Exists("Peranx.txt"))
+            {
+                File.Create("Peranx.txt").Close();
+            }
+            StreamWriter sw2 = new StreamWriter("Peranx.txt");
+            sw2.WriteLine(label3.Text + " " + label4.Text);
+            sw2.Close();
             XOXO_utama home = new XOXO_utama();
             this.Hide();
             home.Show();
@@ -89,6 +105,20 @@ namespace Menu_Utama
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (label3.Text == "X")
+            {
+                label3.Text = "O";
+                label4.Text = "X";
+            }
+            else
+            {
+                label3.Text = "X";
+                label4.Text = "O";
+            }
         }
     }
     }
