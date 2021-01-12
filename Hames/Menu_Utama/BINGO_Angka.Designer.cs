@@ -895,6 +895,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "BINGO_Angka";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BINGO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_Angka_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_Angka_Load);

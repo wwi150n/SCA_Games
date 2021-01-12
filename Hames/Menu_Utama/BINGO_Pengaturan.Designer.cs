@@ -204,6 +204,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "BINGO_Pengaturan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pengaturan";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_Pengaturan_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_Pengaturan_Load);

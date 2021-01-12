@@ -125,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "BINGO_IsiNama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BINGO_IsiNama";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_IsiNama_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_IsiNama_Load);

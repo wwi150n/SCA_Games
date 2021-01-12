@@ -42,36 +42,7 @@ namespace Menu_Utama
             Data temp = new Data();
             string[] y1;
             List<Data> daftar = new List<Data>();
-            temp.n = 59f;
-            temp.nama = "Agus";
-            daftar.Add(temp);
-            temp.n = 58f;
-            temp.nama = "Budi";
-            daftar.Add(temp);
-            temp.n = 57f;
-            temp.nama = "Chitra";
-            daftar.Add(temp);
-            temp.n = 56f;
-            temp.nama = "Domino";
-            daftar.Add(temp);
-            temp.n = 55f;
-            temp.nama = "Erlangga";
-            daftar.Add(temp);
-            temp.n = 54f;
-            temp.nama = "Fajar";
-            daftar.Add(temp);
-            temp.n = 53f;
-            temp.nama = "Gandhi";
-            daftar.Add(temp);
-            temp.n = 52f;
-            temp.nama = "Hansono";
-            daftar.Add(temp);
-            temp.n = 51f;
-            temp.nama = "Ijun";
-            daftar.Add(temp);
-            temp.n = 50f;
-            temp.nama = "Jaguar";
-            daftar.Add(temp);
+            
             if (File.Exists("Nama.txt"))
             {
                 y1 = File.ReadAllLines("Nama.txt");
@@ -82,6 +53,39 @@ namespace Menu_Utama
                     temp.n = Convert.ToSingle(temp2[1]);
                     daftar.Add(temp);
                 }
+            }
+            else
+            {
+                temp.n = 59f;
+                temp.nama = "Agus";
+                daftar.Add(temp);
+                temp.n = 58f;
+                temp.nama = "Budi";
+                daftar.Add(temp);
+                temp.n = 57f;
+                temp.nama = "Chitra";
+                daftar.Add(temp);
+                temp.n = 56f;
+                temp.nama = "Domino";
+                daftar.Add(temp);
+                temp.n = 55f;
+                temp.nama = "Erlangga";
+                daftar.Add(temp);
+                temp.n = 54f;
+                temp.nama = "Fajar";
+                daftar.Add(temp);
+                temp.n = 53f;
+                temp.nama = "Gandhi";
+                daftar.Add(temp);
+                temp.n = 52f;
+                temp.nama = "Hansono";
+                daftar.Add(temp);
+                temp.n = 51f;
+                temp.nama = "Ijun";
+                daftar.Add(temp);
+                temp.n = 50f;
+                temp.nama = "Jaguar";
+                daftar.Add(temp);
             }
 
             for (int i = 0; i < daftar.Count - 1; i++)

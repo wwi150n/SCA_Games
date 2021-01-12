@@ -166,8 +166,13 @@ namespace Menu_Utama
                 label5.Text = pcom.ToString();
                 progressBar1.Maximum = stg;
                 progressBar2.Maximum = stg;
-                progressBar1.Value = pplayer;
-                progressBar2.Value = pcom;
+                if ((pplayer <= 5) && (pcom <= 5))
+                {
+                    progressBar1.Value = pplayer;
+                    progressBar2.Value = pcom;
+                }
+                else if (pplayer > 5) progressBar1.Value = 5;
+                else if (pcom > 5) progressBar2.Value = 5;
                 if ((pplayer >= stg) | (pcom >= stg)) stop = true;
             }
             turn++;
