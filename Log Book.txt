@@ -5,17 +5,75 @@
 
 28-30 Desember 2020: Scrummaster - Wilson (171114004)
 28 Desember 2020:
+Wilson - Membuat menu utama, membuat menu utama untuk game BINGO, membuat fitur isi angka manual untuk BINGO, dan membuat menu mulai permainan BINGO.
+Sylvia - Membuat menu utama untuk game XOXO. (not commit)
+Anthony - Membuat menu utama untuk game SOS. (di commit pada hari berikutnya)
+NB: User Story no 1, 3, 8 done. User Story no 5 ke on progress. User Story no 10, dan 20 ke sprint backlog.
+
 29 Desember 2020:
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO.
+Sylvia - Membuat menu utama untuk game XOXO (lanjutan) (not commit).
+Anthony - Membuat menu utama untuk game SOS (lanjutan).
+NB: User Story tidak berubah posisi. Akan tetapi, estimasi User Story no 5 dari 2 jam menjadi estimasi baru yaitu 6 jam.
+
 30 Desember 2020:
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO (lanjutan).
+Sylvia - Membuat papan untuk game XOXO. (not commit)
+Anthony - Membuat papan permainan untuk meletakkan S dan O. (not commit)
+NB: User Story tidak berubah posisi.
 
-31 Desember 2020-4 Januari 2021: Scrummaster - Sylvia Dewi Chaiyanti (171110690)
-31 Desember 2020:
+2-5 Januari 2021: Scrummaster - Sylvia Dewi Chaiyanti (171110690)
 2 Januari 2021:
+Wilson - Membuat fitur pilih angka untuk dipanggil dalam permainan BINGO (lanjutan).
+Sylvia - Melengkapi fitur yang ada dalam permainan XOXO (lanjutan)
+Anthony - Melengkapi fitur yang ada dalam permainan SOS (lanjutan) (not commit)
+NB: User Story 13,19 done dan sisanya masih on process.
+
 4 Januari 2021:
+Wilson - Melengkapi fitur yang ada dalam permainan BINGO.
+Sylvia - Melengkapi fitur yang ada dalam permainan XOXO. (not commit)
+Anthony - Memperbaiki dan melengkapi fitur yang ada dalam permainan SOS.
+NB: User Story tidak berubah posisi.
 
-5-7 Januari 2021: Scrummaster - Anthony (171111245)
 5 Januari 2021:
-6 Januari 2021:
-7 Januari 2021:
+Wilson - Melengkapi fitur yang ada dalam permainan BINGO(lanjutan).
+Sylvia - Mendesain ulang tampilan dan melengkapi fitur yang ada dalam permainan XOXO. 
+Anthony - Memperbaiki dan membuat dokumentasi permainan.
+NB: User Story 5,7,10,14,15,18 dan sisanya masih on process.
 
-8-12 Januari 2021: No Scrummaster (Finishing)
+6-8 Januari 2021: Scrummaster - Anthony (171111245)
+6 Januari 2021:
+Wilson - Update Fitur Isi Nama.
+Sylvia - Melengkapi fitur yang ada dalam XOXO (lanjutan) (not commit)
+Anthony - Melengkapi fitur dan memperbaiki fitur pada permainan SOS (lanjutan)
+NB : User Story tidak berubah posisi.
+
+7 Januari 2021:
+Wilson - Membuat Fitur Nilai Tertinggi.
+Sylvia - Melengkapi fitur yang ada dalam XOXO (lanjutan) (not commit)
+Anthony - Menentukan S atau O dan S atau O tersebut ditempatkan.
+NB : User Story 16 dan 20 done.
+
+8 Januari 2021:
+Wilson - Membuat Fitur Nilai Tertinggi (lanjutan)
+Sylvia - Melengkapi fitur pada XOXO (lanjutan)
+Anthony - Melengkapi fitur lihat score sementara.
+NB : User Story 6 dan 21 done.
+
+9 Januari 2021 (Scrummaster: Wilson)
+Wilson - Membuat Fitur Pengaturan
+Sylvia - Memperbaiki papan untuk meletakkan X dan O.
+Anthony - Membuat fitur papan score.
+NB: User Story tidak perubah posisi
+
+11 Januari 2021 (Scrummaster: Sylvia Dewi Chaiyanti)
+Wilson - Membuat fitur pengaturan dan memperbaiki bug (lanjutan)
+Sylvia - Membuat  fitur history score.
+Anthony - Memperbaiki bug dan membuat fitur high score.
+NB: User Story 9 dan 12 done.
+
+12 Januari 2021 (Scrummaster : Anthony)
+Wilson - Update bantuan , perbaiki bug, dan design.
+Sylvia - Update tampilan XOXO
+Anthony - Menyelesaikan bug fitur high score.
+NB : Semua user story selesai.
