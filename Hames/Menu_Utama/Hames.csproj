@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,13 +47,76 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BINGO_Angka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Angka.Designer.cs">
+      <DependentUpon>BINGO_Angka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan1.Designer.cs">
+      <DependentUpon>BINGO_Bantuan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan2.Designer.cs">
+      <DependentUpon>BINGO_Bantuan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan3.Designer.cs">
+      <DependentUpon>BINGO_Bantuan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_IsiNama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_IsiNama.Designer.cs">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Main.Designer.cs">
+      <DependentUpon>BINGO_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="BINGO_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BINGO_Menu.Designer.cs">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.Designer.cs">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Pengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Pengaturan.Designer.cs">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScore_SOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScore_SOS.Designer.cs">
+      <DependentUpon>HighScore_SOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -60,11 +126,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOS.Designer.cs">
+      <DependentUpon>SOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOS_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SOS_Menu.Designer.cs">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XOXO_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_Help.Designer.cs">
+      <DependentUpon>XOXO_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XOXO_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_Main.Designer.cs">
+      <DependentUpon>XOXO_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="XOXO_Menu.cs">
       <SubType>Form</SubType>
@@ -72,8 +156,44 @@
     <Compile Include="XOXO_Menu.Designer.cs">
       <DependentUpon>XOXO_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XOXO_utama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_utama.Designer.cs">
+      <DependentUpon>XOXO_utama.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BINGO_Angka.resx">
+      <DependentUpon>BINGO_Angka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan1.resx">
+      <DependentUpon>BINGO_Bantuan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan2.resx">
+      <DependentUpon>BINGO_Bantuan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan3.resx">
+      <DependentUpon>BINGO_Bantuan3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_IsiNama.resx">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Main.resx">
+      <DependentUpon>BINGO_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BINGO_Menu.resx">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_NilaiTertinggi.resx">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Pengaturan.resx">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScore_SOS.resx">
+      <DependentUpon>HighScore_SOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -86,12 +206,25 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SOS.resx">
+      <DependentUpon>SOS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SOS_Menu.resx">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_Help.resx">
+      <DependentUpon>XOXO_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_Main.resx">
+      <DependentUpon>XOXO_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XOXO_Menu.resx">
       <DependentUpon>XOXO_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_utama.resx">
+      <DependentUpon>XOXO_utama.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +238,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_static_tumblr_static_e1l41iv9zi80skkcc0ooo4gk0_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastelgalaxytumblr-l-7ef72673bb99ae03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4936936fea49aedc199e2806de1c9431.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c80790896f341f0acf96e8f5b93ad97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcaf37ba1cd5f6a12ca327a017260675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
