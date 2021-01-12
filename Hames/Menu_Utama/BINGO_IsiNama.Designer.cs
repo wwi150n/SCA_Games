@@ -129,7 +129,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO_IsiNama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BINGO_IsiNama";
+            this.Text = "BINGO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_IsiNama_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_IsiNama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
