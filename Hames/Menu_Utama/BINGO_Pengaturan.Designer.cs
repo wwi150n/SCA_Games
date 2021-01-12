@@ -208,7 +208,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO_Pengaturan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pengaturan";
+            this.Text = "BINGO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_Pengaturan_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_Pengaturan_Load);
             this.groupBox1.ResumeLayout(false);

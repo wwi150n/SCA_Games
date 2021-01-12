@@ -74,7 +74,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO_NilaiTertinggi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BINGO_NilaiTertinggi";
+            this.Text = "BINGO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BINGO_NilaiTertinggi_FormClosed);
             this.Load += new System.EventHandler(this.BINGO_NilaiTertinggi_Load);
             this.ResumeLayout(false);

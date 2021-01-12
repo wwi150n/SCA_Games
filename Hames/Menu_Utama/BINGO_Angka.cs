@@ -120,11 +120,11 @@ namespace Menu_Utama
             {
                 txt9[i].Visible = false;
             }
-            if (File.Exists("Setting.txt"))
+            if (File.Exists("Pengaturan.txt"))
             {
                 string a;
                 string[] b;
-                StreamReader sr = new StreamReader("Setting.txt");
+                StreamReader sr = new StreamReader("Pengaturan.txt");
                 a = sr.ReadLine();
                 b = a.Split();
                 if (b[0] == "7")

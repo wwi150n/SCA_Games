@@ -112,6 +112,8 @@ namespace Menu_Utama
         }
         public void main1(object sender,EventArgs e)
         {
+            label7.Visible = true;
+            label8.Visible = true;
             if (!stop)
             {
                 int kx = 0, ky = 0;
@@ -146,16 +148,19 @@ namespace Menu_Utama
                 //taruh warna(tergantung setting)
                 if (stg==5)
                 {
+                    txt5[kx, ky].Text = com[kx, ky].ToString();
                     txt5[kx, ky].BackColor = Color.Yellow;
                     
                 }
                 else if (stg == 7)
                 {
+                    txt7[kx, ky].Text = com[kx, ky].ToString();
                     txt7[kx, ky].BackColor = Color.Yellow;
                     
                 }
                 else if (stg == 9)
                 {
+                    txt9[kx, ky].Text = com[kx, ky].ToString();
                     txt9[kx, ky].BackColor = Color.Yellow;
                     
                 }
@@ -649,7 +654,7 @@ namespace Menu_Utama
                     {
                         btn7[i, j].Text = b[7 * i + j];
                         player[i, j] = Convert.ToInt32(b[7 * i + j]);
-                        //txt7[i, j].Text = com[i, j].ToString();
+                        
                     }
                 }
             }
@@ -661,7 +666,7 @@ namespace Menu_Utama
                     {
                         btn9[i, j].Text = b[9 * i + j];
                         player[i, j] = Convert.ToInt32(b[9 * i + j]);
-                        //txt9[i, j].Text = com[i, j].ToString();
+                        
                     }
                 }
             }
@@ -767,19 +772,23 @@ namespace Menu_Utama
                     }
                 }
             }
+            
             com[kx, ky] = 0;
 
             //ubah warna
             if (stg == 7)
             {
+                txt7[kx, ky].Text = angkacom.ToString();
                 txt7[kx, ky].BackColor = Color.Yellow;
             }
             else if (stg == 9)
             {
+                txt9[kx, ky].Text = angkacom.ToString();
                 txt9[kx, ky].BackColor = Color.Yellow;
             }
             else
             {
+                txt5[kx, ky].Text = angkacom.ToString();
                 txt5[kx, ky].BackColor = Color.Yellow;
             }
             label8.Text = angkacom.ToString();
