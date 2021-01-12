@@ -776,38 +776,42 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Location = new System.Drawing.Point(426, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 30);
             this.button1.TabIndex = 82;
             this.button1.Text = "<<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Location = new System.Drawing.Point(468, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 30);
             this.button2.TabIndex = 83;
             this.button2.Text = "Angka Acak";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
             this.button3.Location = new System.Drawing.Point(644, 210);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(36, 30);
             this.button3.TabIndex = 84;
             this.button3.Text = ">>";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // BINGO_Angka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(687, 253);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -894,6 +898,7 @@
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO_Angka";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BINGO";
