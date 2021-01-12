@@ -195,12 +195,14 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Tomato;
+            this.button6.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
             this.button6.Location = new System.Drawing.Point(170, 256);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(117, 23);
             this.button6.TabIndex = 15;
             this.button6.Text = "Help";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // XOXO_Menu
