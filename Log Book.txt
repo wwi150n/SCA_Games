@@ -73,3 +73,7 @@ Anthony - Memperbaiki bug dan membuat fitur high score.
 NB: User Story 9 dan 12 done.
 
 12 Januari 2021 (Scrummaster : Anthony)
+Wilson - Update bantuan , perbaiki bug, dan design.
+Sylvia - Update tampilan XOXO
+Anthony - Menyelesaikan bug fitur high score.
+NB : Semua user story selesai.
