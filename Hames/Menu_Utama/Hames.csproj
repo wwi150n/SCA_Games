@@ -46,11 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BINGO_Angka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Angka.Designer.cs">
+      <DependentUpon>BINGO_Angka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan1.Designer.cs">
+      <DependentUpon>BINGO_Bantuan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan2.Designer.cs">
+      <DependentUpon>BINGO_Bantuan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Bantuan3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Bantuan3.Designer.cs">
+      <DependentUpon>BINGO_Bantuan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_IsiNama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_IsiNama.Designer.cs">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Main.Designer.cs">
+      <DependentUpon>BINGO_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="BINGO_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BINGO_Menu.Designer.cs">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_NilaiTertinggi.Designer.cs">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BINGO_Pengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BINGO_Pengaturan.Designer.cs">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -72,8 +120,32 @@
     <Compile Include="XOXO_Menu.Designer.cs">
       <DependentUpon>XOXO_Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BINGO_Angka.resx">
+      <DependentUpon>BINGO_Angka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan1.resx">
+      <DependentUpon>BINGO_Bantuan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan2.resx">
+      <DependentUpon>BINGO_Bantuan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Bantuan3.resx">
+      <DependentUpon>BINGO_Bantuan3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_IsiNama.resx">
+      <DependentUpon>BINGO_IsiNama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Main.resx">
+      <DependentUpon>BINGO_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BINGO_Menu.resx">
       <DependentUpon>BINGO_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_NilaiTertinggi.resx">
+      <DependentUpon>BINGO_NilaiTertinggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BINGO_Pengaturan.resx">
+      <DependentUpon>BINGO_Pengaturan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
