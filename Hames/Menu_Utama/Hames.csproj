@@ -72,6 +72,12 @@
     <Compile Include="SOS_Menu.Designer.cs">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XOXO_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOXO_Help.Designer.cs">
+      <DependentUpon>XOXO_Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="XOXO_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="SOS_Menu.resx">
       <DependentUpon>SOS_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOXO_Help.resx">
+      <DependentUpon>XOXO_Help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XOXO_Main.resx">
       <DependentUpon>XOXO_Main.cs</DependentUpon>

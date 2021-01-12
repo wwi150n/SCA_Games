@@ -275,6 +275,7 @@ namespace Menu_Utama
             A227.Text = pmn[1];
             if (pmn[0] == "O") giliran = 0;
             else giliran = 1;
+            A229.Visible = false;
         }
 
         public int giliran;
@@ -342,10 +343,30 @@ namespace Menu_Utama
 
                     giliran ++;
                 }
+                imbang();
+                if (A228.Visible)
+                {
+                    A228.Visible = false;
+                    A229.Visible = true;
+                }
+                else
+                {
+                    A229.Visible = false;
+                    A228.Visible = true;
+                }
             }
             else
             {
-                
+                if (kolom == 2)
+                {
+                    MessageBox.Show(label2.Text + " menyerah. Permainan selesai !!!","Notifikasi");
+                    selesai(2);
+                }
+                else if (kolom == 3)
+                {
+                    MessageBox.Show(label3.Text + " menyerah. Permainan selesai !!!", "Notifikasi");
+                    selesai(1);
+                }
             }
             
 
@@ -707,7 +728,7 @@ namespace Menu_Utama
                 string temp;
                 temp = "Permainan selesai !!! " + label2.Text + " memenangkan permainan";
                 MessageBox.Show(temp,"Notifikasi");
-                
+                selesai(1);
             }
                 
             else if (scorePemain2 == 2)
@@ -715,8 +736,66 @@ namespace Menu_Utama
                 string temp;
                 temp = "Permainan selesai !!! " + label3.Text + " memenangkan permainan";
                 MessageBox.Show(temp, "Notifikasi");
+                selesai(2);
             }
                 
+        }
+
+        public void selesai(int kode)
+        {
+            List<string> isi = new List<string>();
+            if (!File.Exists("History.txt"))
+            {
+                File.Create("History.txt").Close();
+            }
+            else
+            {
+                StreamReader sr3 = new StreamReader("History.txt");
+                string a;
+                string[] b;
+                do
+                {
+                    a = sr3.ReadLine();
+                    isi.Add(a);
+                } while (!sr3.EndOfStream);
+                sr3.Close();
+            }
+            string nama;
+            nama = label2.Text.PadRight(30) + "\t" + label3.Text.PadRight(30) + "\t" + scorePemain1.ToString() + "-" + scorePemain2.ToString() + "\t";
+            if (kode == 1) nama += label2.Text.PadRight(30);
+            else nama += label3.Text.PadRight(30);
+            isi.Add(nama);
+            StreamWriter sw = new StreamWriter("History.txt");
+            for (int i = 0; i < isi.Count; i++)
+            {
+                sw.WriteLine(isi[i]);
+            }
+            sw.Close();
+            XOXO_Main frm = new XOXO_Main();
+            this.Hide();
+            frm.Show();
+        }
+
+        public void imbang()
+        {
+            bool status = true;
+            for (int i = 0; i < 15; i++)
+            {
+                for (int j = 0; j < 15; j++)
+                {
+                    if (var[i, j] == 2)
+                    {
+                        status = false;
+                        break;
+                    }
+                }
+                if (!status) break;
+            }
+            if (status)
+            {
+                MessageBox.Show("Permainan seimbang, silahkan main lagi", "Notifikasi");
+                reset();
+            }
         }
         private void b01_Click(object sender, EventArgs e)
         {

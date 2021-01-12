@@ -62,24 +62,49 @@ namespace Menu_Utama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!File.Exists("Namax.txt"))
+            if ((textBox1.Text == "")|| (textBox2.Text == ""))
             {
-                File.Create("Namax.txt").Close();
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Nama Pemain 1 tidak boleh kosong !!!","Notifikasi");
+                    textBox1.BackColor = Color.MistyRose;
+                }
+                else
+                {
+                    textBox1.BackColor = Color.GreenYellow;
+                    if (textBox2.Text == "")
+                    {
+                        MessageBox.Show("Nama Pemain 2 tidak boleh kosong !!!", "Notifikasi");
+                        textBox2.BackColor = Color.MistyRose;
+                    }
+                    else
+                    {
+                        textBox2.BackColor = Color.GreenYellow;
+                    }
+                }
             }
-            StreamWriter sw = new StreamWriter("Namax.txt");
-            sw.WriteLine(textBox1.Text + " " + textBox2.Text);
-            sw.Close();
+            else
+            {
+                if (!File.Exists("Namax.txt"))
+                {
+                    File.Create("Namax.txt").Close();
+                }
+                StreamWriter sw = new StreamWriter("Namax.txt");
+                sw.WriteLine(textBox1.Text + " " + textBox2.Text);
+                sw.Close();
 
-            if (!File.Exists("Peranx.txt"))
-            {
-                File.Create("Peranx.txt").Close();
+                if (!File.Exists("Peranx.txt"))
+                {
+                    File.Create("Peranx.txt").Close();
+                }
+                StreamWriter sw2 = new StreamWriter("Peranx.txt");
+                sw2.WriteLine(label3.Text + " " + label4.Text);
+                sw2.Close();
+                XOXO_utama home = new XOXO_utama();
+                this.Hide();
+                home.Show();
             }
-            StreamWriter sw2 = new StreamWriter("Peranx.txt");
-            sw2.WriteLine(label3.Text + " " + label4.Text);
-            sw2.Close();
-            XOXO_utama home = new XOXO_utama();
-            this.Hide();
-            home.Show();
+            
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -132,6 +157,18 @@ namespace Menu_Utama
             this.Hide();
             str.Show();
 
+        }
+
+        private void XOXO_Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            XOXO_Help frm = new XOXO_Help();
+            this.Hide();
+            frm.Show();
         }
     }
     }

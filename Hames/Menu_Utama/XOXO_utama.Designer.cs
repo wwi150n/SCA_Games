@@ -263,12 +263,14 @@ namespace Menu_Utama
             this.A181 = new System.Windows.Forms.Button();
             this.A166 = new System.Windows.Forms.Button();
             this.A151 = new System.Windows.Forms.Button();
+            this.A229 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // scorep2
             // 
             this.scorep2.BackColor = System.Drawing.Color.LightSalmon;
+            this.scorep2.Enabled = false;
             this.scorep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scorep2.Location = new System.Drawing.Point(745, 248);
             this.scorep2.Multiline = true;
@@ -281,6 +283,7 @@ namespace Menu_Utama
             // scorep1
             // 
             this.scorep1.BackColor = System.Drawing.Color.LightSalmon;
+            this.scorep1.Enabled = false;
             this.scorep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scorep1.Location = new System.Drawing.Point(24, 231);
             this.scorep1.Multiline = true;
@@ -343,7 +346,7 @@ namespace Menu_Utama
             this.A003.Location = new System.Drawing.Point(199, 80);
             this.A003.Name = "A003";
             this.A003.Size = new System.Drawing.Size(40, 40);
-            this.A003.TabIndex = 42;
+            this.A003.TabIndex = 3;
             this.A003.UseVisualStyleBackColor = false;
             this.A003.Click += new System.EventHandler(this.button_click);
             // 
@@ -376,7 +379,7 @@ namespace Menu_Utama
             this.A002.Location = new System.Drawing.Point(159, 80);
             this.A002.Name = "A002";
             this.A002.Size = new System.Drawing.Size(40, 40);
-            this.A002.TabIndex = 39;
+            this.A002.TabIndex = 2;
             this.A002.UseVisualStyleBackColor = false;
             this.A002.Click += new System.EventHandler(this.button_click);
             // 
@@ -409,7 +412,7 @@ namespace Menu_Utama
             this.A001.Location = new System.Drawing.Point(119, 80);
             this.A001.Name = "A001";
             this.A001.Size = new System.Drawing.Size(40, 40);
-            this.A001.TabIndex = 36;
+            this.A001.TabIndex = 1;
             this.A001.UseVisualStyleBackColor = false;
             this.A001.Click += new System.EventHandler(this.button_click);
             // 
@@ -418,11 +421,11 @@ namespace Menu_Utama
             this.A228.BackColor = System.Drawing.Color.Maroon;
             this.A228.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
             this.A228.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.A228.Location = new System.Drawing.Point(738, 13);
+            this.A228.Location = new System.Drawing.Point(14, 270);
             this.A228.Name = "A228";
             this.A228.Size = new System.Drawing.Size(90, 25);
             this.A228.TabIndex = 35;
-            this.A228.Text = "Reset";
+            this.A228.Text = "Menyerah";
             this.A228.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -439,6 +442,7 @@ namespace Menu_Utama
             // A226
             // 
             this.A226.BackColor = System.Drawing.Color.OrangeRed;
+            this.A226.Enabled = false;
             this.A226.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A226.Location = new System.Drawing.Point(350, 24);
             this.A226.Name = "A226";
@@ -450,6 +454,7 @@ namespace Menu_Utama
             // A227
             // 
             this.A227.BackColor = System.Drawing.Color.OrangeRed;
+            this.A227.Enabled = false;
             this.A227.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A227.Location = new System.Drawing.Point(445, 24);
             this.A227.Name = "A227";
@@ -465,7 +470,7 @@ namespace Menu_Utama
             this.A004.Location = new System.Drawing.Point(239, 80);
             this.A004.Name = "A004";
             this.A004.Size = new System.Drawing.Size(40, 40);
-            this.A004.TabIndex = 51;
+            this.A004.TabIndex = 4;
             this.A004.UseVisualStyleBackColor = false;
             // 
             // A005
@@ -475,7 +480,7 @@ namespace Menu_Utama
             this.A005.Location = new System.Drawing.Point(279, 80);
             this.A005.Name = "A005";
             this.A005.Size = new System.Drawing.Size(40, 40);
-            this.A005.TabIndex = 52;
+            this.A005.TabIndex = 5;
             this.A005.UseVisualStyleBackColor = false;
             // 
             // A019
@@ -767,7 +772,7 @@ namespace Menu_Utama
             this.A010.Location = new System.Drawing.Point(479, 80);
             this.A010.Name = "A010";
             this.A010.Size = new System.Drawing.Size(40, 40);
-            this.A010.TabIndex = 77;
+            this.A010.TabIndex = 10;
             this.A010.UseVisualStyleBackColor = false;
             // 
             // A009
@@ -777,7 +782,7 @@ namespace Menu_Utama
             this.A009.Location = new System.Drawing.Point(439, 80);
             this.A009.Name = "A009";
             this.A009.Size = new System.Drawing.Size(40, 40);
-            this.A009.TabIndex = 76;
+            this.A009.TabIndex = 9;
             this.A009.UseVisualStyleBackColor = false;
             this.A009.Click += new System.EventHandler(this.A009_Click);
             // 
@@ -808,7 +813,7 @@ namespace Menu_Utama
             this.A008.Location = new System.Drawing.Point(399, 80);
             this.A008.Name = "A008";
             this.A008.Size = new System.Drawing.Size(40, 40);
-            this.A008.TabIndex = 73;
+            this.A008.TabIndex = 8;
             this.A008.UseVisualStyleBackColor = false;
             // 
             // A037
@@ -838,7 +843,7 @@ namespace Menu_Utama
             this.A007.Location = new System.Drawing.Point(359, 80);
             this.A007.Name = "A007";
             this.A007.Size = new System.Drawing.Size(40, 40);
-            this.A007.TabIndex = 70;
+            this.A007.TabIndex = 7;
             this.A007.UseVisualStyleBackColor = false;
             // 
             // A036
@@ -868,7 +873,7 @@ namespace Menu_Utama
             this.A006.Location = new System.Drawing.Point(319, 80);
             this.A006.Name = "A006";
             this.A006.Size = new System.Drawing.Size(40, 40);
-            this.A006.TabIndex = 67;
+            this.A006.TabIndex = 6;
             this.A006.UseVisualStyleBackColor = false;
             // 
             // A145
@@ -1768,7 +1773,7 @@ namespace Menu_Utama
             this.A015.Location = new System.Drawing.Point(679, 80);
             this.A015.Name = "A015";
             this.A015.Size = new System.Drawing.Size(40, 40);
-            this.A015.TabIndex = 152;
+            this.A015.TabIndex = 15;
             this.A015.UseVisualStyleBackColor = false;
             // 
             // A014
@@ -1778,7 +1783,7 @@ namespace Menu_Utama
             this.A014.Location = new System.Drawing.Point(639, 80);
             this.A014.Name = "A014";
             this.A014.Size = new System.Drawing.Size(40, 40);
-            this.A014.TabIndex = 151;
+            this.A014.TabIndex = 14;
             this.A014.UseVisualStyleBackColor = false;
             // 
             // A043
@@ -1808,7 +1813,7 @@ namespace Menu_Utama
             this.A013.Location = new System.Drawing.Point(599, 80);
             this.A013.Name = "A013";
             this.A013.Size = new System.Drawing.Size(40, 40);
-            this.A013.TabIndex = 148;
+            this.A013.TabIndex = 13;
             this.A013.UseVisualStyleBackColor = false;
             // 
             // A042
@@ -1838,7 +1843,7 @@ namespace Menu_Utama
             this.A012.Location = new System.Drawing.Point(559, 80);
             this.A012.Name = "A012";
             this.A012.Size = new System.Drawing.Size(40, 40);
-            this.A012.TabIndex = 145;
+            this.A012.TabIndex = 12;
             this.A012.UseVisualStyleBackColor = false;
             // 
             // A041
@@ -1868,7 +1873,7 @@ namespace Menu_Utama
             this.A011.Location = new System.Drawing.Point(519, 80);
             this.A011.Name = "A011";
             this.A011.Size = new System.Drawing.Size(40, 40);
-            this.A011.TabIndex = 142;
+            this.A011.TabIndex = 11;
             this.A011.UseVisualStyleBackColor = false;
             // 
             // A225
@@ -2621,6 +2626,18 @@ namespace Menu_Utama
             this.A151.TabIndex = 192;
             this.A151.UseVisualStyleBackColor = false;
             // 
+            // A229
+            // 
+            this.A229.BackColor = System.Drawing.Color.Maroon;
+            this.A229.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
+            this.A229.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.A229.Location = new System.Drawing.Point(745, 287);
+            this.A229.Name = "A229";
+            this.A229.Size = new System.Drawing.Size(90, 25);
+            this.A229.TabIndex = 35;
+            this.A229.Text = "Menyerah";
+            this.A229.UseVisualStyleBackColor = false;
+            // 
             // XOXO_utama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2859,6 +2876,7 @@ namespace Menu_Utama
             this.Controls.Add(this.A031);
             this.Controls.Add(this.A016);
             this.Controls.Add(this.A001);
+            this.Controls.Add(this.A229);
             this.Controls.Add(this.A228);
             this.Controls.Add(this.pictureBox1);
             this.Name = "XOXO_utama";
@@ -3113,5 +3131,6 @@ namespace Menu_Utama
     private System.Windows.Forms.Button A181;
     private System.Windows.Forms.Button A166;
     private System.Windows.Forms.Button A151;
-  }
+        private System.Windows.Forms.Button A229;
+    }
 }

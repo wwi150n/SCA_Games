@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Tomato;
             this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(169, 255);
+            this.button3.Location = new System.Drawing.Point(169, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 23);
             this.button3.TabIndex = 11;
@@ -192,6 +193,16 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(170, 256);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(117, 23);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "Help";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // XOXO_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,6 +210,7 @@
             this.BackColor = System.Drawing.Color.Yellow;
             this.BackgroundImage = global::Menu_Utama.Properties.Resources.original;
             this.ClientSize = new System.Drawing.Size(436, 330);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
@@ -209,6 +221,7 @@
             this.Name = "XOXO_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XOXO";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.XOXO_Menu_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -231,5 +244,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
