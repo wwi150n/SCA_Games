@@ -117,4 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>1. Isi Nama Pemain untuk bagian X dan O
+
+2. Kemudian klik "New Game".
+
+3. Jika sudah masuk, klik button yang ada sebagai tempat meletakkan 
+    'X' atau 'O' sesuai dengan giliran Anda.
+
+4. Untuk memenangkan permainan, Anda harus bisa membuat tulisan 
+    "XXXXX" atau "OOOOO" sebanyak 2 kali dari berbagai arah.
+
+5. Game akan berakhir jika salah satu pemain menang.
+</value>
+  </data>
 </root>
